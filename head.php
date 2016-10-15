@@ -47,3 +47,6 @@
 
 <!-- JQUERY -->
 <script src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/jquery_004.js"></script>
+
+<!-- style -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
