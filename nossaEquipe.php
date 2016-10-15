@@ -1,37 +1,28 @@
-<!-- =========================
+=========================
    OUR TEAM SECTION   
 ============================== -->
 
 <section class="our-team" id="team">
 <div class="container">
 	
-	<!-- SECTION HEADER -->
 	<div class="section-header">
-		
-		<!-- SECTION TITLE -->
 		<h2 class="dark-text">Nossa Equipe</h2>
-		
-		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
 		<h6>
 			Conheça nossa equipe. Trabalhamos com prazer e dedicação, desenvolvendo nosso potencial em equipe.			
 		</h6>
 	</div>
-	<!-- / END SECTION HEADER -->
 	
-	<!-- TEAM MEMBERS -->
 	<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s">
-		<!-- MEMBER -->
 		<div class="col-lg-3 col-sm-3">
 			<div class="team-member">
 				<figure class="profile-pic"> 
-				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniel.jpg" alt=""> <!-- MEMBER PROFILE PIC -->
+					<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniel.jpg" alt="">
 				</figure>
 				<div class="member-details">
 					<h5 class="dark-text red-border-bottom">Daniel Ferreira</h5>
 					<div class="position">
-						Professor maio/2016 - Atual
+						<p>Professor maio/2016 - Atual</p>
 					</div>
-					
 				</div>
 				<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
 					<ul>
@@ -41,27 +32,18 @@
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
-		<!-- / END MEMBER -->
 		
 		<div class="col-lg-3 col-sm-3">
 			<div class="team-member">
 				<figure class="profile-pic">
-				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorernestoteodoro.jpg" alt="">
+					<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorernestoteodoro.jpg" alt="">
 				</figure>
 				<div class="member-details">
 					<h5 class="dark-text green-border-bottom">Ernesto Teodoro</h5>
 					<div class="position">
-						Professor maio/2016 - Atual
+						<p>Professor maio/2016 - Atual</p>
 					</div>
 				</div>
 				<div class="social-icons">
@@ -71,14 +53,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -102,14 +76,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 		
@@ -132,14 +98,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 		<div class="col-lg-3 col-sm-3">
@@ -160,14 +118,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -191,13 +141,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Trabalha como estagiária em programação web na InHouse. Tem conhecimentos em Java, PHP, JQuery, JavaScript,
-						C, C#, HTML5, CSS3, MySQL, SQL e Android. 
-						
-					</p>
-				</div>
 			</div>
 		</div>
 		<div class="col-lg-3 col-sm-3">
@@ -219,14 +162,6 @@ nulla sed quisquam.
 						<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 		<div class="col-lg-3 col-sm-3">
@@ -247,14 +182,6 @@ nulla sed quisquam.
 						<li><a href="https://github.com/GuilhermeFujita"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -278,14 +205,6 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 		
@@ -307,14 +226,6 @@ nulla sed quisquam.
 						<li><a href="https://github.com/josejuniorcj"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -339,14 +250,6 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 	
@@ -369,14 +272,6 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -401,14 +296,6 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 		<div class="col-lg-3 col-sm-3">
@@ -429,14 +316,6 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
-				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
 				</div>
 			</div>
 		</div>
@@ -459,19 +338,8 @@ nulla sed quisquam.
 						<li><a href=""><i class="fa fa-skype"></i></a></li>
 					</ul>
 				</div>
-				<div class="details">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-Praesentium sapiente voluptate nostrum ipsa tempora optio facilis beatae
- quo aut error corrupti officiis dolore accusantium rem rerum illum 
-nulla sed quisquam.
-					</p>
-				</div>
 			</div>
 		</div>
 	</div> 
-	
-	<!-- / END TEAM MEMBER LIST -->
-	
 </div> <!-- / END CONTAINER -->
-</section> <!-- / END OUR TEAM SECTION -->
+</section> <!-- / END OUR TEAM SECTION

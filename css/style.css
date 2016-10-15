@@ -3,13 +3,16 @@
 .current:before{background: #f9a200;}
 .navbar-inverse .navbar-nav>li>a:hover{color: #f9a200;}
 
-
 /*NOSSA MISSÃO*/
 .focus-box .service-icon{padding: 15px;}
 .service-icon .fa.fa-css3{font-size: 75px!important;}
 .service-icon .fa.fa-android{font-size: 90px!important;}
 .service-icon .fa.fa-users{font-size: 75px!important;}
 .service-icon .fa.fa-television{font-size: 75px!important;padding-left: 7px;}
+
+/*NOSSA EQUIPE*/
+.section-header h6{color:#404040;}
+.team-member .member-details .position{color:#404040;}
 
 
 @media (max-width: 767px){
