@@ -128,7 +128,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/biancaarantes.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text red-border-bottom">Bianca Arantes</h5>
+					<h5 class="dark-text green-border-bottom">Bianca Arantes</h5>
 					<div class="position">
 						Programadora maio/2016 - Atual
 					</div>
@@ -149,7 +149,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniatualizado.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text red-border-bottom">Daniele Rodrigues</h5>
+					<h5 class="dark-text blue-border-bottom">Daniele Rodrigues</h5>
 					<div class="position">
 						Teste de qualidade
 					</div>
@@ -170,7 +170,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/fujitaatualizado.jpg" alt="" style="-webkit-transform: rotate(90deg);">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text green-border-bottom">Guilherme Fujita</h5>
+					<h5 class="dark-text yellow-border-bottom">Guilherme Fujita</h5>
 					<div class="position">
 						Programador maio/2016 - Atual
 					</div>
@@ -192,7 +192,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/guilhermegolfetto.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text blue-border-bottom">Guilherme Golfetto</h5>
+					<h5 class="dark-text red-border-bottom">Guilherme Golfetto</h5>
 					<div class="position">
 						Programador maio/2016 - Atual
 					</div>
@@ -214,7 +214,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/junior2.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">J J </h5>
+					<h5 class="dark-text green-border-bottom">J J </h5>
 					<div class="position">
 						Programador maio/2016 - Atual
 					</div>
@@ -237,7 +237,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/leonardoguimaraes.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">Leonardo Guimarães</h5>
+					<h5 class="dark-text blue-border-bottom">Leonardo Guimarães</h5>
 					<div class="position">
 						Programador maio/2016 - Atual
 					</div>
@@ -283,7 +283,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/vanessapereira.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">Vanessa Pereira</h5>
+					<h5 class="dark-text red-border-bottom">Vanessa Pereira</h5>
 					<div class="position">
 						Gerente maio/2016 - Atual
 					</div>
@@ -304,7 +304,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/hebert.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">Hebert Wagner</h5>
+					<h5 class="dark-text green-border-bottom">Hebert Wagner</h5>
 					<div class="position">
 						Iniciação Científica set/2016 - Atual
 					</div>
@@ -325,7 +325,7 @@
 				<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 				</figure>
 				<div class="member-details">
-					<h5 class="dark-text yellow-border-bottom">Matheus Souza</h5>
+					<h5 class="dark-text blue-border-bottom">Matheus Souza</h5>
 					<div class="position">
 						Programador maio/2016 - ago/2016
 					</div>

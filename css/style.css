@@ -13,6 +13,8 @@
 /*NOSSA EQUIPE*/
 .section-header h6{color:#404040;}
 .team-member .member-details .position{color:#404040;}
+.team-member figure img{-webkit-filter: grayscale(100%);}
+.team-member figure img:hover{-webkit-filter: grayscale(0%);}
 
 
 @media (max-width: 767px){
