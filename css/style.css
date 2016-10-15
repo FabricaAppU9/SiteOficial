@@ -6,10 +6,10 @@
 
 /*NOSSA MISSÃO*/
 .focus-box .service-icon{padding: 15px;}
-.fa.fa-css3{font-size: 75px!important;}
-.fa.fa-android{font-size: 90px!important;}
-.fa.fa-users{font-size: 75px!important;}
-.fa.fa-television{font-size: 75px!important;padding-left: 7px;}
+.service-icon .fa.fa-css3{font-size: 75px!important;}
+.service-icon .fa.fa-android{font-size: 90px!important;}
+.service-icon .fa.fa-users{font-size: 75px!important;}
+.service-icon .fa.fa-television{font-size: 75px!important;padding-left: 7px;}
 
 
 @media (max-width: 767px){
