@@ -24,7 +24,7 @@
 					<li><a href="#focus">Missão</a></li>
 					<li><a href="#aboutus">Objetivo</a></li>
 					<li><a href="#team">Equipe</a></li>
-					<li><a href="#pricingtable">Pricing</a></li>
+					<!-- <li><a href="#pricingtable">Pricing</a></li> -->
 					<li><a href="#features">Tecnologias</a></li>
 					<li><a href="#works">Projetos</a></li>
 					<li><a href="#testimonials">Depoimentos</a></li>
