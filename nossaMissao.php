@@ -13,7 +13,7 @@
 		
 		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
 		<h6>
-			Nossa missão é.....
+			Nossa missão é:
 		</h6>
 	</div>
 	<!-- / END SECTION HEADER -->

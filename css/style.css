@@ -4,6 +4,13 @@
 .navbar-inverse .navbar-nav>li>a:hover{color: #f9a200;}
 
 
+/*NOSSA MISSÃO*/
+.focus-box .service-icon{padding: 15px;}
+.fa.fa-css3{font-size: 75px!important;}
+.fa.fa-android{font-size: 90px!important;}
+.fa.fa-users{font-size: 75px!important;}
+.fa.fa-television{font-size: 75px!important;padding-left: 7px;}
+
 
 @media (max-width: 767px){
 	/*config tema*/
