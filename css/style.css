@@ -1,3 +1,6 @@
+/*config*/
+::selection{background: #fe9e03;}
+
 /*config navbar*/
 .current a{color: #f9a200 !important;}
 .current:before{background: #f9a200;}
