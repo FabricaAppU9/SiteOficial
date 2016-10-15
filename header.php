@@ -55,7 +55,7 @@
 		</div>
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
-        <div class="row bottom-message-section">
+        <!-- <div class="row bottom-message-section">
 			<div class="col-lg-4 col-sm-4">
 				<div class="short-text">
 					<i class="icon icon-fontawesome-webfont-358"></i> frase 1
@@ -71,7 +71,7 @@
 					<i class="icon-fontawesome-webfont-347"></i> frase 3
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div> <!-- / END BIG HEADING WITH CALL TO ACTION BUTTONS AND SHORT MESSAGES  -->
 	
 </header> <!-- / END HOME SECTION  -->
