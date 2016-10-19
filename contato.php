@@ -1,7 +1,7 @@
 <section class="contact-us" id="contact">
 	<div class="container">
 	    <div class="section-header">
-			<h2 class="white-text">Quer fazer desta equipe?</h2>
+			<h2 class="white-text">Quer fazer parte desta equipe?</h2>
 			<h6 class="white-text">
 				Você realmente gosta de tecnologia? Quer fazer parte desta incrível equipe? Entre em contato!
 			</h6>
