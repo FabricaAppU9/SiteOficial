@@ -24,7 +24,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/daniel-ferreira-de-barros-junior-65111622?authType=name&authToken=7Zgn&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B0%3B41539810%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/masterets1000?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/ernesto-teodoro-silva-62868347?authType=name&authToken=i5w7&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B2%3B51424504%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/gabriel.baptista.5680?pnref=story"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/ernesto-teodoro-silva-62868347?authType=name&authToken=i5w7&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B2%3B51424504%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://github.com/gabrielbaptista"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/jsoft.souza?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-carlos-silva-de-souza-67427b15?authType=name&authToken=Cdvi&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B1%3B77916445%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100004935793311&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/alexandre-correa-alves-4aa5ab9b?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 							<li><a target="_blank" href="https://www.facebook.com/bianca.luna.351756"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/bianca-arantes-dos-santos-919744121?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://github.com/BiancaArantes28"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -154,7 +154,7 @@
 							
 							<li><a target="_blank" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -175,7 +175,7 @@
 							<li><a href="https://www.facebook.com/guilherme.fujita.1?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://br.linkedin.com/in/guilherme-sant-ana-fujita-5b49b0114"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/GuilhermeFujita"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -197,7 +197,7 @@
 							<li><a href="https://www.facebook.com/golfetto.guilherme?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://br.linkedin.com/in/guilhermegolfetto"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/GolfettoGuilherme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -219,7 +219,7 @@
 							<li><a href="https://www.facebook.com/josejuniorcj?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/jos%C3%A9-j%C3%BAnior-08931144?trk=nav_responsive_tab_profile_pic"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/josejuniorcj"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -242,7 +242,7 @@
 							<li><a href="https://www.facebook.com/leonardo.guimaraes.16718?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/leonardo-guimar%C3%A3es-99b693b3?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href="https://github.com/leonardo-sguimaraes"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -265,7 +265,7 @@
 							<li><a href="https://www.facebook.com/marcela.menezesmaciel?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://br.linkedin.com/in/marcela-menezes-17a71964"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -288,7 +288,7 @@
 							<li><a href="https://www.facebook.com/vanessa.pereira.1428?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href="https://br.linkedin.com/in/vanessa-pereira-94011353"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -309,7 +309,7 @@
 							<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
@@ -330,7 +330,7 @@
 							<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
