@@ -9,12 +9,12 @@
 	<div class="section-header">
 		
 		<!-- SECTION TITLE -->
-		<h2 class="dark-text">Nossa Missão</h2>
+		<h2 class="dark-text">Nossa EXPERIÊNCIA</h2>
 		
-		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION 
 		<h6>
 			Nossa missão é:
-		</h6>
+		</h6>-->
 	</div>
 	<!-- / END SECTION HEADER -->
 	

@@ -9,13 +9,13 @@ header .navbar-brand{padding-top: 17px;}
 
 /*NOSSA MISSÃO*/
 .focus-box .service-icon{padding: 15px;}
-.service-icon .fa.fa-css3{font-size: 75px!important;}
-.service-icon .fa.fa-android{font-size: 90px!important;}
-.service-icon .fa.fa-users{font-size: 75px!important;}
-.service-icon .fa.fa-television{font-size: 75px!important;padding-left: 7px;}
+.service-icon .fa.fa-css3{font-size: 75px!important;color: #e96656!important;}
+.service-icon .fa.fa-android{font-size: 90px!important;color: #34d293!important;}
+.service-icon .fa.fa-users{font-size: 75px!important;color: #3ab0e2!important;}
+.service-icon .fa.fa-television{font-size: 75px!important;padding-left: 7px;color: #f7d861!important;}
 
 /*NOSSA EQUIPE*/
-.section-header h6{color:#404040;}
+.section-header h6{color:#adadad;}
 .team-member .member-details .position{color:#404040;}
 .team-member figure img{-webkit-filter: grayscale(100%);}
 .team-member figure img:hover{-webkit-filter: grayscale(0%);}
