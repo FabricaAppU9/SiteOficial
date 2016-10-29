@@ -1,15 +1,23 @@
 <section class="contact-us" id="contact">
 	<div class="container">
 	    <div class="section-header">
-			<h2 class="white-text">Quer fazer parte desta equipe?</h2>
+			<h2 class="white-text">Selecione a opção de assunto</h2>
 			<h6 class="white-text">
-				Você realmente gosta de tecnologia? Quer fazer parte desta incrível equipe? Entre em contato!
+				Você realmente gosta de tecnologia? Entre em contato!
 			</h6>
 		</div>
-		
 		<div class="row">
-			<form role="form" class="contact-form" id="contact-form">
-				<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+			<div class="col-sm-12">
+				<select name="escolha-contato" id="escolha-contato" class="form-control input-box" >
+					<option value="0">(Selecione)</option>
+					<option value="1">Fazer parte da equipe</option>
+					<option value="2">Enviar mensagem</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<form role="form" class="contact-form" id="contato-equipe" style="display:none;">
+				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="name" placeholder="Seu Nome" class="form-control input-box" id="name" type="text">
 				</div>
@@ -27,7 +35,7 @@
 				</div>
 				</div>
 				
-				<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="col-md-12 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+				<div class="col-sm-12">
 					<textarea name="message" class="form-control textarea-box" placeholder="Fale um pouco sobre você e sua experiência em tecnologia" id="message"></textarea>
 				</div>
 				<h4 class="success pull-left white-text">
@@ -37,8 +45,44 @@
 				<h4 class="error pull-left white-text">
 					E-mail must be valid and message must be longer than 1 character.
 				</h4>
-				<button style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="btn btn-primary custom-button red-btn wow fadeInLeft animated" id="submit" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s" type="submit">Enviar Contato</button>
+				<button class="btn btn-primary custom-button red-btn" id="submit" type="submit">Enviar Contato</button>
+			</form>
+			<form role="form" class="contact-form" id="contato-normal" style="display: none;">
+				<div>
+				<div class="col-lg-6 col-sm-6">
+					<input name="name" placeholder="Seu Nome" class="form-control input-box" id="name" type="text">
+				</div>
+				<div class="col-lg-6 col-sm-6">
+					<input name="email" placeholder="Seu Email" class="form-control input-box" id="email" type="email">
+				</div>
+				</div>
+				
+				<div class="col-sm-12">
+					<textarea name="message" class="form-control textarea-box" placeholder="Mensagem: " id="message"></textarea>
+				</div>
+				<h4 class="success pull-left white-text">
+					Your message has been sent successfully.
+				</h4>
+				
+				<h4 class="error pull-left white-text">
+					E-mail must be valid and message must be longer than 1 character.
+				</h4>
+				<button class="btn btn-primary custom-button red-btn" type="submit">Enviar Contato</button>
 			</form>
 		</div>
 	</div>
 </section>
+<script>
+	$("#escolha-contato").change(function(){
+		var selecionado = $(this).val();
+
+		if(selecionado == 1){
+			$("#contato-equipe").css("display","block");
+			$("#contato-normal").css("display","none");
+		}
+		else if(selecionado == 2){
+			$("#contato-normal").css("display","block");
+			$("#contato-equipe").css("display","none");
+		}
+	});
+</script>

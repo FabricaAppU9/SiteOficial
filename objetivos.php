@@ -78,7 +78,7 @@
 				</ul> 
 			</div> 
 		</div>
-
+<!-- 
 		<div class="our-clients">
 			<h5><span class="section-footer-title">NOSSOS CLIENTES</span></h5>
 		</div>
@@ -87,6 +87,6 @@
 				<li><a href="#"><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt=""></li>
 				
 			</ul>
-		</div>
+		</div> -->
 	</div>
 </section> 

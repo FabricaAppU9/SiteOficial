@@ -1,5 +1,6 @@
 /*config*/
 ::selection{background: #fe9e03;}
+.section-header h6{color:#adadad;}
 
 /*config navbar*/
 .current a{color: #f9a200 !important;}
@@ -14,8 +15,15 @@ header .navbar-brand{padding-top: 17px;}
 .service-icon .fa.fa-users{font-size: 75px!important;color: #3ab0e2!important;}
 .service-icon .fa.fa-television{font-size: 75px!important;padding-left: 7px;color: #f7d861!important;}
 
+/*OBJETIVO*/
+#aboutus .section-header h6{color:#adadad;}
+
+/*DEPOIMENTOS*/
+#testimonials .section-header h6{ 
+	color: #fff;
+}
+
 /*NOSSA EQUIPE*/
-.section-header h6{color:#adadad;}
 .team-member .member-details .position{color:#404040;}
 .team-member figure img{-webkit-filter: grayscale(100%);}
 .team-member figure img:hover{-webkit-filter: grayscale(0%);}
