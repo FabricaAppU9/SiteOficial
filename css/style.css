@@ -5,6 +5,7 @@
 .current a{color: #f9a200 !important;}
 .current:before{background: #f9a200;}
 .navbar-inverse .navbar-nav>li>a:hover{color: #f9a200;}
+header .navbar-brand{padding-top: 17px;}
 
 /*NOSSA MISSÃO*/
 .focus-box .service-icon{padding: 15px;}

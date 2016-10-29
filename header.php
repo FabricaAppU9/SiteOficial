@@ -15,7 +15,9 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="navbar-brand">
-					<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/logoFappUni9.png" alt="Zerif">
+					<a href="#home">
+						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/logoFappUni9.png" alt="Zerif">
+					</a>
 				</div>
 			</div>
 			<nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
