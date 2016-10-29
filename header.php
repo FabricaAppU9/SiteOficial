@@ -23,7 +23,7 @@
 			<nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
 				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
 					<li><a href="#home">Inicio</a></li>
-					<li><a href="#focus">Missão</a></li>
+					<li><a href="#focus">Experiência</a></li>
 					<li><a href="#aboutus">Objetivo</a></li>
 					<li><a href="#team">Equipe</a></li>
 					<!-- <li><a href="#pricingtable">Pricing</a></li> -->
