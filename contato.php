@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<form role="form" class="contact-form" id="contato-equipe" style="display:none;">
+			<form role="form" class="contact-form" id="contato-equipe" style="display:none;" method="POST" action="sendMail.php">
 				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="name" placeholder="Seu Nome" class="form-control input-box" id="name" type="text">
