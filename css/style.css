@@ -20,6 +20,24 @@ header .navbar-brand{padding-top: 17px;}
 .team-member figure img{-webkit-filter: grayscale(100%);}
 .team-member figure img:hover{-webkit-filter: grayscale(0%);}
 
+/*TECNOLOGIAS*/
+.features .feature {
+	text-align: center;
+    border: 3px solid #ccc;
+    background-color: rgba(205, 205, 205, 0.15);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.features .feature .feature-icon{
+	float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-height: 50px;
+}
+.features .feature .feature-icon img{}
+
 
 @media (max-width: 767px){
 	/*config tema*/
