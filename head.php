@@ -15,10 +15,10 @@
 	http://www.templatemonster.com/demo/57780.html
 	http://wrapbootstrap.com/preview/WB053H4T4
 ============================== -->
-<link rel="shortcut icon" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/favicon.ico">
-<link rel="apple-touch-icon" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/apple-touch-icon.png">
+<link rel="shortcut icon" href="Zerif - Responsive One Page Template_arquivos/favicon-fabrica-de-app-uninove.png">
+<!-- <link rel="apple-touch-icon" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://demo.templateocean.com/wrapbootstrap/zerif-html/v1.3.1/images/icons/apple-touch-icon-114x114.png"> -->
 <link rel="stylesheet" type="text/css" href="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/awe/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/awe/css/font-awesome.min.css">
 
