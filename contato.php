@@ -15,7 +15,9 @@
 				</select>
 			</div>
 		</div>
-		
+		<div id="resultado" style="width:1000px;heigth:1000px;display:none;">
+			
+		</div>
 		<div class="row">
 			<form class="contact-form" id="contato-equipe" style="display:none; method="post">
 				<div>
@@ -107,8 +109,13 @@
 		var curso = $("#curso").val();
 		var mensagem = $("#mensagem").val();
 		$.post('enviar-equipe.php',{name:name,email:email,ra:ra,campus:campus,curso:curso,mensagem:mensagem},function(data){
-			$("#texto-load").html(data);
+			
+			//var resultado = eval(data);
+			//alert(resultado);
+			//$("#texto-load").html(data);
 			alert(data);
+			$("#resultado").css("display","block");
+			$("#resultado").html(data);
 			$("#loading").css("display","none");
 		});
 	});

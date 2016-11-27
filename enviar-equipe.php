@@ -16,35 +16,37 @@ $mail = new PHPMailer();
 //configurando envio de email
 $mail->isSMTP();
 $mail->Charset = 'UTF-8';
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
+$mail->Host = 'smtp.fabricaappu9.com.br';
+$mail->Port = 25;
+//$mail->SMTPAuth = true;
+//$mail->SMTPSecure = 'ss1';
+$mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ss1';
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);
-$mail->Username = "biancaarantes28@gmail.com";
-$mail->Password = "123456";
+//$mail->SMTPOptions = array(
+   // 'ssl' => array(
+      //  'verify_peer' => false,
+      //  'verify_peer_name' => false,
+      //  'allow_self_signed' => true
+   // )
+//);
+$mail->Username = "contato@fabricaappu9.com.br";
+$mail->Password = "********";
 
 //preparando assunto, mensagem.
-$mail->setFrom("biancaarantes28@gmail.com",$nome);
-$mail->addAddress("biancaarantes28@gmail.com");
+$mail->setFrom("contato@fabricaappu9.com.br",$nome);
+$mail->addAddress("contato@fabricaappu9.com.br");
 $mail->Subject = "Quero participar da equipe";
 $mail->msgHTML("<html>Ola eu sou {$nome}, meu RA: {$ra}, sou do campus {$campus}, sou do curso {$curso} e meu email {$e}: {$email} <br/> {$mensagem}</html>");
 $mail->AltBody = "Ola eu sou {$nome}, meu RA: {$ra}, sou do campus {$campus}, sou do curso {$curso} e meu email {$e}: {$email} <br/> {$mensagem}";
-$html = "";
+
 
 if($mail->send()){
-	$html .= "Email enviado com sucesso!";
+	$html = "Email enviado com sucesso!";
 }else{
-	$html .= "Seu email não foi enviado!";
+	$html = "Seu email não foi enviado!";
 }
-echo $html;
-
+echo $mail->ErrorInfo;
+//echo $html;
 
 
 

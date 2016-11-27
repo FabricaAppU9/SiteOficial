@@ -37,11 +37,8 @@
 							<div style="width: 380px;" class="owl-item">
 								<div class="feedback-box">
 									<div class="message">
-										“Called days. Image kind beginning have. Herb set kind herb. 
-										Wherein saying third was, every land moveth also bearing hath bring had 
-										give god gathered behold open cattle after a, from third male subdue 
-										multiply divided void cattle winged. Herb set kind herb. multiply 
-										divided void cattle winged. Herb set kind herb.”
+										“Temos grande alegria e enorme prazer mantermos o contato e acompanhar a evolução do software. É um sonho de décadas, agora se concretizando graças ao empenho
+de tão brilhante grupo da Fábrica de App da Uninove, que aceitaram o desafio de algo tão diferente e tendo à frente o Prof. Gabriel.”
 									</div>
 								</div>
 							</div>
