@@ -30,7 +30,7 @@
 	        <a data-toggle="modal" href="#myModalProspiro" id="procalc"><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/prospiro.bmp" alt="project" style="border-radius: 30px;">
 				<!--<div class="project-info">
 					<div class="project-details">
-						<h5 class="white-text red-border-bottom">
+						<h5 class="white-text red-border-bottom"
 						Pro-Spiro </h5>
 						<div class="details white-text">
 							Android
