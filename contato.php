@@ -19,7 +19,7 @@
 			
 		</div>
 		<div class="row">
-			<form class="contact-form" id="contato-equipe" style="display:none; method="post">
+			<!-- <form class="contact-form" id="contato-equipe" style="display:none; method="post">
 				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="name" placeholder="Seu Nome" class="form-control input-box" id="name" type="text">
@@ -41,15 +41,11 @@
 				<div class="col-sm-12">
 					<textarea name="mensagem" class="form-control textarea-box" placeholder="Fale um pouco sobre você e sua experiência em tecnologia" id="mensagem"></textarea>
 				</div>
-				<!--<h4 class="success pull-left white-text">
-					Your message has been sent successfully.
-				</h4>
-				
-				<h4 class="error pull-left white-text">
-					E-mail must be valid and message must be longer than 1 character.
-				</h4>-->
 				<button class="btn btn-primary custom-button red-btn" id="botao-equipe">Enviar Contato</button>
-			</form>
+			</form> -->
+			<div style="display: block;margin:0 auto;">
+				<iframe style="display:none;margin: 0 auto;" class="contact-form" id="contato-equipe" src="https://docs.google.com/forms/d/e/1FAIpQLSckypixpLjvVrMfNPMmpXQK0csXC2ZnVMb6WOA136JFRGExTA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+			</div>
 			
 			<form class="contact-form" id="contato-normal" style="display: none;">
 				<div>
