@@ -15,7 +15,7 @@
 							<div style="width: 380px;" class="owl-item">
 								<div class="feedback-box">
 									<div class="message">
-										 “Pedi para esta equipe para atualizar a tecnologia do meus softwares, pro-calc e pro-spiro, adorei! Excelente trabalho, recomendo esta equipe!”
+										 “Temos grande alegria e enorme prazer mantermos o contato e acompanhar a evolução do software. É um sonho de décadas, agora se concretizando graças ao empenho de tão brilhante grupo da Fábrica de App da Uninove, que aceitaram o desafio de algo tão diferente e tendo à frente o Prof. Gabriel.”
 									</div>
 									
 									<div class="client">
@@ -29,7 +29,7 @@
 											</div>
 										</div>
 										<div class="client-image hidden-xs">
-											<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
+											<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px" style="margin-top: 13px;">
 										</div>
 									</div>
 								</div>
@@ -38,7 +38,7 @@
 								<div class="feedback-box">
 									<div class="message">
 										“Temos grande alegria e enorme prazer mantermos o contato e acompanhar a evolução do software. É um sonho de décadas, agora se concretizando graças ao empenho
-de tão brilhante grupo da Fábrica de App da Uninove, que aceitaram o desafio de algo tão diferente e tendo à frente o Prof. Gabriel.”
+										de tão brilhante grupo da Fábrica de App da Uninove, que aceitaram o desafio de algo tão diferente e tendo à frente o Prof. Gabriel.”
 									</div>
 								</div>
 							</div>

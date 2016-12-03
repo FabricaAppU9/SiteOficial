@@ -18,19 +18,16 @@ $mail->isSMTP();
 $mail->Charset = 'UTF-8';
 $mail->Host = 'smtp.fabricaappu9.com.br';
 $mail->Port = 25;
-//$mail->SMTPAuth = true;
-//$mail->SMTPSecure = 'ss1';
-$mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
-//$mail->SMTPOptions = array(
-   // 'ssl' => array(
-      //  'verify_peer' => false,
-      //  'verify_peer_name' => false,
-      //  'allow_self_signed' => true
-   // )
-//);
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
 $mail->Username = "contato@fabricaappu9.com.br";
-$mail->Password = "********";
+$mail->Password = "F@bric@@pp2016";
 
 //preparando assunto, mensagem.
 $mail->setFrom("contato@fabricaappu9.com.br",$nome);
@@ -45,8 +42,8 @@ if($mail->send()){
 }else{
 	$html = "Seu email não foi enviado!";
 }
-echo $mail->ErrorInfo;
-//echo $html;
+
+echo $html;
 
 
 

@@ -113,7 +113,9 @@
 			//var resultado = eval(data);
 			//alert(resultado);
 			//$("#texto-load").html(data);
-			alert(data);
+			// alert(data);
+
+			// console.log(data);
 			$("#resultado").css("display","block");
 			$("#resultado").html(data);
 			$("#loading").css("display","none");
