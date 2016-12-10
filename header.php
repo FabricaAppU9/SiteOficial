@@ -6,6 +6,7 @@
 
 <header id="home" class="header">
 	<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+	<input type="hidden" id="numero-teste" value="0">
 		<div class="container">
 			<div class="navbar-header responsive-logo">
 				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse">
@@ -22,15 +23,15 @@
 			</div>
 			<nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
 				<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
-					<li><a href="#home">Inicio</a></li>
-					<li><a href="#focus">Experiência</a></li>
-					<li><a href="#aboutus">Objetivo</a></li>
-					<li><a href="#team">Equipe</a></li>
+					<li><a class="teste" href="#home">Inicio</a></li>
+					<li><a class="teste" href="#focus">Experiência</a></li>
+					<li><a class="teste" href="#aboutus">Objetivo</a></li>
+					<li><a class="teste" href="#team">Equipe</a></li>
 					<!-- <li><a href="#pricingtable">Pricing</a></li> -->
-					<li><a href="#features">Tecnologias</a></li>
-					<li><a href="#works">Projetos</a></li>
-					<li><a href="#testimonials">Depoimentos</a></li>
-					<li><a href="#contact">Contatos</a></li>
+					<li><a class="teste" href="#features">Tecnologias</a></li>
+					<li><a class="teste" href="#works">Projetos</a></li>
+					<li><a class="teste" href="#testimonials">Depoimentos</a></li>
+					<li><a class="teste" href="#contact">Contatos</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -35,3 +35,20 @@
 <script src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/smoothscroll.js"></script>
 <script src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/jquery.js"></script>
 <script src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/zerif.js"></script>
+<script>
+	$(".teste").click(function(){
+		
+			
+		
+			$(".navbar-collapse").css("display","none");
+		
+	});
+	$(".navbar-toggle").click(function(){
+		//if($(".responsive-nav").css("display") === "none"){
+			//alert("estou aqui");
+			$(".navbar-collapse").css("display","block");
+		//}
+		
+	});
+	
+</script>
