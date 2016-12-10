@@ -46,7 +46,7 @@
 	$(".navbar-toggle").click(function(){
 		//if($(".responsive-nav").css("display") === "none"){
 			//alert("estou aqui");
-			$(".navbar-collapse").css("display","block");
+			$(".navbar-collapse").show("slow");
 		//}
 		
 	});
