@@ -67,7 +67,8 @@
       			<td>Android Studio, Astah, Java, Netbeans, Git e GitHub.</td>
       		</tr>
       		<tr>
-      			<td></td>
+      			<td>Link Google Play: </td>
+				<td><a href="https://play.google.com/store/apps/details?id=espirometria.fabricaapp.uninove.com.br.procalc" target="_blank">Pro-calc</a></td>
       		</tr>
       	</table>
       	</div>
