@@ -1,12 +1,12 @@
 <section class="contact-us" id="contact">
 	<div class="container">
 	    <div class="section-header">
-			<h2 class="white-text">Selecione a opção de assunto</h2>
-			<h6 class="white-text">
+			<!--<h2 class="white-text">Selecione a opção de assunto</h2>-->
+			<h2 class="white-text">
 				Você realmente gosta de tecnologia? Entre em contato!
-			</h6>
+			</h2>
 		</div>
-		<div class="row">
+		<!--<div class="row">
 			<div class="col-sm-12">
 				<select name="escolha-contato" id="escolha-contato" class="form-control input-box" >
 					<option value="0">(Selecione)</option>
@@ -14,7 +14,7 @@
 					<option value="2">Enviar mensagem</option>
 				</select>
 			</div>
-		</div>
+		</div>-->
 		<div id="resultado" style="width:1000px;heigth:1000px;display:none;">
 			
 		</div>
@@ -43,11 +43,9 @@
 				</div>
 				<button class="btn btn-primary custom-button red-btn" id="botao-equipe">Enviar Contato</button>
 			</form> -->
-			<div style="display: block;margin:0 auto;">
-				<iframe style="display:none;margin: 0 auto;" class="contact-form" id="contato-equipe" src="https://docs.google.com/forms/d/e/1FAIpQLSckypixpLjvVrMfNPMmpXQK0csXC2ZnVMb6WOA136JFRGExTA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-			</div>
 			
-			<form class="contact-form" id="contato-normal" style="display: none;">
+			
+			<form class="contact-form" id="contato-normal">
 				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="nome" placeholder="Seu Nome" class="form-control input-box" id="nome" type="text">
@@ -77,6 +75,24 @@
 			<div id="texto-load" style="margin-top:30px;">Aguarde enquanto o sistema processa os dados!</div>
 			<center><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/ajax-loader.gif" style="margin-top:50px !important;margin-bottom:100px !important;width:200px;"></center>
 		</div>
+</section>
+<section class="contact-us" id="cadastrar">
+	<div class="container">
+		<div class="section-header">
+			<!--<h2 class="white-text">Selecione a opção de assunto</h2>-->
+			<h2 class="white-text">
+				Venha fazer parte da nossa equipe!
+			</h2>
+			<h4 class="white-text">
+				Faça a sua inscrição!
+			</h4>
+		</div>
+		<div class="row">
+			<div style="display: block;margin:0 auto;">
+				<iframe style="margin: 0 auto;" class="contact-form" id="contato-equipe" src="https://docs.google.com/forms/d/e/1FAIpQLSckypixpLjvVrMfNPMmpXQK0csXC2ZnVMb6WOA136JFRGExTA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+			</div>
+		</div>
+	</div>
 </section>
 <script>
 	$("#escolha-contato").change(function(){

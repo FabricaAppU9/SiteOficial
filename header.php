@@ -32,6 +32,7 @@
 					<li><a class="teste" href="#works">Projetos</a></li>
 					<li><a class="teste" href="#testimonials">Depoimentos</a></li>
 					<li><a class="teste" href="#contact">Contatos</a></li>
+					<li><a class="teste" href="#cadastrar">Cadastrar</a></li>
 				</ul>
 			</nav>
 		</div>

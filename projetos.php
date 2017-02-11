@@ -106,5 +106,5 @@
 	</div>
 </div>
 <script>
-	$("#myModalProcalc").modal()
+	//$("#myModalProcalc").modal()
 </script>
