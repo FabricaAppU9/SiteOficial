@@ -106,6 +106,3 @@
       </div>
 	</div>
 </div>
-<script>
-	//$("#myModalProcalc").modal()
-</script>

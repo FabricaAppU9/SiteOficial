@@ -22,7 +22,7 @@
 				<li><a href=""><i class="fa fa-github"></i></a></li>
 				<li><a href="https://www.skype.com/fabricaappu9"><i class="fa fa-skype"></i></a></li>
 			</ul>
-			 ©2016 Uninove
+			 ©2017 Uninove
 		</div>
 	</div>
 </footer>

@@ -1,3 +1,9 @@
+<style>
+	.col-lg-3, .col-sm-3{
+		
+		max-height:329px !important;
+	}
+</style>
 <section class="our-team" id="team">
 	<div class="container">
 		<div class="section-header">
@@ -17,27 +23,7 @@
 						<h5 class="dark-text red-border-bottom">Antonio Andrade</h5>
 						<div class="position">
 							<p>Professor agosto/2016 - Atual</p>
-						</div>
-					</div>
-					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
-						<ul>
-							<!--<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/daniel-ferreira-de-barros-junior-65111622?authType=name&authToken=7Zgn&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B0%3B41539810%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://github.com/DanielGTI"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
-					<figure class="profile-pic"> 
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniel.jpg" alt="">
-					</figure>
-					<div class="member-details">
-						<h5 class="dark-text red-border-bottom">Daniel Ferreira</h5>
-						<div class="position">
-							<p>Professor maio/2016 - Atual</p>
+							<p>Campus: Memorial</p>
 						</div>
 					</div>
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
@@ -51,19 +37,21 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic"> 
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professoradebora.jpg" alt="">
+						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniel.jpg" alt="">
 					</figure>
 					<div class="member-details">
-						<h5 class="dark-text red-border-bottom">Debora Canne</h5>
+						<h5 class="dark-text red-border-bottom">Daniel Ferreira</h5>
 						<div class="position">
-							<p>Professor agosto/2016 - Atual</p>
+							<p>Professor maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
+					
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
 						<ul>
-							<!--<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/daniel-ferreira-de-barros-junior-65111622?authType=name&authToken=7Zgn&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B0%3B41539810%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://github.com/DanielGTI"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
@@ -72,14 +60,37 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
+					<figure class="profile-pic"> 
+						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professoradebora.jpg" alt="">
+					</figure>
+					<div class="member-details">
+						<h5 class="dark-text red-border-bottom">Debora Canne</h5>
+						<div class="position">
+							<p>Professor agosto/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
+						</div>
+					</div>
+					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
+						<ul>
+							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/in/daniel-ferreira-de-barros-junior-65111622?authType=name&authToken=7Zgn&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B0%3B41539810%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://github.com/DanielGTI"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-3">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorernestoteodoro.jpg" alt="">
 					</figure>
 					<div class="member-details">
 						<h5 class="dark-text green-border-bottom">Ernesto Teodoro</h5>
 						<div class="position">
-							<p>Professor maio/2016 - Atual</p>
+							<p>Professor maio/2016 - dezembro/2016</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -94,7 +105,7 @@
 			</div>
 			
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorgabrielbaptista.jpg" alt="">
 					</figure>
@@ -102,6 +113,7 @@
 						<h5 class="dark-text blue-border-bottom">Gabriel Baptista</h5>
 						<div class="position">
 							<p>Professor maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -116,14 +128,15 @@
 			</div>
 			
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorjoaocarlos.jpg" alt="">
+						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/professorjoaofotonova.jpg" alt="">
 					</figure>
 					<div class="member-details">
 						<h5 class="dark-text yellow-border-bottom">João Carlos</h5>
 						<div class="position">
 							<p>Professor maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -137,7 +150,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -145,20 +158,21 @@
 						<h5 class="dark-text yellow-border-bottom">Rosana Cordovil</h5>
 						<div class="position">
 							<p>Professora agosto/2016 - Atual</p>
+							<p>Campus: Memorial</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							<!--<li><a target="_blank" href="https://www.facebook.com/jsoft.souza?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/jsoft.souza?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-carlos-silva-de-souza-67427b15?authType=name&authToken=Cdvi&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B1%3B77916445%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<!-- <li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
-							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
+							 <li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
+							
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/alexandre.jpg" alt="">
 					</figure>
@@ -166,6 +180,7 @@
 						<h5 class="dark-text red-border-bottom">Alexandre Alves</h5>
 						<div class="position">
 							<p>Programador maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -180,7 +195,7 @@
 			</div>
 			
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/biancaarantes.jpg" alt="">
 					</figure>
@@ -188,6 +203,7 @@
 						<h5 class="dark-text green-border-bottom">Bianca Arantes</h5>
 						<div class="position">
 							<p>Programadora maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -201,7 +217,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/daniatualizado.jpg" alt="">
 					</figure>
@@ -222,14 +238,15 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/fujitaatualizado.jpg" alt="" style="-webkit-transform: rotate(90deg);">
 					</figure>
 					<div class="member-details">
 						<h5 class="dark-text yellow-border-bottom">Guilherme Fujita</h5>
 						<div class="position">
-							<p>Programador maio/2016 - Atual</p>
+							<p>Programador maio/2016 - março/2016</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -244,7 +261,7 @@
 			</div>
 			
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/guilhermegolfetto.jpg" alt="">
 					</figure>
@@ -252,6 +269,7 @@
 						<h5 class="dark-text red-border-bottom">Guilherme Golfetto</h5>
 						<div class="position">
 							<p>Programador maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -266,7 +284,7 @@
 			</div>
 			
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;max-height:329px;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/junior2.jpg" alt="">
 					</figure>
@@ -274,6 +292,7 @@
 						<h5 class="dark-text green-border-bottom">J J </h5>
 						<div class="position">
 							<p>Programador maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -289,7 +308,7 @@
 		
 		
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;max-height:329px;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/leonardoguimaraes.jpg" alt="">
 					</figure>
@@ -297,6 +316,7 @@
 						<h5 class="dark-text blue-border-bottom">Leonardo Guimarães</h5>
 						<div class="position">
 							<p>Programador maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -335,14 +355,15 @@
 		 
 		
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;max-height:329px;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/vanessapereira.jpg" alt="">
 					</figure>
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom">Vanessa Pereira</h5>
 						<div class="position">
-							<p>Gerente maio/2016 - Atual</p>
+							<p>Gerente maio/2016 - dezembro/2016</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -356,7 +377,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;max-height:329px;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/hebert.jpg" alt="">
 					</figure>
@@ -364,20 +385,21 @@
 						<h5 class="dark-text green-border-bottom">Hebert Wagner</h5>
 						<div class="position">
 							<p>Iniciação Científica set/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							<!-- <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							 <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
-							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
+							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+							
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -385,20 +407,21 @@
 						<h5 class="dark-text blue-border-bottom">Matheus Pedro</h5>
 						<div class="position">
 							<p>Programador maio/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
-					<!-- <div class="social-icons">
+					 <div class="social-icons">
 						<ul>
 							 <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							
 						</ul>
-					</div> -->
+					</div> 
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -406,6 +429,7 @@
 						<h5 class="dark-text blue-border-bottom">Jonathan Souza</h5>
 						<div class="position">
 							<p>Programador maio/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -418,7 +442,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -426,6 +450,7 @@
 						<h5 class="dark-text blue-border-bottom">Heraldo de Souza</h5>
 						<div class="position">
 							<p>Programador maio/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -438,7 +463,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -446,19 +471,20 @@
 						<h5 class="dark-text blue-border-bottom">João Henrique</h5>
 						<div class="position">
 							<p>Programador outubro/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							 <!-- <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
+							  <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
 							<li><a href="https://www.linkedin.com/in/heraldo-souza-b90793130?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>-->
+							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -466,19 +492,20 @@
 						<h5 class="dark-text blue-border-bottom">Ivan Ramos</h5>
 						<div class="position">
 							<p>Iniciação Científica outubro/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							 <!-- <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
+							<li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
 							<li><a href="https://www.linkedin.com/in/heraldo-souza-b90793130?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>-->
+							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -486,19 +513,20 @@
 						<h5 class="dark-text blue-border-bottom">Rodolfo Pinto</h5>
 						<div class="position">
 							<p>Iniciação Científica outubro/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							 <!-- <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
+							 <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> 
 							<li><a href="https://www.linkedin.com/in/heraldo-souza-b90793130?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>-->
+							<li><a href="https://github.com/Heraldo26"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-3">
-				<div class="team-member">
+				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
 						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
 					</figure>
@@ -506,6 +534,7 @@
 						<h5 class="dark-text blue-border-bottom">Ricardo Mota</h5>
 						<div class="position">
 							<p>Programador outubro/2016 - atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
