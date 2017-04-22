@@ -1,0 +1,73 @@
+@import "/header.less";
+
+body{
+	top:0px;
+	left:0px;
+	right:0px;
+}
+
+#conteudo-minhaconta{
+	height:700px;
+
+	h1{
+		color:@cor-titulo;
+	}
+
+	.border-dotted{
+		border:1px dotted @cor-titulo;
+	}
+	.img-perfil{
+		#trocar-img{
+			display:none;
+		}
+
+		label{
+			margin-left:80px;
+			margin-top:15px;
+			color:@cor-padrao;
+		}
+	}
+	
+	p{
+		color:red;
+	}
+	.row{
+		margin-top:30px;
+		#trocar-senha{
+			
+			&:hover{
+				background-color:darken(#337ab7,10);
+			}
+		}
+		#mostrar-senha{
+			display:none;
+		}
+		
+	}
+	.tirar-borda-right{
+		border-right:none;
+		background-color:#fff;
+	}
+	.tirar-borda-left{
+		border-left:none;
+	}
+	.tirar-bordar-left-ecolor{
+		border-left:none;
+		background-color:#fff;
+	}
+	.tirar-borda{
+		border-right:none;
+	}
+	.display-none{
+		display:none;
+	}
+
+
+			padding:0px;
+
+			.salvar{
+				.fazerBotao(@cor-padrao,#fff);
+				float:right;
+			}
+		
+}

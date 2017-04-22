@@ -1,0 +1,35 @@
+body {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+body .img-body {
+  width: 100%;
+  position: fixed;
+}
+.login {
+  background: #000000 transparent;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  height: 350px;
+  transform: translate(50%, 35%);
+  transition: 0.3s;
+  position: absolute;
+  border-radius: 8px;
+  padding: 30px;
+}
+.login logo .img-logo {
+  width: 30% !important;
+  margin-top: 30px;
+}
+.login .button-logar a {
+  background-color: #00cc00;
+  color: #fff;
+}
+.login .button-logar a:hover {
+  background-color: #009900;
+  color: #fff;
+}
+.margintop30px {
+  margin-top: 30px;
+}
