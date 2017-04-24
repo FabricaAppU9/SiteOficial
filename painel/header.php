@@ -53,7 +53,7 @@
 								<?php foreach($menus as $menu){?>
 									<li><a href="<?=$menu['pme_url']?>"><i class="<?=$menu['pme_icone']?>" aria-hidden="true"></i>&nbsp;&nbsp;<?=utf8_encode($menu['pme_nome'])?></a></li>
 								<?php }?>
-								<li><a title="Sair"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;Sair</a></li>
+								<li><a title="Sair" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;Sair</a></li>
 							</ul>
 						</li>
 					</ul>

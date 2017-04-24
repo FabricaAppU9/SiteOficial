@@ -6,7 +6,7 @@
 	$obj_usuario = new DaoUsuario();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
-
+	
 
 ?>
 <section id="conteudo-minhaconta">
