@@ -91,6 +91,12 @@ body {
 #conteudo-minhaconta .img-perfil #trocar-img {
   display: none;
 }
+#conteudo-minhaconta .img-perfil #sell-foto {
+  margin-left: 120px;
+  margin-top: 15px;
+  /*.fazerBotao(@cor-padrao,#FFFFFF);
+			border:1px solid @cor-padrao;*/
+}
 #conteudo-minhaconta .img-perfil label {
   margin-left: 80px;
   margin-top: 15px;

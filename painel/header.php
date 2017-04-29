@@ -7,9 +7,14 @@
 
 	$obj_usuario = new DaoUsuario();
 	$obj_menu    = new DaoMenu();
-
+    $obj_login   = new Login();
+	
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
-	$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_id']);
+	$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_ptu_id']);
+	
+	if(!$obj_login->usuarioEstaLogado()){
+		header("Location: login.php");
+	}
 ?>
 </!DOCTYPE html>
 <html>

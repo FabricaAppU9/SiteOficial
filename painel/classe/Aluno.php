@@ -13,7 +13,7 @@
 		private $pus_id;
 
 		public function setNome($nome){
-			$this->nome = $nome
+			$this->nome = $nome;
 		}
 
 		public function setRa($ra){
@@ -31,4 +31,50 @@
 		public function setSemestre($semestre){
 			$this->semestre = $semestre;
 		}
+
+		public function setPpe_id($ppe_id){
+			$this->ppe_id = $ppe_id;
+		}
+
+		public function setFoto($foto){
+			$this->foto = $foto;
+		}
+
+		public function setPus_id($pus_id){
+			$this->pus_id = $pus_id;
+		}
+
+		public function getNome(){
+			return $this->nome;
+		}
+
+		public function getRa(){
+			return $this->ra;
+		}
+
+		public function getPcr_id(){
+			return $this->pcr_id;
+		}
+
+		public function getPca_id(){
+			return $this->pca_id;
+		}
+
+		public function getSemestre(){
+			return $this->semestre;
+		}
+
+		public function getPpe_id(){
+			return $this->ppe_id;
+		}
+
+		public function getFoto(){
+			return $this->foto;
+		}
+
+		public function getPus_id(){
+			return $this->pus_id;
+		}
+
+
 	}

@@ -2,11 +2,16 @@
 
 	require_once("header.php");
 	require_once("classe/DaoUsuario.php");
+	require_once("classe/DaoAluno.php");
+	require_once("classe/DaoCargo.php");
 
 	$obj_usuario = new DaoUsuario();
+	$obj_aluno   = new DaoAluno();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
-	
+	//$id_usuario  = (int)$_SESSION["id"];
+	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao,$_SESSION["id"]);
+
 
 ?>
 <section id="conteudo-minhaconta">
@@ -14,16 +19,20 @@
 			<h1><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Minha Conta</h1>
 			<div class="border-dotted"></div>
 			<div class="row">
-				<div class="col-md-6 img-perfil">
-					<?php if($usuario['pus_foto'] == null){?>
-						<img src="imagens/alunos/usuario.png" class="img-circle" width="50%"><br>
-					<?php }else{?>
-						<img src="imagens/alunos/biancaarantes.jpg" class="img-circle" width="50%"><br>
-					<?php }?>
+				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto.php">
+					<div class="col-md-6 img-perfil">
+						<?php if($aluno['pal_foto'] == null){?>
+							<img src="imagens/alunos/usuario.png" class="img-circle" width="50%"><br>
+						<?php }else{?>
+							<img src="imagens/alunos/<?=$aluno['pal_foto']?>" class="img-circle" width="50%"><br>
+						<?php }?>
+						
+						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
+						<input type="file" id="trocar-img" name="foto_perfil"><br>
+						<input type="submit" id="sell-foto" class="btn btn-primary" value="Salvar">
+					</div>
 					
-					<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
-					<input type="file" id="trocar-img">
-				</div>
+				</form>
 				<div class="col-md-6">
 					
 					<div class="row">
@@ -31,7 +40,7 @@
 							
 							<div class="input-group border_nome">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-user" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left valida-form tirar-borda" name="nome" id="nome" placeholder="Nome" value="Bianca Arantes">
+						      <input type="text" class="form-control tirar-borda-left valida-form tirar-borda" name="nome" id="nome" placeholder="Nome" value="<?= utf8_encode($aluno['pal_nome'])?>">
 						      <div class="input-group-addon tirar-bordar-left-ecolor nome_info"></div>
 						    </div>
 						    <p id="info_nome"></p>
