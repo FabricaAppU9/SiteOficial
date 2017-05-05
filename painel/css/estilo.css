@@ -140,3 +140,12 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#trocar-senha-modal {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  background-color: red;
+  top: 0px;
+  z-index: 99999;
+  left: 0px;
+}

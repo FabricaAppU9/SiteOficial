@@ -5,7 +5,7 @@
 		public function buscaUsuario($conexao, $email, $senha){
 			$senhaMd5 = md5($senha);
 			$email = mysqli_real_escape_string($conexao, $email);
-			$query = "select * from usuario where pus_login = '{$email}' and pus_senha = '{$senhaMd5}'";
+			$query = "select * from usuario where pus_login = '{$email}' and pus_senha = '{$senhaMd5}' and pus_habilitado = 1";
 			$resultado = mysqli_Query($conexao, $query);
 			$usuario = mysqli_fetch_assoc($resultado);
 			return $usuario;
