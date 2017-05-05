@@ -4,13 +4,16 @@
 	require_once("classe/Login.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoMenu.php");
+	require_once("classe/DaoAluno.php");
 
 	$obj_usuario = new DaoUsuario();
 	$obj_menu    = new DaoMenu();
     $obj_login   = new Login();
-	
+	$obj_aluno   = new DaoAluno();
+
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_ptu_id']);
+	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao, $_SESSION["id"]);
 	
 	if(!$obj_login->usuarioEstaLogado()){
 		header("Location: login.php");
@@ -49,7 +52,7 @@
 							</div>
 						</li>
 						<li class="dropdown">
-							<img src="imagens/alunos/biancaarantes.jpg" class="img-circle" alt="Aluno da Fábrica" title="Clique para ver as opções" height="30px">&nbsp;&nbsp;Bianca Arantes&nbsp;&nbsp;<a data-toggle="dropdown"><span class="caret"></span></a>
+							<img src="imagens/alunos/<?=$aluno['pal_foto']?>" class="img-circle" alt="Aluno da Fábrica" title="Clique para ver as opções" height="30px">&nbsp;&nbsp;Bianca Arantes&nbsp;&nbsp;<a data-toggle="dropdown"><span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<!--<li><a href="minhaconta.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Minha Conta</a></li>
 								<li><a href="depoimentos.html"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Depoimento</a></li>

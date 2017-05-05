@@ -88,7 +88,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook">
+						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" value="<?=$aluno['pal_facebook']?>">
 						      
 						    </div>
 						</div>
@@ -97,7 +97,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-github" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="GitHub" placeholder="GitHub">
+						      <input type="text" class="form-control tirar-borda-left" id="GitHub" placeholder="GitHub" value="<?=$aluno['pal_github']?>">
 						      
 						    </div>
 						</div>
@@ -106,7 +106,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin">
+						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin" value="<?=$aluno['pal_linkedin']?>">
 						      
 						    </div>
 						</div>
@@ -120,5 +120,7 @@
 			</div>
 		</div>
 	</section>
+	<div id="trocar-senha-modal" class="modal">
 
+	</div>
 <?php require_once("footer.php");?>
