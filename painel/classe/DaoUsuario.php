@@ -22,5 +22,11 @@
 			$query = "UPDATE usuario SET pus_foto = '{$imagem}' WHERE pus_id = {$pus_id}";
 			return mysqli_query($conexao,$query);
 		}
+
+		public function alteraSenha($conexao, $senha, $pus_id){
+			$query = "UPDATE usuario SET pus_senha = '{$senha}' WHERE pus_id = {$pus_id}";
+			return mysqli_query($conexao,$query);
+		}
+
 	}
 	
