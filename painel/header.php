@@ -11,12 +11,14 @@
     $obj_login   = new Login();
 	$obj_aluno   = new DaoAluno();
 
-	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
-	$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_ptu_id']);
-	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao, $_SESSION["id"]);
+	
 	
 	if(!$obj_login->usuarioEstaLogado()){
 		header("Location: login.php");
+	}else{
+		$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
+		$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_ptu_id']);
+		$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao, $_SESSION["id"]);
 	}
 ?>
 </!DOCTYPE html>

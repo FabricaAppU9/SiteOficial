@@ -80,6 +80,7 @@ body {
 }
 #conteudo-minhaconta {
   height: 700px;
+  z-index: 1;
   padding: 0px;
 }
 #conteudo-minhaconta h1 {
@@ -140,12 +141,69 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#arquivo-selecionado {
+  margin-left: 60px;
+}
+.modal {
+  left: 50px;
+  z-index: 999999;
+  display: none;
+  position: fixed !important;
+  transform: translate(100%, 25%);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+}
+.modal .modal-header {
+  padding: 10px;
+  height: 34px;
+}
+.modal .modal-header h3 {
+  margin: 0px;
+}
+.modal .modal-header a {
+  color: red;
+  cursor: pointer;
+}
+.modal .modal-header a:hover {
+  color: #00cc00;
+}
+.modal .modal-content {
+  padding: 20px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  height: 316px;
+}
+.modal .modal-content .margin-bottom10 {
+  margin-bottom: 10px;
+}
+.modal .modal-content .boder-dotter {
+  width: 100%;
+  border: 1px dotted #D3D3D3;
+}
+.modal .modal-content .margin-top20 {
+  margin-top: 20px;
+}
+.modal .modal-content p {
+  color: red;
+}
+.modal .loader {
+  display: none;
+  margin-top: 80px;
+}
+.modal .resultado-senha {
+  display: none;
+}
 #trocar-senha-modal {
-  width: 400px;
-  height: 300px;
-  position: relative;
-  background-color: red;
-  top: 0px;
-  z-index: 99999;
-  left: 0px;
+  width: 400px !important;
+  height: 400px !important;
+}
+#trocar-senha-modal #box-trocar-senha {
+  background-color: #00cc00;
+  color: #fff;
+}
+#trocar-senha-modal #box-trocar-senha:hover {
+  background-color: #009900;
+  color: #fff;
 }

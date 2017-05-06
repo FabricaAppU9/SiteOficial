@@ -8,7 +8,7 @@ body{
 
 #conteudo-minhaconta{
 	height:700px;
-
+	z-index:1;
 	h1{
 		color:@cor-titulo;
 	}
@@ -77,12 +77,69 @@ body{
 			}
 		
 }
-#trocar-senha-modal{
-	width:400px;
-	height:300px;
-	position:relative;
-	background-color:red;
-	top:0px;
-	z-index:99999;
-	left:0px;
+#arquivo-selecionado{
+	margin-left:60px;
 }
+.modal{
+	left:50px;
+	z-index:999999;
+	display:none;
+	position:fixed !important;
+	transform:translate(100%,25%);
+	background-color:#FFFFFF;
+	border-radius:10px;
+	border:1px solid #D3D3D3;
+	.modal-header{
+		padding:10px;
+		height:34px;
+		h3{
+			margin:0px;
+		}
+		a{
+			color:red;
+			cursor:pointer;
+			&:hover{
+				color:@cor-padrao;
+			}
+		}
+	}
+	.modal-content{
+		padding:20px;
+		border-radius:0px;
+		border:none;
+		box-shadow: 0 0px 0px rgba(0,0,0,.5);
+		height:316px;
+
+		.margin-bottom10{
+			margin-bottom:10px;
+		}
+		.boder-dotter{
+			width:100%;
+			border: 1px dotted #D3D3D3;
+		}
+		.margin-top20{
+			margin-top:20px;
+		}
+		p{
+			color:red;
+		}
+	}
+	.loader{
+		display:none;
+		margin-top:80px;
+	}
+	.resultado-senha{
+		display:none;
+	}
+}
+
+#trocar-senha-modal{
+	width:400px !important;
+	height:400px !important;
+	
+	#box-trocar-senha{
+		.fazerBotao(@cor-padrao,#fff);
+	}
+}
+
+

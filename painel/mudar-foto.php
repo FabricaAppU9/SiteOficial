@@ -3,7 +3,7 @@
 	require_once("classe/conecta.php");
 	require_once("classe/DaoAluno.php");
 	require_once("classe/Login.php");
-
+	session_start();
 	$obj_aluno = new DaoAluno();
 
 	$arquivo_tmp = $_FILES[ 'foto_perfil' ][ 'tmp_name' ];
@@ -22,9 +22,13 @@
 		if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
 
 			$obj_aluno->MudaFoto($conexao,$novoNome,$_SESSION["id"]);
+			$_SESSION['foto'] = "Imagem alterada com Sucesso!";
 			header("Location: minhaconta.php");
+
+			print_r("Sucesso!");
 		}else{
 			echo "Erro";
+			header("Location: minhaconta.php");
 		}
 	}else{
 		echo "Extensão não aceita!, por favor, informe um arquivo com .jpg, .jpeg, .gif ou .png";
