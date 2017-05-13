@@ -4,6 +4,7 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/Login.php");
 	session_start();
+	ini_set('session.use_trans_sid', 10);
 	$obj_aluno = new DaoAluno();
 
 	$arquivo_tmp = $_FILES[ 'foto_perfil' ][ 'tmp_name' ];
