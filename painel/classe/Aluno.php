@@ -11,6 +11,9 @@
 		//private $pcg_id
 		private $foto;
 		private $pus_id;
+		private $facebook;
+		private $github;
+		private $linkedin;
 		private $data_ini;
 		private $data_update;
 		private $data_fim;
@@ -48,11 +51,33 @@
 			$this->pus_id = $pus_id;
 		}
 
+		public function setFacebook($facebook){
+			$this->facebook;
+		}
+
+		public function setGithub($github){
+			$this->github;
+		}
+
+		public function setLinkedin($linkedin){
+			$this->linkedin;
+		}
+
 		public function setDataIni($data_ini){
 			$this->data_ini = $data_ini;
 		}
 
-		
+		public function setDataUpdate($data_update){
+			$this->data_update;
+		}
+
+		public function setDataFim($data_fim){
+			$this->data_fim;
+		}
+
+		public function setHabilitado($habilitado){
+			$this->habilitado = $habilitado;
+		}
 
 		public function getNome(){
 			return $this->nome;
@@ -84,6 +109,34 @@
 
 		public function getPus_id(){
 			return $this->pus_id;
+		}
+
+		public function getFacebook(){
+			return $this->facebook;
+		}
+
+		public function getGithub(){
+			return $this->github;
+		}
+
+		public function getLinkedin(){
+			return $this->linkedin;
+		}
+
+		public function getDataIni(){
+			return $this->data_ini;
+		}
+
+		public function getDataUpdate(){
+			return $this->data_update;
+		}
+
+		public function getDataFim(){
+			return $this->data_fim;
+		}
+
+		public function getHabilitado(){
+			return $this->habilitado;
 		}
 
 

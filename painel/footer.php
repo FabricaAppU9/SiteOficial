@@ -44,6 +44,10 @@
 			$("#arquivo-selecionado").html("Arquivo selecionado!");
 		}
 	});
+	$("#salvar-aluno").click(function(){
+		var dados = $("#form-aluno").serialize();
+		$.ajax({ type: "POST", url: 'editar-usuario.php', data: dados, success: function(msg){ alert(msg); } });
+	});
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
 </script>
 	</body>

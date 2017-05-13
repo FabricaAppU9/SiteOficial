@@ -4,15 +4,18 @@
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoCargo.php");
+	require_once("classe/DaoCampus.php");
 
 	$obj_usuario = new DaoUsuario();
 	$obj_aluno   = new DaoAluno();
+	$obj_cargo   = new DaoCargo();
+	$obj_campus  = new DaoCampus();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	//$id_usuario  = (int)$_SESSION["id"];
 	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao,$_SESSION["id"]);
-
-
+	$cargos      = $obj_cargo->listaCargos($conexao);
+	$campus      = $obj_campus->buscaCargos($conexao);
 ?>
 <section id="conteudo-minhaconta">
 		<div class="container">
@@ -39,7 +42,7 @@
 					
 				</form>
 				<div class="col-md-6">
-					
+					<form id="form-aluno">
 					<div class="row">
 						<div class="col-md-12">
 							
@@ -56,9 +59,9 @@
 							
 						    <select name="campus" id="campus" class="form-control valida-form border_campus">
 						    	<option value="">Selecione o campus...</option>
-						    	<option value="1">Santo Amaro</option>
-						    	<option value="2">Memorial</option>
-						    	<option value="3">Vila Prudente</option>
+						    	<?php foreach($campus as $ca){?>
+						    		<option value="<?=$ca['pca_id']?>"><?=utf8_encode($ca['pca_nome'])?></option>
+						    	<?php }?>
 						    </select>
 						    <p id="info_campus"></p>
 						</div>
@@ -67,11 +70,12 @@
 					<div class="row">
 						<div class="col-md-12">
 							
-							<div class="input-group border_cargo">
-						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-user" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left valida-form tirar-borda" name="cargo" id="cargo" placeholder="Cargo" value="Programadora">
-						      <div class="input-group-addon tirar-bordar-left-ecolor cargo_info"></div>
-						    </div>
+							<select name="cargo" id="cargo" class="form-control valida-form border_campus">
+								<option value="">Selecione o cargo...</option>
+								<?php foreach($cargos as $cargo){?>
+									<option value="<?=$cargo['pcr_id']?>"><?=utf8_encode($cargo['pcr_nome'])?></option>
+								<?php }?>
+							</select>
 						    <p id="info_cargo"></p>
 						</div>
 					</div>
@@ -86,7 +90,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" value="<?=$aluno['pal_facebook']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" name="facebook" value="<?=$aluno['pal_facebook']?>">
 						      
 						    </div>
 						</div>
@@ -95,7 +99,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-github" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="GitHub" placeholder="GitHub" value="<?=$aluno['pal_github']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="GitHub" placeholder="GitHub" name="github" value="<?=$aluno['pal_github']?>">
 						      
 						    </div>
 						</div>
@@ -104,16 +108,17 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin" value="<?=$aluno['pal_linkedin']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin" name="linkedin" value="<?=$aluno['pal_linkedin']?>">
 						      
 						    </div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<a class="btn btn-default salvar" id="salvar-nova-senha"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+							<a class="btn btn-default salvar" id="salvar-aluno"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
 						</div>
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>

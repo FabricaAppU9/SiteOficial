@@ -20,11 +20,11 @@ $mail->SMTPOptions = array(
         'allow_self_signed' => true
     )
 );
-$mail->Username = "biancaarantes28@gmail.com";
-$mail->Password = "123456";
+$mail->Username = "seuemail@gmail.com";
+$mail->Password = "";
 
-$mail->setFrom("biancaarantes28@gmail.com",$nome);
-$mail->addAddress("biancaarantes28@gmail.com");
+$mail->setFrom("seuemail@gmail.com",$nome);
+$mail->addAddress("seuemail@gmail.com");
 $mail->Subject = "Contato";
 $mail->msgHTML("<html>Ola eu sou {$nome}, meu email {$e}: {$email} <br/> {$mensagem}</html>");
 $mail->AltBody = "Ola eu sou {$nome}, meu email {$e}: {$email} <br/> {$mensagem}";
