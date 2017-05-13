@@ -52,9 +52,7 @@
 			$this->data_ini = $data_ini;
 		}
 
-		public function setDataUpdate($data_update){
-			$this->
-		}
+		
 
 		public function getNome(){
 			return $this->nome;
