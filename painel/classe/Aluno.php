@@ -11,6 +11,10 @@
 		//private $pcg_id
 		private $foto;
 		private $pus_id;
+		private $data_ini;
+		private $data_update;
+		private $data_fim;
+		private $habilitado;
 
 		public function setNome($nome){
 			$this->nome = $nome;
@@ -42,6 +46,14 @@
 
 		public function setPus_id($pus_id){
 			$this->pus_id = $pus_id;
+		}
+
+		public function setDataIni($data_ini){
+			$this->data_ini = $data_ini;
+		}
+
+		public function setDataUpdate($data_update){
+			$this->
 		}
 
 		public function getNome(){

@@ -35,4 +35,8 @@
 			return mysqli_query($conexao,$query);
 		}
 
+		public function alteraUsuario($conexao, Aluno $aluno){
+			$query = "UPDATE aluno SET pal_nome = '{$aluno->getAluno()}', pal_ra = '{$aluno->getRa()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}"
+		}
+
 	}
