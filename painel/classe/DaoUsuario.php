@@ -6,7 +6,15 @@
 		public function buscaUsuario($conexao, $email, $senha){
 			$senhaMd5 = md5($senha);
 			$email = mysqli_real_escape_string($conexao, $email);
-			$query = "select * from usuario left join aluno on usuario.pus_id = pal_pus_id where pus_login = '{$email}' and pus_senha = '{$senhaMd5}' and pal_pus_id = 1";
+			$query = "select * from usuario where pus_login = '{$email}' and pus_senha = '{$senhaMd5}'";
+			$resultado = mysqli_Query($conexao, $query);
+			$usuario = mysqli_fetch_assoc($resultado);
+			return $usuario;
+		}
+		public function buscaUsuarioAluno($conexao, $email, $senha){
+			$senhaMd5 = md5($senha);
+			$email = mysqli_real_escape_string($conexao, $email);
+			$query = "select * from usuario left join aluno on usuario.pus_id = aluno.pal_pus_id where pus_login = '{$email}' and pus_senha = '{$senhaMd5}' and aluno.pal_habilitado = 1";
 			$resultado = mysqli_Query($conexao, $query);
 			$usuario = mysqli_fetch_assoc($resultado);
 			return $usuario;
@@ -29,7 +37,16 @@
 			return mysqli_query($conexao,$query);
 		}
 
-		
+		public function buscaUsuarioProfessor($conexao,$email,$senha){
+			$senhaMd5 = md5($senha);
+			$email = mysqli_real_escape_string($conexao, $email);
+			$query = "select * from usuario left join professor on usuario.pus_id = professor.prf_pus_id where pus_login = '{$email}' and pus_senha = '{$senhaMd5}' and professor.prf_habilitado = 1";
+			$resultado = mysqli_Query($conexao, $query);
+			$usuario = mysqli_fetch_assoc($resultado);
+			return $usuario;
+		}
+
+
 
 	}
 	
