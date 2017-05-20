@@ -131,7 +131,7 @@
 				</div>
 				<div class="row margin-top20">
 					<div class="col-md-12">
-						<center><a class="btn btn-default" id="box-trocar-senha"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;TROCAR</a></center>
+						<center><a class="btn btn-default" id="box-trocar-senha-professor"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;&nbsp;TROCAR</a></center>
 						
 					</div>
 				</div>

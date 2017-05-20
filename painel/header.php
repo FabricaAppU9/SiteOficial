@@ -5,12 +5,13 @@
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoMenu.php");
 	require_once("classe/DaoAluno.php");
+	require_once("classe/DaoProfessor.php");
 
-	$obj_usuario = new DaoUsuario();
-	$obj_menu    = new DaoMenu();
-    $obj_login   = new Login();
-	$obj_aluno   = new DaoAluno();
-
+	$obj_usuario   = new DaoUsuario();
+	$obj_menu      = new DaoMenu();
+    $obj_login     = new Login();
+	$obj_aluno     = new DaoAluno();
+	$obj_professor = new DaoProfessor(); 
 	
 	
 	if(!$obj_login->usuarioEstaLogado()){
@@ -23,7 +24,9 @@
 			$foto = $aluno['pal_foto'];
 			$nome = utf8_encode($aluno['pal_nome']);
 		}else{
-
+			$professor = $obj_professor->buscaProfessorPorUsuario($conexao,$_SESSION["id"]);
+			$foto = $professor['prf_foto'];
+			$nome = utf8_encode($professor['prf_nome']);
 		}
 		
 	}

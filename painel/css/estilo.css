@@ -207,3 +207,11 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#trocar-senha-modal #box-trocar-senha-professor {
+  background-color: #00cc00;
+  color: #fff;
+}
+#trocar-senha-modal #box-trocar-senha-professor:hover {
+  background-color: #009900;
+  color: #fff;
+}
