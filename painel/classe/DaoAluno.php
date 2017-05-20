@@ -1,5 +1,5 @@
 <?php 
-	
+	// teste
 	require_once("conecta.php");
 	require_once("Aluno.php");
 

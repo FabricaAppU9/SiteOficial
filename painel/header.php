@@ -1,5 +1,5 @@
 <?php 
-
+	// teste
 	require_once("classe/conecta.php");
 	require_once("classe/Login.php");
 	require_once("classe/DaoUsuario.php");
@@ -18,7 +18,14 @@
 	}else{
 		$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 		$menus       = $obj_menu->consultaMenu($conexao,$usuario['pus_ptu_id']);
-		$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao, $_SESSION["id"]);
+		if($usuario['pus_ptu_id'] == 1){
+			$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao, $_SESSION["id"]);
+			$foto = $aluno['pal_foto'];
+			$nome = utf8_encode($aluno['pal_nome']);
+		}else{
+
+		}
+		
 	}
 ?>
 </!DOCTYPE html>
@@ -36,6 +43,7 @@
 		<nav>
 			<div class="container">
 				<div class="col-md-6 col-xs-6 logo">
+					
 					<img src="imagens/logoFappUni9.png" alt="Logo da fábrica de app" title="Logo Fábrica de APP UNINOVE">
 				</div>
 				<div class="col-md-6 col-xs-6 menu">
@@ -54,7 +62,13 @@
 							</div>
 						</li>
 						<li class="dropdown">
-							<img src="imagens/alunos/<?=$aluno['pal_foto']?>" class="img-circle" alt="Aluno da Fábrica" title="Clique para ver as opções" height="30px">&nbsp;&nbsp;Bianca Arantes&nbsp;&nbsp;<a data-toggle="dropdown"><span class="caret"></span></a>
+							<?php if($foto != null){?>
+								<img src="imagens/alunos/<?=$foto?>" class="img-circle" alt="Aluno da Fábrica" title="Clique para ver as opções" height="30px">&nbsp;&nbsp;<?=$nome?>&nbsp;&nbsp;<a data-toggle="dropdown"><span class="caret"></span></a>
+							<?php }else{?>
+								<img src="imagens/alunos/usuario.png" class="img-circle" alt="Aluno da Fábrica" title="Clique para ver as opções" height="30px">&nbsp;&nbsp;<?=$nome?>&nbsp;&nbsp;<a data-toggle="dropdown"><span class="caret"></span></a>
+							
+							<?php }?>
+							
 							<ul class="dropdown-menu">
 								<!--<li><a href="minhaconta.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Minha Conta</a></li>
 								<li><a href="depoimentos.html"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Depoimento</a></li>

@@ -3,7 +3,7 @@
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
-		
+		// teste
 		$("#trocar-senha-modal").css({"display":"block"});
 	});
 	$("#fechar-modal-senha").click(function(){

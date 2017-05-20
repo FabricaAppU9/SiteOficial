@@ -1,5 +1,5 @@
 <?php 
-
+	// teste
 	require_once("header.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoAluno.php");
@@ -60,7 +60,11 @@
 						    <select name="campus" id="campus" class="form-control valida-form border_campus">
 						    	<option value="">Selecione o campus...</option>
 						    	<?php foreach($campus as $ca){?>
+						    		<?php if($aluno['pal_pca_id'] == $ca['pca_id']){?>
+						    		<option value="<?=$ca['pca_id']?>" selected="selected"><?=utf8_encode($ca['pca_nome'])?></option>
+						    		<?php }else{?>
 						    		<option value="<?=$ca['pca_id']?>"><?=utf8_encode($ca['pca_nome'])?></option>
+						    		<?php }?>
 						    	<?php }?>
 						    </select>
 						    <p id="info_campus"></p>
@@ -73,7 +77,11 @@
 							<select name="cargo" id="cargo" class="form-control valida-form border_campus">
 								<option value="">Selecione o cargo...</option>
 								<?php foreach($cargos as $cargo){?>
+									<?php if($aluno['pal_pcr_id'] == $cargo['pcr_id']){?>
+										<option value="<?=$cargo['pcr_id']?>" selected="selected"><?=utf8_encode($cargo['pcr_nome'])?></option>
+									<?php }else{?>
 									<option value="<?=$cargo['pcr_id']?>"><?=utf8_encode($cargo['pcr_nome'])?></option>
+									<?php }?>
 								<?php }?>
 							</select>
 						    <p id="info_cargo"></p>
