@@ -3,7 +3,7 @@
 <script src="bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
-		
+		// teste
 		$("#trocar-senha-modal").css({"display":"block"});
 	});
 	$("#fechar-modal-senha").click(function(){
@@ -43,6 +43,10 @@
 		if($(this).val() !== ""){
 			$("#arquivo-selecionado").html("Arquivo selecionado!");
 		}
+	});
+	$("#salvar-aluno").click(function(){
+		var dados = $("#form-aluno").serialize();
+		$.ajax({ type: "POST", url: 'editar-usuario.php', data: dados, success: function(msg){ alert(msg); } });
 	});
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
 </script>

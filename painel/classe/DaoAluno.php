@@ -1,5 +1,5 @@
 <?php 
-	
+	// teste
 	require_once("conecta.php");
 	require_once("Aluno.php");
 
@@ -35,8 +35,9 @@
 			return mysqli_query($conexao,$query);
 		}
 
-		/*public function alteraUsuario($conexao, Aluno $aluno){
-			$query = "UPDATE aluno SET pal_nome = '{$aluno->getAluno()}', pal_ra = '{$aluno->getRa()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}"
-		}*/
+		public function alteraUsuario($conexao, Aluno $aluno, $data_update, $pal_id){
+			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_facebook = '{$aluno->getFacebook()}', pal_github = '{$aluno->getGithub()}', pal_linkedin = '{$aluno->getLinkedin()}', pal_data_update = '{$data_update}' WHERE pal_pus_id = {$pal_id}"; 
+			return mysqli_query($conexao,$query);
+		}
 
 	}

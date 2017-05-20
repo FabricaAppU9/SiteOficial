@@ -1,5 +1,5 @@
 <?php 
-
+	// teste
 	require_once("classe/conecta.php");
 	require_once("classe/Login.php");
 	require_once("classe/DaoUsuario.php");
