@@ -52,15 +52,15 @@
 		}
 
 		public function setFacebook($facebook){
-			$this->facebook;
+			$this->facebook = $facebook;
 		}
 
 		public function setGithub($github){
-			$this->github;
+			$this->github = $github;
 		}
 
 		public function setLinkedin($linkedin){
-			$this->linkedin;
+			$this->linkedin = $linkedin;
 		}
 
 		public function setDataIni($data_ini){
