@@ -39,7 +39,7 @@
 					
 				</form>
 				<div class="col-md-6">
-					
+					<form id="form-professor" method="post">
 					<div class="row">
 						<div class="col-md-12">
 							
@@ -88,9 +88,10 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<a class="btn btn-default salvar" id="salvar-nova-senha"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+							<a class="btn btn-default salvar" id="salvar-nova-senha-professor"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
 						</div>
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>
