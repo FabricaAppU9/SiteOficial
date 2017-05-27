@@ -79,6 +79,12 @@
 		var dados = $("#form-aluno").serialize();
 		$.ajax({ type: "POST", url: 'editar-usuario.php', data: dados, success: function(msg){ alert(msg); } });
 	});
+	//Alterar professor: 
+	$("#salvar-nova-senha-professor").click(function(){
+		var dados = $("#form-professor").serialize();
+		$.ajax({ type: "POST", url: 'editar-professor.php', data: dados, success: function(msg){ alert(msg); } });
+	});
+
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
 </script>
 	</body>
