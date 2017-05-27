@@ -1,0 +1,217 @@
+body {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  margin: 0px;
+}
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #00cc00;
+}
+header nav .logo {
+  padding: 5px 0px 0px 0px;
+}
+header nav .menu ul {
+  float: right;
+  list-style: none;
+  padding: 5px 0px 0px 0px;
+}
+header nav .menu ul span {
+  color: #fff;
+}
+header nav .menu ul li {
+  display: inline-block;
+  color: #fff;
+  padding-left: 10px;
+}
+header nav .menu ul li a {
+  color: #fff;
+  cursor: pointer;
+}
+header nav .menu ul li .dropdown-menu {
+  background-color: #00cc00;
+}
+header nav .menu ul li .dropdown-menu li {
+  display: block;
+  padding-top: 10px;
+}
+header nav .menu ul li .dropdown-menu li a {
+  padding: 0px;
+  color: #fff;
+  cursor: pointer;
+}
+header nav .menu ul li .dropdown-menu li a:hover {
+  background-color: #00cc00;
+  text-decoration: none;
+}
+header nav .menu ul li .notificacoes-menu {
+  background-color: #fff;
+  width: 250px;
+}
+header nav .menu ul li .notificacoes-menu h4 {
+  color: #00cc00;
+}
+header nav .menu ul li .notificacoes-menu ul {
+  float: left;
+  height: 200px;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+header nav .menu ul li .notificacoes-menu ul li {
+  min-width: 100%;
+}
+header nav .menu ul li .notificacoes-menu ul li a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav .menu ul li .notificacoes-menu ul li a:hover {
+  background-color: #fff;
+}
+header nav .menu ul li .notificacoes-menu a {
+  color: #00cc00;
+  text-decoration: underline;
+}
+body {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+#conteudo-minhaconta {
+  height: 700px;
+  z-index: 1;
+  padding: 0px;
+}
+#conteudo-minhaconta h1 {
+  color: #DCDCDC;
+}
+#conteudo-minhaconta .border-dotted {
+  border: 1px dotted #DCDCDC;
+}
+#conteudo-minhaconta .img-perfil #trocar-img {
+  display: none;
+}
+#conteudo-minhaconta .img-perfil #sell-foto {
+  margin-left: 120px;
+  margin-top: 15px;
+  /*.fazerBotao(@cor-padrao,#FFFFFF);
+			border:1px solid @cor-padrao;*/
+}
+#conteudo-minhaconta .img-perfil label {
+  margin-left: 80px;
+  margin-top: 15px;
+  color: #00cc00;
+}
+#conteudo-minhaconta p {
+  color: red;
+}
+#conteudo-minhaconta .row {
+  margin-top: 30px;
+}
+#conteudo-minhaconta .row #trocar-senha:hover {
+  background-color: #285f8f;
+}
+#conteudo-minhaconta .row #mostrar-senha {
+  display: none;
+}
+#conteudo-minhaconta .tirar-borda-right {
+  border-right: none;
+  background-color: #fff;
+}
+#conteudo-minhaconta .tirar-borda-left {
+  border-left: none;
+}
+#conteudo-minhaconta .tirar-bordar-left-ecolor {
+  border-left: none;
+  background-color: #fff;
+}
+#conteudo-minhaconta .tirar-borda {
+  border-right: none;
+}
+#conteudo-minhaconta .display-none {
+  display: none;
+}
+#conteudo-minhaconta .salvar {
+  background-color: #00cc00;
+  color: #fff;
+  float: right;
+}
+#conteudo-minhaconta .salvar:hover {
+  background-color: #009900;
+  color: #fff;
+}
+#arquivo-selecionado {
+  margin-left: 60px;
+}
+.modal {
+  left: 50px;
+  z-index: 999999;
+  display: none;
+  position: fixed !important;
+  transform: translate(100%, 25%);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+}
+.modal .modal-header {
+  padding: 10px;
+  height: 34px;
+}
+.modal .modal-header h3 {
+  margin: 0px;
+}
+.modal .modal-header a {
+  color: red;
+  cursor: pointer;
+}
+.modal .modal-header a:hover {
+  color: #00cc00;
+}
+.modal .modal-content {
+  padding: 20px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  height: 316px;
+}
+.modal .modal-content .margin-bottom10 {
+  margin-bottom: 10px;
+}
+.modal .modal-content .boder-dotter {
+  width: 100%;
+  border: 1px dotted #D3D3D3;
+}
+.modal .modal-content .margin-top20 {
+  margin-top: 20px;
+}
+.modal .modal-content p {
+  color: red;
+}
+.modal .loader {
+  display: none;
+  margin-top: 80px;
+}
+.modal .resultado-senha {
+  display: none;
+}
+#trocar-senha-modal {
+  width: 400px !important;
+  height: 400px !important;
+}
+#trocar-senha-modal #box-trocar-senha {
+  background-color: #00cc00;
+  color: #fff;
+}
+#trocar-senha-modal #box-trocar-senha:hover {
+  background-color: #009900;
+  color: #fff;
+}
+#trocar-senha-modal #box-trocar-senha-professor {
+  background-color: #00cc00;
+  color: #fff;
+}
+#trocar-senha-modal #box-trocar-senha-professor:hover {
+  background-color: #009900;
+  color: #fff;
+}
