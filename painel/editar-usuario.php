@@ -18,6 +18,7 @@
 
 	$data = date('y/m/d');
 	$resultado = $obj_daoaluno->alteraUsuario($conexao, $obj_aluno,$data, $_SESSION["id"]);
+	echo $resultado;
 	if($resultado){
 		echo "Sucesso!";
 	}else{
