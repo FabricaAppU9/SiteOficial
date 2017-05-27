@@ -99,7 +99,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" name="facebook" value="<?=$aluno['pal_facebook']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" name="facebook_aluno" value="<?=$aluno['pal_facebook']?>">
 						      
 						    </div>
 						</div>
