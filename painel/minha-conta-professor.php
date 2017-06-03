@@ -63,7 +63,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" value="<?=$professor['prf_facebook']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook" name="facebook_professor" value="<?=$professor['prf_facebook']?>">
 						      
 						    </div>
 						</div>
@@ -72,7 +72,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-github" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="GitHub" placeholder="GitHub" value="<?=$professor['prf_github']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="GitHub" name="github" placeholder="GitHub" value="<?=$professor['prf_github']?>">
 						      
 						    </div>
 						</div>
@@ -81,7 +81,7 @@
 						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin" value="<?=$professor['prf_linkedin']?>">
+						      <input type="text" class="form-control tirar-borda-left" id="Linkedin" placeholder="Linkedin" name="linkedin" value="<?=$professor['prf_linkedin']?>">
 						      
 						    </div>
 						</div>
