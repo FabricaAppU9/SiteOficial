@@ -141,6 +141,26 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#conteudo-alunos {
+  height: 700px;
+  z-index: 1;
+}
+#conteudo-alunos h1 {
+  color: #DCDCDC;
+}
+#conteudo-alunos .border-dotted {
+  border: 1px dotted #DCDCDC;
+}
+#conteudo-alunos .botao-add {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#conteudo-alunos .botao-add i {
+  color: green;
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
 #arquivo-selecionado {
   margin-left: 60px;
 }
@@ -194,6 +214,21 @@ body {
 }
 .modal .resultado-senha {
   display: none;
+}
+#modal-aluno {
+  left: 50px;
+  z-index: 999999;
+  position: fixed !important;
+  transform: translate(50%, 25%);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+  display: block !important;
+  width: 600px;
+  height: 400px;
+}
+#modal-aluno .modal-content margin-top20 {
+  margin-top: 20px;
 }
 #trocar-senha-modal {
   width: 400px !important;
