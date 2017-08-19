@@ -215,3 +215,43 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#conteudo-depoimentos {
+  height: 550px;
+}
+#conteudo-depoimentos h1 {
+  color: #DCDCDC;
+}
+#conteudo-depoimentos .border-dotted {
+  border: 1px dotted #DCDCDC;
+}
+#conteudo-depoimentos .row {
+  margin-top: 30px;
+}
+#conteudo-depoimentos .row .aviso p {
+  font-size: 14px;
+  color: #DCDCDC;
+}
+#conteudo-depoimentos .edit-depoimento {
+  width: 100%;
+  padding: 0px;
+  display: none;
+  height: 242px;
+}
+#conteudo-depoimentos .edit-depoimento .textarea {
+  padding: 0px;
+}
+#conteudo-depoimentos .edit-depoimento .textarea textarea {
+  height: 100px;
+}
+#conteudo-depoimentos .edit-depoimento .botaosalvar {
+  padding: 0px;
+}
+#conteudo-depoimentos .edit-depoimento .botaosalvar .salvar {
+  background-color: #00cc00;
+  color: #fff;
+  float: right;
+}
+#conteudo-depoimentos .edit-depoimento .botaosalvar .salvar:hover {
+  background-color: #009900;
+  color: #fff;
+}
