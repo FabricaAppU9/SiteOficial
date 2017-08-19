@@ -14,6 +14,12 @@
 	<div class="container">
 		<h1><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Alunos</h1>
 		<div class="border-dotted"></div>
+		<select name="alunos" id="selecionar_campus" class="form-control">
+			<option value="">(Selecione)</option>
+			<?php foreach($campus as $campu){?>
+				<option value="{?=$campu['pca_id']?>"><?=utf8_encode($campu['pca_nome'])?></option>
+			<?php }?>
+		</select>
 		<div class="row botao-add">
 			<div class="col-md-12">
 				<i class="fa fa-plus-circle" aria-hidden="true"></i>
@@ -32,7 +38,7 @@
 			</table>
 		</div>
 	</div>
-	<div class="modal" id="modal-aluno">
+	<div class="modal" id="modal-aluno" style="display:none !important;">
 		<div class="modal-header">
 			<div class="row">
 				<div class="col-md-10">
