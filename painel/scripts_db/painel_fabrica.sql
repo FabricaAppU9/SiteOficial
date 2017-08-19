@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Maio-2017 às 15:04
--- Versão do servidor: 5.7.9
--- PHP Version: 5.6.16
+-- Generation Time: 19-Ago-2017 às 16:48
+-- Versão do servidor: 10.1.21-MariaDB
+-- PHP Version: 7.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -26,9 +26,8 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `aluno`
 --
 
-DROP TABLE IF EXISTS `aluno`;
-CREATE TABLE IF NOT EXISTS `aluno` (
-  `pal_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `aluno` (
+  `pal_id` int(11) NOT NULL,
   `pal_nome` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pal_ra` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pal_pcr_id` int(11) NOT NULL,
@@ -44,9 +43,8 @@ CREATE TABLE IF NOT EXISTS `aluno` (
   `pal_habilitado` int(11) DEFAULT NULL,
   `pal_data_ini` date DEFAULT NULL,
   `pal_data_update` date DEFAULT NULL,
-  `pal_data_fim` date DEFAULT NULL,
-  PRIMARY KEY (`pal_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `pal_data_fim` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `aluno`
@@ -61,12 +59,10 @@ INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`,
 -- Estrutura da tabela `campus`
 --
 
-DROP TABLE IF EXISTS `campus`;
-CREATE TABLE IF NOT EXISTS `campus` (
-  `pca_id` int(11) NOT NULL AUTO_INCREMENT,
-  `pca_nome` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`pca_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `campus` (
+  `pca_id` int(11) NOT NULL,
+  `pca_nome` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `campus`
@@ -82,12 +78,10 @@ INSERT INTO `campus` (`pca_id`, `pca_nome`) VALUES
 -- Estrutura da tabela `cargo`
 --
 
-DROP TABLE IF EXISTS `cargo`;
-CREATE TABLE IF NOT EXISTS `cargo` (
-  `pcr_id` int(11) NOT NULL AUTO_INCREMENT,
-  `pcr_nome` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`pcr_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `cargo` (
+  `pcr_id` int(11) NOT NULL,
+  `pcr_nome` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `cargo`
@@ -101,15 +95,27 @@ INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `depoimento_aluno`
+--
+
+CREATE TABLE `depoimento_aluno` (
+  `pda_id` int(11) NOT NULL,
+  `pda_texto` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `pda_data_inicio` date NOT NULL,
+  `pda_data_update` date NOT NULL,
+  `pda_pal_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `galeria`
 --
 
-DROP TABLE IF EXISTS `galeria`;
-CREATE TABLE IF NOT EXISTS `galeria` (
-  `pga_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `galeria` (
+  `pga_id` int(11) NOT NULL,
   `pga_nome` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `pag_pus_id` int(11) NOT NULL,
-  PRIMARY KEY (`pga_id`)
+  `pag_pus_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -118,15 +124,13 @@ CREATE TABLE IF NOT EXISTS `galeria` (
 -- Estrutura da tabela `menu`
 --
 
-DROP TABLE IF EXISTS `menu`;
-CREATE TABLE IF NOT EXISTS `menu` (
-  `pme_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `menu` (
+  `pme_id` int(11) NOT NULL,
   `pme_nome` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pme_url` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pme_ptu_id` int(11) NOT NULL,
-  `pme_icone` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`pme_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `pme_icone` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `menu`
@@ -138,7 +142,8 @@ INSERT INTO `menu` (`pme_id`, `pme_nome`, `pme_url`, `pme_ptu_id`, `pme_icone`) 
 (3, 'Horário', 'horario.php', 1, 'fa fa-clock-o'),
 (4, 'Minha Conta', 'minha-conta-professor.php', 2, 'fa fa-user'),
 (5, 'Depoimento', 'depoimento-professor.php', 2, 'fa fa-comment'),
-(6, 'Alunos', 'alunos.php', 2, 'fa fa-user');
+(6, 'Alunos', 'alunos.php', 2, 'fa fa-user'),
+(7, 'Projetos', 'projetos.php', 2, 'fa fa-code');
 
 -- --------------------------------------------------------
 
@@ -146,9 +151,8 @@ INSERT INTO `menu` (`pme_id`, `pme_nome`, `pme_url`, `pme_ptu_id`, `pme_icone`) 
 -- Estrutura da tabela `professor`
 --
 
-DROP TABLE IF EXISTS `professor`;
-CREATE TABLE IF NOT EXISTS `professor` (
-  `prf_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `professor` (
+  `prf_id` int(11) NOT NULL,
   `prf_nome` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `prf_habilitado` int(11) DEFAULT NULL,
   `prf_foto` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -159,16 +163,15 @@ CREATE TABLE IF NOT EXISTS `professor` (
   `prf_data_ini` date DEFAULT NULL,
   `prf_data_update` date DEFAULT NULL,
   `prf_data_fim` date DEFAULT NULL,
-  `prf_pcr_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`prf_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `prf_pcr_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `professor`
 --
 
 INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `prf_pus_id`, `prf_facebook`, `prf_github`, `prf_linkedin`, `prf_data_ini`, `prf_data_update`, `prf_data_fim`, `prf_pcr_id`) VALUES
-(1, 'Joao', 1, '149528133859202ebabe5fb_2.png', 2, NULL, NULL, NULL, NULL, NULL, NULL, 3);
+(1, 'Joao teste', 1, '149528133859202ebabe5fb_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -176,12 +179,10 @@ INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `pr
 -- Estrutura da tabela `tipo_usuario`
 --
 
-DROP TABLE IF EXISTS `tipo_usuario`;
-CREATE TABLE IF NOT EXISTS `tipo_usuario` (
-  `ptu_id` int(11) NOT NULL AUTO_INCREMENT,
-  `ptu_nome` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`ptu_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `tipo_usuario` (
+  `ptu_id` int(11) NOT NULL,
+  `ptu_nome` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tipo_usuario`
@@ -197,16 +198,14 @@ INSERT INTO `tipo_usuario` (`ptu_id`, `ptu_nome`) VALUES
 -- Estrutura da tabela `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
-CREATE TABLE IF NOT EXISTS `usuario` (
-  `pus_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `usuario` (
+  `pus_id` int(11) NOT NULL,
   `pus_login` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pus_senha` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pus_ptu_id` int(11) NOT NULL,
   `pus_foto` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pus_habilitado` int(11) NOT NULL,
-  PRIMARY KEY (`pus_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `pus_habilitado` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `usuario`
@@ -216,6 +215,113 @@ INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_fo
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
 (2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `aluno`
+--
+ALTER TABLE `aluno`
+  ADD PRIMARY KEY (`pal_id`);
+
+--
+-- Indexes for table `campus`
+--
+ALTER TABLE `campus`
+  ADD PRIMARY KEY (`pca_id`);
+
+--
+-- Indexes for table `cargo`
+--
+ALTER TABLE `cargo`
+  ADD PRIMARY KEY (`pcr_id`);
+
+--
+-- Indexes for table `depoimento_aluno`
+--
+ALTER TABLE `depoimento_aluno`
+  ADD PRIMARY KEY (`pda_id`);
+
+--
+-- Indexes for table `galeria`
+--
+ALTER TABLE `galeria`
+  ADD PRIMARY KEY (`pga_id`);
+
+--
+-- Indexes for table `menu`
+--
+ALTER TABLE `menu`
+  ADD PRIMARY KEY (`pme_id`);
+
+--
+-- Indexes for table `professor`
+--
+ALTER TABLE `professor`
+  ADD PRIMARY KEY (`prf_id`);
+
+--
+-- Indexes for table `tipo_usuario`
+--
+ALTER TABLE `tipo_usuario`
+  ADD PRIMARY KEY (`ptu_id`);
+
+--
+-- Indexes for table `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`pus_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `aluno`
+--
+ALTER TABLE `aluno`
+  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `campus`
+--
+ALTER TABLE `campus`
+  MODIFY `pca_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `cargo`
+--
+ALTER TABLE `cargo`
+  MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `depoimento_aluno`
+--
+ALTER TABLE `depoimento_aluno`
+  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `galeria`
+--
+ALTER TABLE `galeria`
+  MODIFY `pga_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `menu`
+--
+ALTER TABLE `menu`
+  MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `professor`
+--
+ALTER TABLE `professor`
+  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tipo_usuario`
+--
+ALTER TABLE `tipo_usuario`
+  MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
