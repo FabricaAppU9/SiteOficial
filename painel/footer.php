@@ -86,6 +86,11 @@
 	});
 
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
+
+	$(".editardepoimento").click(function(){
+		
+		$(".edit-depoimento").css({"display":"block"});
+	});
 </script>
 	</body>
 </html>

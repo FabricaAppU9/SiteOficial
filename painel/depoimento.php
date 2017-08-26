@@ -38,26 +38,22 @@
 						<td>Teste</td>
 						<td>26/03/2017</td>
 						<td>-</td>
-						<td><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true" data-toggle="modal" data-target="#modal-mensagem"></i><i class="fa fa-times" style="color:red;" aria-hidden="true"></i></td>
+						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
 					</tr>
 				</table>
 			</div>
-			<div class="modal fade" id="modal-mensagem">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-					<h4 class="modal-title">Título da mensagem</h4>
+			<div class="edit-depoimento">
+				<div class="row">
+					<div class="col-md-12 textarea">
+						<textarea name="depoimento" class="form-control">Depoimento aqui</textarea>
+					</div>
 				</div>
-				<div class="modal-body">
-					<p>Conteúdo da mensagem</p>
-				</div>
-				<div class="modal-footer">
-					<!--<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>-->
+				<div class="row">
+					<div class="col-md-12 botaosalvar">
+						<a class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
 		</div>
 
 	</section>
