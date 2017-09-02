@@ -45,7 +45,7 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<textarea name="depoimento" class="form-control">Depoimento aqui</textarea>
+						<textarea name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
 					</div>
 				</div>
 				<div class="row">
