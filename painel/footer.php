@@ -84,7 +84,38 @@
 		var dados = $("#form-professor").serialize();
 		$.ajax({ type: "POST", url: 'editar-professor.php', data: dados, success: function(msg){ alert(msg); } });
 	});
-
+	//Abrir modal adicionar aluno:
+	$("#modal-add-aluno").click(function(){
+		$("#modal-aluno").css({"display" : "block"});
+	});
+	//Fechar modal adicionar aluno:
+	$("body").on("click", "#fechar-modal-add-aluno", function(){
+		alert("teste");
+		$("#modal-aluno").css({"display" : "none"});
+	});
+	// Adicionar aluno:
+	$("#salvar-novo-aluno").click(function(){
+		var dados = $("#form-add-aluno").serialize();
+		$.ajax({
+			type: "POST",
+			url: "adicionar-aluno.php",
+			data: dados,
+			success: function(msg){
+				alert(msg);
+			}
+		});
+	});
+	$("#filter-aluno-por-campus").change(function(){
+		var opcao = $(this).val();
+		$.ajax({
+			type: "POST",
+			url: "busca-aluno-por-campus.php",
+			data: {'opcao' : opcao },
+			success: function(msg){
+				$("#colocar-alunos-por-ajax").html(msg);
+			}
+		});
+	});
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
 </script>
 	</body>

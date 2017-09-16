@@ -20,6 +20,13 @@
 			return $usuario;
 		}
 
+		public function buscaUsuarioPorLogin($conexao, $login){
+			$query = "SELECT * FROM usuario WHERE pus_login = '{$login}'";
+			$resultado = mysqli_query($conexao, $query);
+			$usuario = mysqli_fetch_assoc($resultado);
+			return $usuario;
+		}
+
 		public function buscaUsuarioPorId($conexao, $id){
 			$query = "SELECT * FROM usuario WHERE pus_id = {$id}";
 			$resultado = mysqli_query($conexao,$query);
@@ -44,6 +51,12 @@
 			$resultado = mysqli_Query($conexao, $query);
 			$usuario = mysqli_fetch_assoc($resultado);
 			return $usuario;
+		}
+
+		public function insereUsuario($conexao, $pus_login, $pus_ptu_id){
+			$senha = md5('fabricaapp');
+			$query = "INSERT INTO usuario (pus_login, pus_senha, pus_ptu_id, pus_habilitado) VALUES ('{$pus_login}', '{$senha}', {$pus_ptu_id}, 1)";
+			return mysqli_query($conexao, $query);
 		}
 
 
