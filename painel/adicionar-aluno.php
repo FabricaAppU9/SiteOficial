@@ -23,6 +23,7 @@
 		$obj_aluno->setPpe_id($_POST['periodo']);
 		$obj_aluno->setSemestre($_POST['semestre']);
 		$obj_aluno->setPus_id($usuario['pus_id']);
+		$obj_aluno->setPcs_id($_POST['curso']);
 		$data = date('y/m/d');
 
 		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno, $data);
@@ -36,7 +37,7 @@
 		echo "Usuário não adicionado!";
 	}
 
-	
+	die();
 	/*if($resultado){
 		echo "Sucesso!";
 	}else{

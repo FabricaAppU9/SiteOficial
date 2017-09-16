@@ -8,7 +8,7 @@
 		private $pca_id; // campus do aluno na fábrica. Chave estrangeira da tabela campus.
 		private $semestre;
 		private $ppe_id; // período do aluno. Chave estrangeira da tabela período.
-		//private $pcg_id
+		private $pcs_id; // curso do aluno. Chave estrangeira da tabela curso.
 		private $foto;
 		private $pus_id;
 		private $facebook;
@@ -18,6 +18,7 @@
 		private $data_update;
 		private $data_fim;
 		private $habilitado;
+		private $email;
 
 		public function setNome($nome){
 			$this->nome = $nome;
@@ -79,6 +80,14 @@
 			$this->habilitado = $habilitado;
 		}
 
+		public function setPcs_id($pcs_id){
+			$this->pcs_id = $pcs_id;
+		}
+
+		public function setEmail($email){
+			$this->email = $email;
+		}
+
 		public function getNome(){
 			return $this->nome;
 		}
@@ -137,6 +146,14 @@
 
 		public function getHabilitado(){
 			return $this->habilitado;
+		}
+
+		public function getPcs_id(){
+			return $this->pcs_id;
+		}
+
+		public function getEmail(){
+			return $this->email;
 		}
 
 
