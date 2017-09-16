@@ -19,6 +19,7 @@
 	<div class="container">
 		<h1><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Alunos</h1>
 		<div class="border-dotted"></div>
+		
 		<div class="row botao-add">
 			<div class="col-md-12">
 				<i class="fa fa-plus-circle" aria-hidden="true" id="modal-add-aluno"></i>
@@ -66,6 +67,7 @@
 		</div>
 	</div>
 	<div class="modal" id="modal-aluno" style="display: none !important;">
+
 		<div class="modal-header">
 			<div class="row">
 				<div class="col-md-10">

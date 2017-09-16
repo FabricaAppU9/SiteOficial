@@ -76,10 +76,10 @@
 			<center><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/ajax-loader.gif" style="margin-top:50px !important;margin-bottom:100px !important;width:200px;"></center>
 		</div>
 </section>
-<!--<section class="contact-us" id="cadastrar">
+<section class="contact-us" id="cadastrar">
 	<div class="container">
 		<div class="section-header">
-			<!--<h2 class="white-text">Selecione a opção de assunto</h2>
+			<!--<h2 class="white-text">Selecione a opção de assunto</h2>-->
 			<h2 class="white-text">
 				Venha fazer parte da nossa equipe!
 			</h2>
@@ -89,11 +89,11 @@
 		</div>
 		<div class="row">
 			<div style="display: block;margin:0 auto;">
-				<iframe style="margin: 0 auto;" class="contact-form" id="contato-equipe" src="https://docs.google.com/forms/d/e/1FAIpQLSckypixpLjvVrMfNPMmpXQK0csXC2ZnVMb6WOA136JFRGExTA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+				<iframe style="margin: 0 auto;" class="contact-form" id="contato-equipe" src="https://docs.google.com/forms/d/e/1FAIpQLScVpNDq1HKeag1e38AowyvQplhd7g4GDOg_BsyJNvECewkXTg/viewform?usp=sf_link" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 			</div>
 		</div>
 	</div>
-</section>-->
+</section>
 <script>
 	$("#escolha-contato").change(function(){
 		var selecionado = $(this).val();
