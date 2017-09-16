@@ -45,12 +45,12 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<textarea name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
+						<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+						<a class="btn btn-default salvar" id="salvar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
 					</div>
 				</div>
 			</div>

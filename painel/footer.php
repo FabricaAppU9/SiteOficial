@@ -91,6 +91,14 @@
 		
 		$(".edit-depoimento").css({"display":"block"});
 	});
+
+	$(".botaosalvar").click(function(){
+		var dados = $("#textId").val();
+
+		$.ajax({ type: "POST", url: 'salvar-depoimento-aluno.php', data: dados, success: function(msg){ alert(msg); } });
+		//alert("Data " + dados);
+
+	});
 </script>
 	</body>
 </html>
