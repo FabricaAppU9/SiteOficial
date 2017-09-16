@@ -27,13 +27,22 @@
 				</div>
 			</div>
 			<div class="row">
-				<table class="table table-bordered">
+				<div class="row">
+					<div class="col-md-12 botaosalvar">
+						<a class="btn btn-default salvar" id="adicionar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR DEPOIMENTO</a>
+					</div>
+				</div>
+
+
+				<table class="table table-bordered" id="table_depoimento">
 					<tr>
 						<th>Depoimento</th>
 						<th>Data de criação</th>
 						<th>Data de atualização</th>
 						<th>Ação</th>
 					</tr>
+
+
 					<tr>
 						<td>Teste</td>
 						<td>26/03/2017</td>

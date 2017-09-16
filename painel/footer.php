@@ -92,6 +92,11 @@
 		$(".edit-depoimento").css({"display":"block"});
 	});
 
+	$("#adicionar_depoimento").click(function(){
+		//Todo anotado por favor
+		$(".edit-depoimento").css({'display':'block'});
+	});
+
 	$(".botaosalvar").click(function(){
 		var dados = $("#textId").val();
 

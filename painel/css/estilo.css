@@ -255,3 +255,6 @@ body {
   background-color: #009900;
   color: #fff;
 }
+#table_depoimento{
+  display: none;
+}
