@@ -42,4 +42,9 @@
 			//return $aluno->getFacebook();
 		}
 
+		public function adicionaAluno($conexao, Aluno $aluno, $data_ini){
+			$query = "INSERT INTO aluno (pal_ra, pal_nome, pal_pcr_id, pal_pca_id, pal_ppe_id, pal_semestre) VALUES ({$aluno->getRa()}, '{$aluno->getNome()}', {$aluno->getPcr_id()}, {$aluno->getPca_id()}, {$aluno->getPpe_id()}, '{$aluno->getSemestre()}')";
+			return mysqli_query($conexao, $query);
+		}
+
 	}

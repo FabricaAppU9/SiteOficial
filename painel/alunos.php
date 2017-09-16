@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="modal-content display-none">
-			<form id="form-add-aluno" method="post" action="trocar-senha.php">
+			<form id="form-add-aluno" method="post">
 				<div class="row">
 					<div class="col-md-6">
 						<label>RA</label>
@@ -87,6 +87,11 @@
 					<div class="col-md-6">
 						<label>Semestre</label>
 						<input type="text" name="semestre" class="form-control" placeholder="Semestre">
+					</div>
+				</div>
+				<div class="row margin-top20">
+					<div class="col-md-12">
+						<center><button id="salvar-aluno" class="btn btn-primary">Salvar</button></center>
 					</div>
 				</div>
 			</form>
