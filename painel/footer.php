@@ -85,7 +85,7 @@
 		$.ajax({ type: "POST", url: 'editar-professor.php', data: dados, success: function(msg){ alert(msg); } });
 	});
 	// Adicionar aluno:
-	$("#salvar-aluno").click(function(){
+	$("#salvar-novo-aluno").click(function(){
 		var dados = $("#form-add-aluno").serialize();
 		$.ajax({
 			type: "POST",

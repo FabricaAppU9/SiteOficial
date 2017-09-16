@@ -48,7 +48,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<label>RA</label>
-						<input type="number" name="ra" class="form-control" placeholder="ra">
+						<input type="text" name="ra" class="form-control" placeholder="ra">
 					</div>
 					<div class="col-md-6">
 						<label>Nome</label>
@@ -90,8 +90,15 @@
 					</div>
 				</div>
 				<div class="row margin-top20">
+					<div class="col-md-6">
+						<label>Email</label>
+						<input type="email" name="email" class="form-control" placeholder="Email">
+					</div>
+				</div>
+				<div class="row margin-top20">
 					<div class="col-md-12">
-						<center><button id="salvar-aluno" class="btn btn-primary">Salvar</button></center>
+						<center><button id="salvar-novo-aluno" class="btn btn-primary">Salvar</button></center>
+						
 					</div>
 				</div>
 			</form>
