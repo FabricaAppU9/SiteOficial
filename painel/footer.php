@@ -95,8 +95,19 @@
 	$(".botaosalvar").click(function(){
 		var dados = $("#textId").val();
 
-		$.ajax({ type: "POST", url: 'salvar-depoimento-aluno.php', data: dados, success: function(msg){ alert(msg); } });
+		//$.ajax({ type: "POST", dataType: 'json', url: 'salvar-depoimento-aluno.php', data: {depoimento:dados}, success: function(msg){ alert(msg); } });
 		//alert("Data " + dados);
+
+	
+		$.ajax({
+            url: 'salvar-depoimento-aluno.php',
+            type: 'post',
+            dataType: 'json',
+            success: function (data) {
+                alert(msg);
+            },
+            data:{depoimento:$("#textId").val()}
+        });
 
 	});
 </script>
