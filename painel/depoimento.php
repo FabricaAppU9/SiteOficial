@@ -41,8 +41,6 @@
 						<th>Data de atualização</th>
 						<th>Ação</th>
 					</tr>
-
-
 					<tr>
 						<td>Teste</td>
 						<td>26/03/2017</td>

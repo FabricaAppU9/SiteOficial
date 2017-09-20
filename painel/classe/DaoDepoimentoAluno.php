@@ -15,7 +15,7 @@
 		}*/
 
 		public function alteraDepoimento($conexao, DepoimentoAluno $depoimento, $pda_id){
-			$query = "UPDATE depoimento_aluno SET pda_texto = '{$depoimento->getTexto()}' WHERE pda_pal_id = {$pda_id}";
-				return mysqli_query($conexao,$query);
+			$query = "INSERT INTO depoimento_aluno (pda_texto) values('{$depoimento->getTexto()}')";
+			return mysqli_query($conexao,$query);
 		} 
 	}
