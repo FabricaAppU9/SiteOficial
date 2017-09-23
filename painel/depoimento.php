@@ -5,17 +5,20 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCampus.php");
+	require_once("classe/DaoDepoimentoAluno.php");
 
-	$obj_usuario = new DaoUsuario();
-	$obj_aluno   = new DaoAluno();
-	$obj_cargo   = new DaoCargo();
-	$obj_campus  = new DaoCampus();
+	$obj_usuario    = new DaoUsuario();
+	$obj_aluno      = new DaoAluno();
+	$obj_cargo      = new DaoCargo();
+	$obj_campus     = new DaoCampus();
+	$obj_depoimento = new DaoDepoimentoAluno();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	//$id_usuario  = (int)$_SESSION["id"];
 	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao,$_SESSION["id"]);
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
+	$depoimento  = $obj_depoimento->selecionarDepoimento($conexao, $_SESSION["id"]);
 ?>
 <section id="conteudo-depoimentos">
 		<div class="container">
@@ -29,7 +32,10 @@
 			<div class="row">
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="adicionar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR DEPOIMENTO</a>
+						<?php if($depoimento['pda_texto'] == null){?>
+							<a class="btn btn-default salvar" id="adicionar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR DEPOIMENTO</a>
+						<?php }?>
+						
 					</div>
 				</div>
 
@@ -52,7 +58,9 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
+						<form method="post" id="form-edit-depoimento">
+							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
+						</form>
 					</div>
 				</div>
 				<div class="row">

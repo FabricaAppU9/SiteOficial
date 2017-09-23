@@ -14,8 +14,18 @@
 			//return $aluno->getFacebook();
 		}*/
 
-		public function alteraDepoimento($conexao, DepoimentoAluno $depoimento, $pda_id){
-			$query = "INSERT INTO depoimento_aluno (pda_texto, pda_data_inicio, pda_data_update) values('{$depoimento->getTexto()}', '{$depoimento->getDataInicio()}', '{$depoimento->getDataUpdate()}')";
+		//Função de selecionar depoimento
+		public function selecionarDepoimento($conexao, $pal_id){
+			$query = "SELECT * FROM depoimento_aluno WHERE pda_pal_id={$pal_id}";
+			$resultado = mysqli_query($conexao, $query);
+			$depoimento = mysqli_fetch_assoc($resultado);
+
+			return $depoimento;
+		}
+
+
+		public function inserirDepoimento($conexao, DepoimentoAluno $depoimento, $pal_id){
+			$query = "INSERT INTO depoimento_aluno (pda_texto, pda_data_inicio, pda_pal_id) values('{$depoimento->getTexto()}', '{$depoimento->getDataInicio()}', {$pal_id})";
 			return mysqli_query($conexao,$query);
 		} 
 	}

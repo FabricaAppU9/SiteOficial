@@ -1,8 +1,5 @@
 <?php
 
-	//$teste = $_POST['data'];
-	//var_dump($teste);
-
 	require_once("classe/conecta.php");
 	require_once("classe/DaoDepoimentoAluno.php");
 	require_once("classe/DepoimentoAluno.php");
@@ -10,11 +7,9 @@
 
 	$obj_depoimento = new DepoimentoAluno();
 	$obj_daodepoimento = new DaoDepoimentoAluno();
-	//echo $_POST['depoimento'];
 
-	
 	$obj_depoimento->setTexto($_POST['depoimento']);
-	$obj_depoimento->setDataInicio(date('y/m/d'));
+	$obj_depoimento->setDataUpdate(date('y/m/d'));
 
 	$depoimento = $obj_daodepoimento->inserirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
 
