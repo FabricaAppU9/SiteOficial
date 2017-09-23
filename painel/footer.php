@@ -92,26 +92,27 @@
 		$(".edit-depoimento").css({"display":"block"});
 	});
 
-	/*$("#adicionar-depoimento").click(function(){
-		//Todo anotado por favor
-		$("#table_depoimento").css({"display":"block"});
-	});*/
-
 	$("#salvar-depoimento").click(function(){
-		var dados = $("#form-edit-depoimento").serialize();
+		//Todo anotado por favor
+		var dados = $("#form-add-depoimento").serialize();
+				$.ajax({
+		            url: 'salvar-depoimento-aluno.php',
+		            type: 'post',
+		            data: dados,
+		            success: function (data) {
+		                alert(data);
+		            },
+		        });
+	});
 
+	$("#adicionar-depoimento").click(function(){
+		
+		$(".add-depoimento").css({"display" : "block"});
 		//$.ajax({ type: "POST", dataType: 'json', url: 'salvar-depoimento-aluno.php', data: {depoimento:dados}, success: function(msg){ alert(msg); } });
 		//alert("Data " + dados);
 
 	
-		$.ajax({
-            url: 'salvar-depoimento-aluno.php',
-            type: 'post',
-            data: dados,
-            success: function (data) {
-                alert(data);
-            },
-        });
+
 
 	});
 </script>

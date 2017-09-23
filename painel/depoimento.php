@@ -55,10 +55,10 @@
 					</tr>
 				</table>
 			</div>
-			<div class="edit-depoimento">
+			<div class="add-depoimento" style="display: none;">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-depoimento">
+						<form method="post" id="form-add-depoimento">
 							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
 						</form>
 					</div>
@@ -66,6 +66,20 @@
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
 						<a class="btn btn-default salvar" id="salvar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+					</div>
+				</div>
+			</div>
+			<div class="edit-depoimento">
+				<div class="row">
+					<div class="col-md-12 textarea">
+						<form method="post" id="form-edit-depoimento">
+							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 botaosalvar">
+						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
 					</div>
 				</div>
 			</div>
