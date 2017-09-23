@@ -93,7 +93,7 @@
 	});
 
 	$("#salvar-depoimento").click(function(){
-		//Todo anotado por favor
+		//Addiciona o depoimento
 		var dados = $("#form-add-depoimento").serialize();
 				$.ajax({
 		            url: 'salvar-depoimento-aluno.php',
