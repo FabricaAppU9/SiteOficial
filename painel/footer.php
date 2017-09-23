@@ -106,10 +106,9 @@
 	});
 
 	$("#adicionar-depoimento").click(function(){
-		
+		//Editar depoimento
 		$(".add-depoimento").css({"display" : "block"});
-		//$.ajax({ type: "POST", dataType: 'json', url: 'salvar-depoimento-aluno.php', data: {depoimento:dados}, success: function(msg){ alert(msg); } });
-		//alert("Data " + dados);
+
 
 	
 
