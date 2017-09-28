@@ -7,12 +7,12 @@
 
 	class DaoDepoimentoAluno{
 
-		/*public function alteraDepoimento($conexao, DepoimentoAluno $depoimento, $data_inicio, $data_update, $pda_id){
-			$query = "UPDATE depoimento_aluno SET pda_texto = '{$depoimento->getTexto()}', pda_data_inicio = '{data_inicio}', pda_data_update = '{$data_update}' WHERE pda_pal_id = {$pda_id}"; 
+		public function alteraDepoimento($conexao, DepoimentoAluno $depoimento, $pal_id){
+			$query = "UPDATE depoimento_aluno SET pda_texto = '{$depoimento->getTexto()}', pda_data_update = '{$data_update}' WHERE pda_pal_id = {$pal_id}"; 
 			return mysqli_query($conexao,$query);
 			//return $query;
 			//return $aluno->getFacebook();
-		}*/
+		}
 
 		//Função de selecionar depoimento
 		public function selecionarDepoimento($conexao, $pal_id){
