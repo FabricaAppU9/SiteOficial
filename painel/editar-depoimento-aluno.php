@@ -8,7 +8,7 @@
 	$obj_depoimento = new DepoimentoAluno();
 	$obj_daodepoimento = new DaoDepoimentoAluno();
 
-	$obj_depoimento->setTexto($_POST['depoimento']);
+	$obj_depoimento->setTexto($_POST['depoimento_edit']);
 	$obj_depoimento->setDataUpdate(date('y/m/d'));
 
 	$depoimento = $obj_daodepoimento->inserirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);

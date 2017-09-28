@@ -109,10 +109,18 @@
 		//Editar depoimento
 		$(".add-depoimento").css({"display" : "block"});
 
+	});
 
-	
-
-
+	$("#salvar-edit-depoimento").click(function(){
+		var dados = $("#form-edit-depoimento").serialize();
+			$.ajax({
+		        url: 'editar-depoimento-aluno.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+		        },
+		    });
 	});
 </script>
 	</body>

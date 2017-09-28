@@ -73,7 +73,7 @@
 				<div class="row">
 					<div class="col-md-12 textarea">
 						<form method="post" id="form-edit-depoimento">
-							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
+							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
 						</form>
 					</div>
 				</div>
