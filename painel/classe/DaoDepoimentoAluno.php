@@ -8,7 +8,7 @@
 	class DaoDepoimentoAluno{
 
 		public function alteraDepoimento($conexao, DepoimentoAluno $depoimento, $pal_id){
-			$query = "UPDATE depoimento_aluno SET pda_texto = '{$depoimento->getTexto()}', pda_data_update = '{$data_update}' WHERE pda_pal_id = {$pal_id}"; 
+			$query = "UPDATE depoimento_aluno SET pda_texto = '{$depoimento->getTexto()}', pda_data_update = '{$depoimento->getDataUpdate()}' WHERE pda_pal_id = {$pal_id}"; 
 			return mysqli_query($conexao,$query);
 			//return $query;
 			//return $aluno->getFacebook();

@@ -106,7 +106,6 @@
 	});
 
 	$("#adicionar-depoimento").click(function(){
-		//Editar depoimento
 		$(".add-depoimento").css({"display" : "block"});
 
 	});
