@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Set-2017 às 15:25
+-- Generation Time: 30-Set-2017 às 15:34
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -132,7 +132,7 @@ CREATE TABLE `depoimento_professor` (
 --
 
 INSERT INTO `depoimento_professor` (`pdp_id`, `pdp_texto`, `pdp_data_inclusao`, `pdp_data_update`, `pdp_prf_id`) VALUES
-(0, 'Testando depoimento do professor', '2017-09-30', '0000-00-00', 2);
+(2, 'Testando depoimento do professor apÃ³s alteraÃ§Ã£o da tabela', '2017-09-30', '0000-00-00', 2);
 
 -- --------------------------------------------------------
 
@@ -331,6 +331,11 @@ ALTER TABLE `cargo`
 --
 ALTER TABLE `depoimento_aluno`
   MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `galeria`
 --
