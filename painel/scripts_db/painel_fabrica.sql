@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Set-2017 às 13:26
+-- Generation Time: 30-Set-2017 às 13:36
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -122,6 +122,7 @@ INSERT INTO `depoimento_aluno` (`pda_id`, `pda_texto`, `pda_data_inicio`, `pda_d
 CREATE TABLE `depoimento_professor` (
   `pdp_id` int(11) NOT NULL,
   `pdp_texto` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `pdp_data_inclusao` date NOT NULL,
   `pdp_data_update` date NOT NULL,
   `pdp_prf_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -264,12 +265,6 @@ ALTER TABLE `depoimento_aluno`
   ADD PRIMARY KEY (`pda_id`);
 
 --
--- Indexes for table `depoimento_professor`
---
-ALTER TABLE `depoimento_professor`
-  ADD PRIMARY KEY (`pdp_id`);
-
---
 -- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
@@ -323,11 +318,6 @@ ALTER TABLE `cargo`
 --
 ALTER TABLE `depoimento_aluno`
   MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT for table `depoimento_professor`
---
-ALTER TABLE `depoimento_professor`
-  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `galeria`
 --
