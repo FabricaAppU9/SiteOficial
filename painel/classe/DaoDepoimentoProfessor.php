@@ -16,6 +16,9 @@
 		}
 
 	//Inserir depoimento do professor
+		public function inserirDepoimento($conexao, DepoimentoProfessor $depoimento, $prf_id){
+			$query = "INSERT INTO depoimento_professor (pdp_texto, pdp_data_inclusao, pdp_prf_id) values ('{$depoimento->getTexto()}', '{$depoimento->getDataInclusao()}', {$prf_id})"
+		}
 
 	//Alterar depoimento do professor
 	}
