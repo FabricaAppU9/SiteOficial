@@ -9,7 +9,7 @@
 	$obj_daodepoimento = new DaoDepoimentoAluno();
 	
 	
-	$obj_depoimento->setTexto($_POST['depoimento_edit']);
+	$obj_depoimento->setTexto(utf8_decode($_POST['depoimento_edit']));
 	$obj_depoimento->setDataUpdate(date('y/m/d'));
 
 	$depoimento = $obj_daodepoimento->alteraDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
