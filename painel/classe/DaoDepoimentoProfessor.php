@@ -22,4 +22,10 @@
 		}
 
 	//Alterar depoimento do professor
+		public function alteraDepoimento($conexao, DepoimentoProfessor $depoimento, $prf_id){
+			$query = "UPDATE depoimento_professor SET pdp_texto = '{$depoimento->getTexto()}', pdp_data_update = '{$depoimento->getDataUpdate()}' WHERE pdp_prf_id = {$prf_id}"; 
+			return mysqli_query($conexao,$query);
+			//return $query;
+			//return $aluno->getFacebook();
+		}
 	}
