@@ -17,7 +17,8 @@
 
 	//Inserir depoimento do professor
 		public function inserirDepoimento($conexao, DepoimentoProfessor $depoimento, $prf_id){
-			$query = "INSERT INTO depoimento_professor (pdp_texto, pdp_data_inclusao, pdp_prf_id) values ('{$depoimento->getTexto()}', '{$depoimento->getDataInclusao()}', {$prf_id})"
+			$query = "INSERT INTO depoimento_professor (pdp_texto, pdp_data_inclusao, pdp_prf_id) values ('{$depoimento->getTexto()}', '{$depoimento->getDataInclusao()}', {$prf_id})";
+			return mysqli_query($conexao, $query);
 		}
 
 	//Alterar depoimento do professor
