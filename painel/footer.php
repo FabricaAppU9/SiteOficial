@@ -104,7 +104,7 @@
 		            },
 		        });
 	});
-
+	//Referente ao botão de adicionar depoimento
 	$("#adicionar-depoimento").click(function(){
 		$(".add-depoimento").css({"display" : "block"});
 
@@ -114,6 +114,31 @@
 		var dados = $("#form-edit-depoimento").serialize();
 			$.ajax({
 		        url: 'editar-depoimento-aluno.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+		        },
+		    });
+	});
+
+	//Adicionar depoimento professor
+	$("#salvar-depoimento-professor").click(function(){
+		var dados = $("#form-add-depoimento-professor").serialize();
+				$.ajax({
+		            url: 'salvar-depoimento-professor.php',
+		            type: 'post',
+		            data: dados,
+		            success: function (data) {
+		                alert(data);
+		            },
+		        });
+	});
+	//Alterar depoimento professor
+	$("#salvar-edit-depoimento-professor").click(function(){
+		var dados = $("#form-edit-depoimento-professor").serialize();
+			$.ajax({
+		        url: 'editar-depoimento-professor.php',
 		        type: 'post',
 		        data: dados,
 		        success: function (data) {
