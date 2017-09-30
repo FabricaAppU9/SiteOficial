@@ -11,7 +11,7 @@
 	$obj_depoimento->setTexto($_POST['depoimento']);
 	$obj_depoimento->setDataInclusao(date('y/m/d'));
 
-	$depoimento = obj_daodepoimento->inserirDepoimento($conexao, $obj_depoimento, $_SESSION["id"])
+	$depoimento = $obj_daodepoimento->inserirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
 
 	if($depoimento){
 		echo "Sucesso";
