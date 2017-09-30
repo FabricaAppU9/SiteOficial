@@ -8,7 +8,7 @@
 	$obj_depoimento    = new DepoimentoProfessor();
 	$obj_daodepoimento = new DaoDepoimentoProfessor();
 
-	$obj_depoimento->setTexto($_POST['depoimento']);
+	$obj_depoimento->setTexto(utf8_decode($_POST['depoimento']));
 	$obj_depoimento->setDataInclusao(date('y/m/d'));
 
 	$depoimento = $obj_daodepoimento->inserirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
