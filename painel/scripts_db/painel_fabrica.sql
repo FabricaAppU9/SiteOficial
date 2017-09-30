@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Ago-2017 às 16:48
+-- Generation Time: 30-Set-2017 às 13:26
 -- Versão do servidor: 10.1.21-MariaDB
--- PHP Version: 7.1.1
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -104,6 +104,26 @@ CREATE TABLE `depoimento_aluno` (
   `pda_data_inicio` date NOT NULL,
   `pda_data_update` date NOT NULL,
   `pda_pal_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `depoimento_aluno`
+--
+
+INSERT INTO `depoimento_aluno` (`pda_id`, `pda_texto`, `pda_data_inicio`, `pda_data_update`, `pda_pal_id`) VALUES
+(5, 'Teste 2  dia 29 de setembro', '2017-09-27', '2017-09-29', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `depoimento_professor`
+--
+
+CREATE TABLE `depoimento_professor` (
+  `pdp_id` int(11) NOT NULL,
+  `pdp_texto` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `pdp_data_update` date NOT NULL,
+  `pdp_prf_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -244,6 +264,12 @@ ALTER TABLE `depoimento_aluno`
   ADD PRIMARY KEY (`pda_id`);
 
 --
+-- Indexes for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  ADD PRIMARY KEY (`pdp_id`);
+
+--
 -- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
@@ -296,7 +322,12 @@ ALTER TABLE `cargo`
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
-  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `galeria`
 --
