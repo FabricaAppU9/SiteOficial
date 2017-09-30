@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Set-2017 às 13:36
+-- Generation Time: 30-Set-2017 às 15:25
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -126,6 +126,13 @@ CREATE TABLE `depoimento_professor` (
   `pdp_data_update` date NOT NULL,
   `pdp_prf_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `depoimento_professor`
+--
+
+INSERT INTO `depoimento_professor` (`pdp_id`, `pdp_texto`, `pdp_data_inclusao`, `pdp_data_update`, `pdp_prf_id`) VALUES
+(0, 'Testando depoimento do professor', '2017-09-30', '0000-00-00', 2);
 
 -- --------------------------------------------------------
 
@@ -263,6 +270,12 @@ ALTER TABLE `cargo`
 --
 ALTER TABLE `depoimento_aluno`
   ADD PRIMARY KEY (`pda_id`);
+
+--
+-- Indexes for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  ADD PRIMARY KEY (`pdp_id`);
 
 --
 -- Indexes for table `galeria`
