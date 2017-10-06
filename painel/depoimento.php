@@ -50,7 +50,7 @@
 					<tr>
 						<td><?=utf8_encode($depoimento['pda_texto'])?></td>
 						<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
-						<?php if($depoimento['pda_data_update'] == 0000-00-00){?>
+						<?php if(date('d/m/Y',  strtotime($depoimento['pda_data_update'])) == 0000-00-00){?>
 							<td>-</td>
 						<?php }?>
 						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
