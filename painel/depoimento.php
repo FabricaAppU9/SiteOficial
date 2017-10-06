@@ -49,7 +49,7 @@
 					</tr>
 					<tr>
 						<td><?=utf8_encode($depoimento['pda_texto'])?></td>
-						<td><?=$depoimento['pda_data_inicio']?></td>
+						<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
 						<?php if($depoimento['pda_data_update'] == 0000-00-00){?>
 							<td>-</td>
 						<?php }?>
