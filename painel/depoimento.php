@@ -34,6 +34,9 @@
 					<div class="col-md-12 botaosalvar">
 						<?php if($depoimento['pda_texto'] == null){?>
 							<a class="btn btn-default salvar" id="adicionar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR DEPOIMENTO</a>
+							<style type="text/css">
+								#table_depoimento{display: none}
+							</style>
 						<?php }?>
 						
 					</div>
@@ -50,8 +53,12 @@
 					<tr>
 						<td><?=utf8_encode($depoimento['pda_texto'])?></td>
 						<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
-						
-						<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
+						<?php if ($depoimento['pda_data_update'] == "0000-00-00") { ?>
+    						<td>-</td>
+						<?php } else { ?>
+   							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
+						<?php } ?>
+
 						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
 					</tr>
 				</table>
