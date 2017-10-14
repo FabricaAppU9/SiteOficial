@@ -5,6 +5,7 @@
 
 	class DaoAluno{
 
+
 		public function buscaAlunoPorUsuario($conexao, $pus_id){
 
 			$obj_aluno = new Aluno();
@@ -29,6 +30,23 @@
 
 			return $alunos;
 		}
+
+		//Lista depoimento aluno
+		public function listatodososdepoimentos($conexao){
+
+			$alunos    = array();
+
+			$query     = "SELECT * FROM depoimento_aluno left join aluno on aluno.pal_id = depoimento_aluno.pda_pal_id";
+			$resultado = mysqli_query($conexao, $query);
+
+			while($aluno = mysqli_fetch_assoc($resultado)){
+				array_push($alunos,$aluno);
+			}
+
+
+			return $alunos;
+		}
+
 
 		public function MudaFoto($conexao,$foto,$pus_id){
 			$query = "UPDATE aluno SET pal_foto = '{$foto}' WHERE pal_pus_id = {$pus_id}";
