@@ -53,39 +53,10 @@
 							<td><?=utf8_encode($depoimento['pda_texto'])?></td>
 							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
 							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
-							<td>Editar ou excluir</td>
+							<td>>Excluir depoimento</td>
 						</tr>
 					<?php }?>
 				</table>
-			</div>
-			<div class="add-depoimento" style="display: none;">
-				<div class="row">
-					<div class="col-md-12 textarea">
-						<form method="post" id="form-add-depoimento">
-							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
-						</form>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
-					</div>
-				</div>
-			</div>
-			<div class="edit-depoimento">
-				<div class="row">
-					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-depoimento">
-							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
-						</form>
-					</div>
-				</div>
-				<!--Alterar a partir daqui-->
-				<div class="row">
-					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
-					</div>
-				</div>
 			</div>
 		</div>
 
