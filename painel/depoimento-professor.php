@@ -34,8 +34,11 @@
 							</style>
 						<?php }?>
 					</div>
-				</div>
 
+					<div class="col-md-12 botaosalvar">
+							<a href="lista-depoimentos-aluno.php" class="btn btn-default salvar" id="listar-depoimento-aluno"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;VISUALIZAR DEPOIMENTO</a>
+					</div>
+				</div>
 
 				<table class="table table-bordered" id="table_depoimento">
 					<tr>
