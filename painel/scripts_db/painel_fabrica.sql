@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Set-2017 às 15:34
--- Versão do servidor: 10.1.21-MariaDB
--- PHP Version: 5.6.30
+-- Generation Time: 10-Jun-2017 às 12:11
+-- Versão do servidor: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -266,6 +266,7 @@ ALTER TABLE `cargo`
   ADD PRIMARY KEY (`pcr_id`);
 
 --
+<<<<<<< HEAD
 -- Indexes for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -278,6 +279,8 @@ ALTER TABLE `depoimento_professor`
   ADD PRIMARY KEY (`pdp_id`);
 
 --
+=======
+>>>>>>> 7a29cba21c6779b31d8bd2ef000a0b8478407d7a
 -- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
@@ -327,6 +330,7 @@ ALTER TABLE `campus`
 ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -337,6 +341,8 @@ ALTER TABLE `depoimento_aluno`
 ALTER TABLE `depoimento_professor`
   MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+=======
+>>>>>>> 7a29cba21c6779b31d8bd2ef000a0b8478407d7a
 -- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
