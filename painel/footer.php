@@ -117,6 +117,66 @@
 		});
 	});
 	//$.ajax({ type: "POST", url: 'teste.php', data: dadosImoveis, success: function(msg){ alert(msg); } });
+
+	$(".editardepoimento").click(function(){
+		
+		$(".edit-depoimento").css({"display":"block"});
+	});
+
+	$("#salvar-depoimento").click(function(){
+		//Addiciona o depoimento
+		var dados = $("#form-add-depoimento").serialize();
+				$.ajax({
+		            url: 'salvar-depoimento-aluno.php',
+		            type: 'post',
+		            data: dados,
+		            success: function (data) {
+		                alert(data);
+		            },
+		        });
+	});
+	//Referente ao botão de adicionar depoimento
+	$("#adicionar-depoimento").click(function(){
+		$(".add-depoimento").css({"display" : "block"});
+
+	});
+
+	$("#salvar-edit-depoimento").click(function(){
+		var dados = $("#form-edit-depoimento").serialize();
+			$.ajax({
+		        url: 'editar-depoimento-aluno.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+		        },
+		    });
+	});
+
+	//Adicionar depoimento professor
+	$("#salvar-depoimento-professor").click(function(){
+		var dados = $("#form-add-depoimento-professor").serialize();
+				$.ajax({
+		            url: 'salvar-depoimento-professor.php',
+		            type: 'post',
+		            data: dados,
+		            success: function (data) {
+		                alert(data);
+		            },
+		        });
+	});
+	//Alterar depoimento professor
+	$("#salvar-edit-depoimento-professor").click(function(){
+		var dados = $("#form-edit-depoimento-professor").serialize();
+			$.ajax({
+		        url: 'editar-depoimento-professor.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+		        },
+		    });
+	});
 </script>
 	</body>
 </html>

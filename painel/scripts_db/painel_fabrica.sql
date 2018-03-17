@@ -95,6 +95,48 @@ INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `depoimento_aluno`
+--
+
+CREATE TABLE `depoimento_aluno` (
+  `pda_id` int(11) NOT NULL,
+  `pda_texto` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `pda_data_inicio` date NOT NULL,
+  `pda_data_update` date NOT NULL,
+  `pda_pal_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `depoimento_aluno`
+--
+
+INSERT INTO `depoimento_aluno` (`pda_id`, `pda_texto`, `pda_data_inicio`, `pda_data_update`, `pda_pal_id`) VALUES
+(5, 'Teste 2  dia 29 de setembro', '2017-09-27', '2017-09-29', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `depoimento_professor`
+--
+
+CREATE TABLE `depoimento_professor` (
+  `pdp_id` int(11) NOT NULL,
+  `pdp_texto` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `pdp_data_inclusao` date NOT NULL,
+  `pdp_data_update` date NOT NULL,
+  `pdp_prf_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `depoimento_professor`
+--
+
+INSERT INTO `depoimento_professor` (`pdp_id`, `pdp_texto`, `pdp_data_inclusao`, `pdp_data_update`, `pdp_prf_id`) VALUES
+(2, 'Testando depoimento do professor apÃ³s alteraÃ§Ã£o da tabela', '2017-09-30', '0000-00-00', 2);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `galeria`
 --
 
@@ -224,6 +266,18 @@ ALTER TABLE `cargo`
   ADD PRIMARY KEY (`pcr_id`);
 
 --
+-- Indexes for table `depoimento_aluno`
+--
+ALTER TABLE `depoimento_aluno`
+  ADD PRIMARY KEY (`pda_id`);
+
+--
+-- Indexes for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  ADD PRIMARY KEY (`pdp_id`);
+
+--
 -- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
@@ -273,6 +327,19 @@ ALTER TABLE `campus`
 ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
+<<<<<<< HEAD
+-- AUTO_INCREMENT for table `depoimento_aluno`
+--
+ALTER TABLE `depoimento_aluno`
+  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+=======
+>>>>>>> 7a29cba21c6779b31d8bd2ef000a0b8478407d7a
 -- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
