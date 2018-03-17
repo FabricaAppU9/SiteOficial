@@ -266,7 +266,6 @@ ALTER TABLE `cargo`
   ADD PRIMARY KEY (`pcr_id`);
 
 --
-<<<<<<< HEAD
 -- Indexes for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -279,8 +278,6 @@ ALTER TABLE `depoimento_professor`
   ADD PRIMARY KEY (`pdp_id`);
 
 --
-=======
->>>>>>> 7a29cba21c6779b31d8bd2ef000a0b8478407d7a
 -- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
