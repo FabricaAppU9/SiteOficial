@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 24-Mar-2018 às 13:33
+-- Generation Time: 24-Mar-2018 às 15:03
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -206,10 +206,10 @@ INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `pr
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `projetos`
+-- Estrutura da tabela `projeto`
 --
 
-CREATE TABLE `projetos` (
+CREATE TABLE `projeto` (
   `prj_id` int(11) NOT NULL,
   `prj_nome` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `prj_descricao` longtext COLLATE utf8_unicode_ci NOT NULL,
@@ -313,9 +313,9 @@ ALTER TABLE `professor`
   ADD PRIMARY KEY (`prf_id`);
 
 --
--- Indexes for table `projetos`
+-- Indexes for table `projeto`
 --
-ALTER TABLE `projetos`
+ALTER TABLE `projeto`
   ADD PRIMARY KEY (`prj_id`);
 
 --
@@ -353,9 +353,9 @@ ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `projetos`
+-- AUTO_INCREMENT for table `projeto`
 --
-ALTER TABLE `projetos`
+ALTER TABLE `projeto`
   MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
