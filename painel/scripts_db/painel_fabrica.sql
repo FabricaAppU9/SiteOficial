@@ -327,7 +327,6 @@ ALTER TABLE `campus`
 ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
-<<<<<<< HEAD
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -338,8 +337,6 @@ ALTER TABLE `depoimento_aluno`
 ALTER TABLE `depoimento_professor`
   MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
-=======
->>>>>>> 7a29cba21c6779b31d8bd2ef000a0b8478407d7a
 -- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
