@@ -5,8 +5,17 @@
 
 	class DaoProjeto{
 
-		public function listaProjeto(){
+		public function listaProjeto($conexao){
+			$projetos = array();
 
+			$query = "SELECT * FROM projeto";
+			$resultado = mysqli_query($conexao, $query);
+
+			while($projeto = mysqli_fetch_assoc($resultado)){
+				array_push($projetos, $projeto);
+			}
+
+			return $projetos;
 		}
 
 		public function inserirProjeto(){
