@@ -1,6 +1,12 @@
 <?php 
 	// teste
 	require_once("header.php");
+	require_once("classe/DaoProjeto.php");
+
+	$obj_projetos = new DaoProjeto();
+	$projetos = $obj_projetos->listaProjeto($conexao);
+
+	//var_dump($projetos);
 	
 ?>
 <section id="conteudo-depoimentos">
@@ -16,16 +22,21 @@
 						<th>Descrição</th>
 						<th>Data de início</th>
 						<th>Data de término</th>
+						<th>Tecnologias</th>
 						<th>Ação</th>
 					</tr>
 					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-   						<td></td>
+					<?php foreach($projetos as $proj) :
+					?>
+						<td><?= $proj['prj_nome'] ?></td>
+						<td><?= $proj['prj_descricao'] ?></td>
+						<td><?= $proj['prj_data_inicio'] ?></td>
+   						<td><?= $proj['prj_data_fim'] ?></td>
+						<td><?= $proj['prj_tecnologias'] ?></td>
 
 						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
 					</tr>
+					<?php endforeach?>
 				</table>
 			</div>
 
