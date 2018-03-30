@@ -29,9 +29,13 @@
 					<?php foreach($projetos as $proj) :
 					?>
 						<td><?= $proj['prj_nome'] ?></td>
-						<td><?= $proj['prj_descricao'] ?></td>
-						<td><?= $proj['prj_data_inicio'] ?></td>
-   						<td><?= $proj['prj_data_fim'] ?></td>
+						<td><?=utf8_encode($proj['prj_descricao'])?></td>
+						<td><?=date('d/m/Y',  strtotime($proj['prj_data_inicio']))?></td>
+   						<?php if ($proj['prj_data_fim'] == "0000-00-00") { ?>
+    						<td>-</td>
+						<?php } else { ?>
+   							<td><?=date('d/m/Y',  strtotime($proj['prj_data_fim']))?></td>
+						<?php } ?>
 						<td><?= $proj['prj_tecnologias'] ?></td>
 
 						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
