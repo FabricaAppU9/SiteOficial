@@ -2,6 +2,7 @@
 
 	require_once("conecta.php");
 	require_once("Projeto.php");
+	require_once ("Professor.php");
 
 	class DaoProjeto{
 
@@ -22,8 +23,9 @@
 
 		}
 
-		public function alterarProjeto(){
-
+		public function alterarProjeto($conexao, Projeto $projeto, $prf_id){
+			$query = "UPDATE projetos SET prj_nome = '{$projeto->getNome()}' WHERE pdp_prf_id = {$prf_id}"; 
+			return mysqli_query($conexao,$query);
 		}
 
 		public function excluirProjeto(){
