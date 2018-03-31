@@ -61,7 +61,7 @@
 				<div class="row">
 					<div class="col-md-12 textarea">
 						<form method="post" id="form-edit-projeto">
-							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Projeto aqui"><?=utf8_encode($proj['prj_nome'])?></textarea>
+							<textarea id="textId" name="projeto_edit" class="form-control" placeholder="Projeto aqui"><?=utf8_encode($proj['prj_nome'])?></textarea>
 						</form>
 					</div>
 				</div>
