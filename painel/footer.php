@@ -177,6 +177,19 @@
 		        },
 		    });
 	});
+
+	//Alterar projetos na tela professor
+	$("#salvar-edit-projeto").click(function(){
+		var dados = $("#form-edit-projeto").serialize();
+			$.ajax({
+		        url: 'editar-projeto.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+		        },
+		    });
+	});
 </script>
 	</body>
 </html>

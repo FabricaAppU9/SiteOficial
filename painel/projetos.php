@@ -60,15 +60,15 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-depoimento">
-							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['prj_nome'])?></textarea>
+						<form method="post" id="form-edit-projeto">
+							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Projeto aqui"><?=utf8_encode($proj['prj_nome'])?></textarea>
 						</form>
 					</div>
 				</div>
 				<!--Alterar a partir daqui-->
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
+						<a class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
 					</div>
 				</div>
 			</div> <!--Fim edit projeto-->
