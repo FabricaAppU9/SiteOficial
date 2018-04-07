@@ -55,15 +55,15 @@
 						<tr>
 							<td><?=$aluno['pal_ra']?></td>
 							<td><?=utf8_encode($aluno['pal_nome'])?></td>
-							<td><?=utf8_encode($aluno['pca_nome'])?></td>
-							<td><?=utf8_encode($aluno['pcs_nome'])?></td>
+							<td><?=utf8_encode($campus['pca_nome'])?></td>
+							<td><?=utf8_encode($aluno['curso'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
 							<td>Editar ou Excluir</td>
 						</tr>
 					<?php }?>
 					
 				</tbody>
-			</table>
+			</table
 		</div>
 	</div>
 	<div class="modal" id="modal-aluno" style="display: none !important;">
@@ -134,7 +134,7 @@
 						<select name="curso" class="form-control">
 							<option value="">Selecione</option>
 							<?php foreach($cursos as $curso){?>
-							<option value="<?=$curso['pcs_id']?>"><?=utf8_encode($curso['pcs_nome'])?></option>
+							<option value="<?=$curso['id']?>"><?=utf8_encode($curso['curso'])?></option>
 							<?php }?>
 						</select>
 					</div>
