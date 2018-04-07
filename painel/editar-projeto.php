@@ -10,7 +10,7 @@
 
 	$obj_projeto->setNome(utf8_decode($_POST['projeto_edit']));
 
-	$projeto = $obj_daoprojeto->alterarProjeto($conexao, $obj_projeto, $_SESSION["id"]);
+	$projeto = $obj_daoprojeto->alterarProjeto($conexao, $obj_projeto, $obj_projeto->getId());
 
 
 	var_dump($projeto);
