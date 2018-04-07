@@ -23,8 +23,8 @@
 
 		}
 
-		public function alterarProjeto($conexao, Projeto $projeto, $prf_id){
-			$query = "UPDATE projetos SET prj_nome = '{$projeto->getNome()}' WHERE pdp_prf_id = {$prf_id}"; 
+		public function alterarProjeto($conexao, Projeto $projeto, $prj_id){
+			$query = "UPDATE projetos SET prj_nome = '{$projeto->getNome()}' WHERE prj_id = {$prj_id}"; 
 			return mysqli_query($conexao,$query);
 		}
 
