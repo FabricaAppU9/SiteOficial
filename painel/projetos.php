@@ -62,26 +62,17 @@
 				<div class="row">
 					<div class="col-md-12 textarea">
 						<form method="post" id="form-edit-projeto">
-							<!--
-								id: escondido
-								nome
-								descricao
-								data_inicio
-								data_fim
-								tecnologias
-							-->
 							<input type="hidden" name="id" value="<?=utf8_encode($proj['prj_id'])?>">
 							<label>Nome</label>
 							<input type="text" name="nome" value="<?=utf8_encode($proj['prj_nome'])?>" class="form-control">
 							<label>Descrição</label>
 							<input type="text" name="descricao" value="<?=utf8_encode($proj['prj_descricao'])?>" class="form-control">
-							<label>Data de Inicio</label>
+							<label>Data de Inicio (aaaa-MM-dd)</label>
 							<input type="text" name="dt_inicio" value="<?=utf8_encode($proj['prj_data_inicio'])?>" class="form-control">
-							<label>Data de término</label>
+							<label>Data de término (aaaa-MM-dd)</label>
 							<input type="text" name="dt_termino" value="<?=utf8_encode($proj['prj_data_fim'])?>" class="form-control">
 							<label>Tecnologias</label>
 							<input type="text" name="tecnologias" value="<?=utf8_encode($proj['prj_tecnologias'])?>" class="form-control">
-							<!--<textarea id="textId" name="projeto_edit" class="form-control" placeholder="Projeto aqui"><?=utf8_encode($proj['prj_nome'])?></textarea>-->
 						</form>
 					</div>
 				</div>
