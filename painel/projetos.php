@@ -61,7 +61,7 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-projeto">
+						<form method="post" action="editar-projeto.php">
 							<input type="hidden" name="id" value="<?=utf8_encode($proj['prj_id'])?>">
 							<label>Nome</label>
 							<input type="text" name="nome" value="<?=utf8_encode($proj['prj_nome'])?>" class="form-control">
@@ -79,7 +79,7 @@
 				<!--Alterar a partir daqui-->
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
+						<button input type="submit" class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
 					</div>
 				</div>
 			</div> <!--Fim edit projeto-->
