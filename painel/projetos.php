@@ -61,7 +61,7 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<form method="post" action="editar-projeto.php">
+						<form method="POST" id="form-edit-projeto">
 							<input type="hidden" name="id" value="<?=utf8_encode($proj['prj_id'])?>">
 							<label>Nome</label>
 							<input type="text" name="nome" value="<?=utf8_encode($proj['prj_nome'])?>" class="form-control">
@@ -73,15 +73,16 @@
 							<input type="text" name="dt_termino" value="<?=utf8_encode($proj['prj_data_fim'])?>" class="form-control">
 							<label>Tecnologias</label>
 							<input type="text" name="tecnologias" value="<?=utf8_encode($proj['prj_tecnologias'])?>" class="form-control">
+							<div class="row">
+								<div class="col-md-12 botaosalvar">
+									<button input type="submit" class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
+					</div>
+				</div
 						</form>
 					</div>
 				</div>
 				<!--Alterar a partir daqui-->
-				<div class="row">
-					<div class="col-md-12 botaosalvar">
-						<button input type="submit" class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
-					</div>
-				</div>
+				>
 			</div> <!--Fim edit projeto-->
 		</div>
 
