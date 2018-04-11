@@ -38,7 +38,7 @@
 				</div>
 				<div class="row margintop30px">
 					<div class="col-md-12 col-xs-12 button-logar">
-						<center><a class="btn btn-default" id="entrar"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Salvar</a></center>
+						<center><a class="btn btn-default" id="entrar"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Entrar</a></center>
 					</div>
 				</div>
 			</form>
