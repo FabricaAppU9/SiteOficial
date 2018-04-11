@@ -32,7 +32,7 @@
 			
 		}
 		
-		public function buscaProjetoPorId($id){
+		public function buscaProjetoPorId($conexao, $id){
 			$query = "SELECT * FROM projeto WHERE prj_id = {$id}";
 			$resultado = mysqli_query($conexao,$query);
 			$projeto = mysqli_fetch_assoc($resultado);
