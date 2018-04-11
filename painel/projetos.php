@@ -76,13 +76,13 @@
 							<div class="row">
 								<div class="col-md-12 botaosalvar">
 									<button input type="submit" class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
-					</div>
-				</div
+								</div>
+							</div>
 						</form>
 					</div>
 				</div>
 				<!--Alterar a partir daqui-->
-				>
+				
 			</div> <!--Fim edit projeto-->
 		</div>
 
