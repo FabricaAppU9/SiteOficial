@@ -38,7 +38,10 @@
 						<?php } ?>
 						<td><?= $proj['prj_tecnologias'] ?></td>
 
-						<td><a class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
+						<td>
+							<a class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
+							<a href="editar-projeto-form.php?id=<?=$proj['prj_id']?>" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
+						</td>
 					</tr>
 					<?php endforeach?>
 				</table>
