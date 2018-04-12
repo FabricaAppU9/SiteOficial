@@ -61,32 +61,6 @@
 					</div>
 				</div>
 			</div> <!--Fim add projeto-->
-			<div class="edit-depoimento">
-				<div class="row">
-					<div class="col-md-12 textarea">
-						<form method="POST" id="form-edit-projeto">
-							<input type="hidden" name="id" value="<?=utf8_encode($proj['prj_id'])?>">
-							<label>Nome</label>
-							<input type="text" name="nome" value="<?=utf8_encode($proj['prj_nome'])?>" class="form-control">
-							<label>Descrição</label>
-							<input type="text" name="descricao" value="<?=utf8_encode($proj['prj_descricao'])?>" class="form-control">
-							<label>Data de Inicio (aaaa-MM-dd)</label>
-							<input type="text" name="dt_inicio" value="<?=utf8_encode($proj['prj_data_inicio'])?>" class="form-control">
-							<label>Data de término (aaaa-MM-dd)</label>
-							<input type="text" name="dt_termino" value="<?=utf8_encode($proj['prj_data_fim'])?>" class="form-control">
-							<label>Tecnologias</label>
-							<input type="text" name="tecnologias" value="<?=utf8_encode($proj['prj_tecnologias'])?>" class="form-control">
-							<div class="row">
-								<div class="col-md-12 botaosalvar">
-									<button input type="submit" class="btn btn-default salvar" id="salvar-edit-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-				<!--Alterar a partir daqui-->
-				
-			</div> <!--Fim edit projeto-->
 		</div>
 
 	</section>
