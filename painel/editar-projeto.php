@@ -9,20 +9,20 @@
 	$obj_daoprojeto = new DaoProjeto();
 
 	$obj_projeto->setId($_POST['id']);
-	$obj_projeto->setNome($_POST['nome']);
-	$obj_projeto->setDescricao($_POST['descricao']);
+	$obj_projeto->setNome(utf8_decode($_POST['nome']));	
+	$obj_projeto->setDescricao(utf8_decode($_POST['descricao']));
 	$obj_projeto->setDataInicio($_POST['dt_inicio']);
 	$obj_projeto->setDataFim($_POST['dt_termino']);
-	$obj_projeto->setTecnologias($_POST['tecnologias']);
+	$obj_projeto->setTecnologias(utf8_decode($_POST['tecnologias']));
 
 	$projeto = $obj_daoprojeto->alterarProjeto($conexao, $obj_projeto, $obj_projeto->getId());
 
 
 
-	var_dump($obj_projeto->getId());
+	//ar_dump($obj_projeto->getId());
 
-	/*if($projeto){
+	if($projeto){
 		echo "Sucesso!";
 	}else{
 		echo "Erro!";
-	} */
+	} 
