@@ -5,15 +5,20 @@
 	require_once("classe/DaoCampus.php");
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCurso.php");
-
+    require_once("classe/DaoPeriodo.php");
+    
+    $obj_periodo = new DaoPeriodo();
 	$obj_campus = new DaoCampus();
 	$obj_cargo = new DaoCargo();
 	$obj_curso = new DaoCurso();
 	$obj_aluno = new DaoAluno();
+
 	$campus = $obj_campus->buscaCargos($conexao);
+    $periodos = $obj_periodo->listaPeriodos($conexao);
 	$cargos = $obj_cargo->listaCargos($conexao);
 	$cursos = $obj_curso->listaCursos($conexao);
 	$alunos = $obj_aluno->listaAlunos($conexao);
+    
 ?>
 <section id="conteudo-alunos">
 	<div class="container">
@@ -55,10 +60,10 @@
 						<tr>
 							<td><?=$aluno['pal_ra']?></td>
 							<td><?=utf8_encode($aluno['pal_nome'])?></td>
-							<td><?=utf8_encode($campus['pca_nome'])?></td>
+							<td><?=utf8_encode($aluno['pca_nome'])?></td>
 							<td><?=utf8_encode($aluno['curso'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-							<td>Editar ou Excluir</td>
+							<td>Editar ou Excluir</td> <!-- criar ações para Editar e Excluir -->
 						</tr>
 					<?php }?>
 					
@@ -82,8 +87,8 @@
 			<form id="form-add-aluno" method="post">
 				<div class="row">
 					<div class="col-md-6">
-						<label>RA</label>
-						<input type="text" name="ra" class="form-control" placeholder="ra">
+						<label>Email</label>
+						<input type="text" name="Email" class="form-control" placeholder="Email">
 					</div>
 					<div class="col-md-6">
 						<label>Nome</label>
@@ -112,11 +117,12 @@
 				</div>
 				<div class="row margin-top20">
 					<div class="col-md-6">
-						<label>Período</label>
+						<label>Periodo</label>
 						<select name="periodo" class="form-control">
 							<option value="">Selecione</option>
-							<option value="1">Manhã</option>
-							<option value="2">Noturno</option>
+							<?php foreach($periodos as $periodo){?>
+							<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($periodo['ppe_nome'])?></option>
+							<?php }?>
 						</select>
 					</div>
 					<div class="col-md-6">
@@ -126,8 +132,8 @@
 				</div>
 				<div class="row margin-top20">
 					<div class="col-md-6">
-						<label>Email</label>
-						<input type="email" name="email" class="form-control" placeholder="Email">
+						<label>RA</label>
+						<input type="text" name="RA" class="form-control" placeholder="RA">
 					</div>
 					<div class="col-md-6">
 						<label>Curso</label>
