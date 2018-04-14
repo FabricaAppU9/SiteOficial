@@ -18,7 +18,7 @@
 
 
 
-	var_dump($obj_projeto);
+	//var_dump($obj_projeto);
 
 	if($projeto){
 		echo "Sucesso!";
