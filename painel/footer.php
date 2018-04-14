@@ -187,6 +187,7 @@
 		        data: dados,
 		        success: function (data) {
 		            alert(data);
+					window.location.href = 'projetos.php'
 		        },
 		    });
 	});
