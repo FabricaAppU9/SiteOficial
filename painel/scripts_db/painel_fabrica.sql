@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 10-Jun-2017 às 12:11
--- Versão do servidor: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: 24-Mar-2018 às 15:03
+-- Versão do servidor: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -204,6 +206,21 @@ INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `pr
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `projeto`
+--
+
+CREATE TABLE `projeto` (
+  `prj_id` int(11) NOT NULL,
+  `prj_nome` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `prj_descricao` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `prj_data_inicio` date NOT NULL,
+  `prj_data_fim` date NOT NULL,
+  `prj_tecnologias` longtext COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `tipo_usuario`
 --
 
@@ -296,6 +313,12 @@ ALTER TABLE `professor`
   ADD PRIMARY KEY (`prf_id`);
 
 --
+-- Indexes for table `projeto`
+--
+ALTER TABLE `projeto`
+  ADD PRIMARY KEY (`prj_id`);
+
+--
 -- Indexes for table `tipo_usuario`
 --
 ALTER TABLE `tipo_usuario`
@@ -316,51 +339,26 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `aluno`
   MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `campus`
 --
 ALTER TABLE `campus`
   MODIFY `pca_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `cargo`
 --
 ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT for table `depoimento_aluno`
+-- AUTO_INCREMENT for table `projeto`
 --
-ALTER TABLE `depoimento_aluno`
-  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT for table `depoimento_professor`
---
-ALTER TABLE `depoimento_professor`
-  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `galeria`
---
-ALTER TABLE `galeria`
-  MODIFY `pga_id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `menu`
---
-ALTER TABLE `menu`
-  MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
---
--- AUTO_INCREMENT for table `professor`
---
-ALTER TABLE `professor`
-  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tipo_usuario`
---
-ALTER TABLE `tipo_usuario`
-  MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `projeto`
+  MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
