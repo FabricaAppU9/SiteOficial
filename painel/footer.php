@@ -191,6 +191,20 @@
 		        },
 		    });
 	});
+	
+	//Adicionar projetos na tela professor
+	$("#add-projeto").click(function(){
+		var dados = $("#form-add-projeto").serialize();
+			$.ajax({
+		        url: 'adicionar-projeto.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+					window.location.href = 'projetos.php'
+		        },
+		    });
+	});
 </script>
 	</body>
 </html>
