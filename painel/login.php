@@ -11,9 +11,9 @@
 		<img class="img-body" src="imagens/imagem_fundofabriaca.jpg">
 		<div class="login">
 			<div class="row">
-				<div class="col-md-12 col-xs-12 logo">
+				<tdiv class="col-md-12 col-xs-12 logo">
 					<center><img class="img-logo" src="imagens/logoFappUni9.png"></center>
-				</div>
+				</tdiv>
 			</div>
 			<form action="logar.php" method="post" id="form-login">
 				<div class="row margintop30px">
@@ -36,13 +36,14 @@
 					    </div>
 					</div>
 				</div>
-				<div class="row margintop30px">
-					<div class="col-md-12 col-xs-12 button-logar">
-						<center><a class="btn btn-default" id="entrar"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Entrar</a></center>
+				    <div class="row margintop30px">
+                         <center><button class="btn btn-default" id="entrar" type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Entrar</button></center>
+
 					</div>
 				</div>
 			</form>
-		</div>
+
+        </div>
 	</body>
 </html>
 <script src="js/jquery.js"></script>
