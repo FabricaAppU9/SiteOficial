@@ -19,8 +19,10 @@
 			return $projetos;
 		}
 
-		public function inserirProjeto(){
-
+		public function inserirProjeto($conexao, Projeto $projeto){
+			$query = "'INSERT INTO projeto(prj_nome, prj_descricao, prj_data_inicio, prj_data_fim, prj_tecnologias) VALUES ('{$projeto->getNome()}', '{$projeto->getDescricao()}',
+			'{$projeto->getDataInicio()}', '{$projeto->getDataFim()}', '{$projeto->getTecnologias()}')";
+			return mysqli_query($conexao,$query);
 		}
 
 		public function alterarProjeto($conexao, Projeto $projeto, $prj_id){
