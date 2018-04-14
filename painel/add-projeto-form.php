@@ -1,19 +1,14 @@
 <?php 
-	// teste
 	require_once("header.php");
-	require_once("classe/DaoProjeto.php");
-
-	$idProjeto = $_GET['id'];
 
 ?>
 
 <section id="conteudo-depoimentos">
 		<div class="container">
-			<h1><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Editar Projeto</h1>
+			<h1><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Adicionar Projeto</h1>
 			<div class="border-dotted"></div>
 			<!--<div class="edit-depoimento">-->
-						<form method="POST" id="form-edit-projeto">
-							<input type="hidden" name="id" value="<?=$idProjeto?>">
+						<form method="POST" id="form-add-projeto">
 							<label>Nome</label>
 							<input type="text" name="nome" class="form-control">
 							<label>Descrição</label>
