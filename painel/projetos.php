@@ -14,9 +14,12 @@
 			<h1><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Projetos</h1>
 			<div class="border-dotted"></div>
 			
-			<div class="col-md-12 botaosalvar">
-							<a href="add-projeto-form.php" class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR DEPOIMENTO</a>
+			<div class="row">
+					<div class="col-md-12 botaosalvar">
+							<a href="add-projeto-form.php" class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR PROJETO</a>
 					</div>
+				</div>
+			
 			<div class="row">
 
 

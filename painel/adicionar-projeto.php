@@ -18,7 +18,7 @@
 
 
 
-	//ar_dump($obj_projeto->getId());
+	var_dump($obj_projeto);
 
 	if($projeto){
 		echo "Sucesso!";
