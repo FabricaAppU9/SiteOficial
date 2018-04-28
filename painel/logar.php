@@ -9,7 +9,11 @@
 	$erro = 0;
 	if($usuario == null){
 		$_SESSION["danger"] = "Usuário ou senha não encontrado.";
-		header("Location: login.php");
+		//header("Location: login.php");
+        echo "<script>
+            alert('Email ou senha incorretos');
+            window.location.href='login.php';
+        </script>";
 	}else{
 		if($usuario['pus_ptu_id'] == 1){
 			$usuario_aluno = $obj_usuario->buscaUsuarioAluno($conexao, $_POST["login"], $_POST["senha"]);
