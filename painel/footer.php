@@ -70,8 +70,14 @@
 			
 		}
 	});
+
+    $("#trocar-img").click(function(){
+        $("#sell-foto").attr("disabled", "disabled");
+    });
+
 	$("#trocar-img").change(function(){
 		if($(this).val() !== ""){
+		    $("#sell-foto").removeAttr("disabled");
 			$("#arquivo-selecionado").html("Arquivo selecionado!");
 		}
 	});
