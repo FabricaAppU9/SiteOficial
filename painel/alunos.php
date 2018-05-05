@@ -82,7 +82,7 @@
 					<center><i class="fa fa-times" aria-hidden="true" id="fechar-modal-add-aluno"></i></center>
 				</div>
 			</div>
-		</div>
+		</div>                                     
 		<div class="modal-content display-none">
 			<form id="form-add-aluno" method="post">
 				<div class="row">

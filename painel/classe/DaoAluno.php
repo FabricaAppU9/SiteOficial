@@ -21,16 +21,18 @@
 
 			$alunos    = array();
 
-			$query     = "SELECT * FROM aluno left join campus ON campus.pca_id = aluno.pal_pca_id left join curso ON curso.id = aluno.pal_pca_id left join cargo ON cargo.pcr_id = aluno.pal_pca_id";
-			$resultado = mysqli_query($conexao, $query);
 
-            if ($resultado == FALSE){
-                
-                echo " Erro no Banco de Dados Aluno ";
-                
-            } else   
+			$query     = "SELECT * FROM aluno left join campus ON campus.pca_id = aluno.pal_pcr_id left join curso ON curso.id = aluno.pal_pcr_id left join cargo ON cargo.pcr_id = aluno.pal_pcr_id";
+			$resultado = mysqli_query($conexao, $query);
             
-			while($aluno = mysqli_fetch_assoc($resultado)){
+            if($resultado == FALSE){
+                
+            ECHO " Erro no Banco de Dados Aluno";
+            
+            }else 
+                
+                while($aluno = mysqli_fetch_assoc($resultado)){
+
 				array_push($alunos,$aluno);
 			     }
             
@@ -72,13 +74,13 @@
 			$query = "SELECT * FROM aluno left join campus on campus.pca_id = aluno.pal_pca_id left join cargo on cargo.pcr_id = aluno.pal_pca_id left join curso on curso.id = aluno.pal_pca_id WHERE pal_pca_id = {$pal_pca_id}";
 			$resultado = mysqli_query($conexao, $query);
             
-            if ($resultado == FALSE){
+
+            if($resultado == FALSE){
                 
-                echo " Selecione o Campus desejado ";
-                
-            } else   
+            ECHO "<center><h1>Selecione Campus</h1></center>";
             
-            
+            }else 
+
 			while($aluno = mysqli_fetch_assoc($resultado)){
 				array_push($alunos,$aluno);
 			}
@@ -86,8 +88,12 @@
 			return $alunos;
 		}
 
-		public function adicionaAluno($conexao, Aluno $aluno, $data_ini){
-			$query = "INSERT INTO aluno (pal_email, pal_nome, pal_pcr_id, pal_pca_id, pal_ppe_id, pal_semestre, pal_pus_id, pal_pcs_id) VALUES ('{$aluno->getEmail()}', '{$aluno->getNome()}', {$aluno->getPcr_id()}, {$aluno->getPca_id()}, {$aluno->getPpe_id()}, '{$aluno->getSemestre()}', {$aluno->getPus_id()}, {$aluno->getId()})";
+
+		public function adicionaAluno($conexao, Aluno $aluno){
+            
+			$query = "INSERT INTO aluno (pal_ra, pal_nome, pal_pcr_id, pal_pca_id, pal_ppe_id, pal_semestre, pal_pus_id, id) VALUES ('{$aluno->getRa()}', '{$aluno->getNome()}', {$aluno->getPcr_id()}, {$aluno->getPca_id()}, {$aluno->getPpe_id()}, '{$aluno->getSemestre()}', {$aluno->getPus_id()}, {$aluno->getId()})";
+            
+
 			return mysqli_query($conexao, $query);
 			#return $query;
 		}

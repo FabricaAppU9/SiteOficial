@@ -7,7 +7,11 @@
 		private $pcr_id; //cargo do aluno na fábrica. Chave estrangeira da tabela cargo.
 		private $pca_id; // campus do aluno na fábrica. Chave estrangeira da tabela campus.
 		private $semestre;
+<<<<<<< Updated upstream
 		private $ppe_id; // período do aluno. Chave estrangeira da tabela período.
+=======
+		private $ppe_id; // período do aluno. Chave estrangeira da tabela período. CHAVE ppe_id = id.
+>>>>>>> Stashed changes
 		private $id; // curso do aluno. Chave estrangeira da tabela curso.
 		private $foto;
 		private $pus_id;

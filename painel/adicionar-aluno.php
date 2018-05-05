@@ -12,6 +12,7 @@
 	$obj_daousuario = new DaoUsuario();
     $obj_daocurso = new DaoCurso();
 
+<<<<<<< Updated upstream
 	$email = $_POST['email'];
 	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $email, 1);
 
@@ -19,16 +20,32 @@
 		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao, $email);
 		$obj_aluno->setEmail($_POST['email']);
 		$nome = utf8_decode($_POST['nome']);
+=======
+	$ra = $_POST['ra'];
+    $obj_aluno->setEmail($_POST['email']);
+	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $obj_aluno->getEmail(), 1);
+
+	if($resulta_usu){
+		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao, $ra);
+		$obj_aluno->setRa($_POST['ra']);
+        $nome = utf8_decode($_POST['nome']);
+>>>>>>> Stashed changes
 		$obj_aluno->setNome($nome);
 		$obj_aluno->setPca_id($_POST['campus']);
 		$obj_aluno->setPcr_id($_POST['cargo']);
 		$obj_aluno->setPpe_id($_POST['periodo']);
 		$obj_aluno->setSemestre($_POST['semestre']);
 		$obj_aluno->setPus_id($usuario['pus_id']);
+<<<<<<< Updated upstream
 		$obj_aluno->setId($_POST['curso']);
+=======
+		$obj_aluno->setPcs_id($_POST['curso']);
+        
+>>>>>>> Stashed changes
 		$data = date('y/m/d');
-
-		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno, $data);
+        
+        
+		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
 
 		if($resultado){
 			echo "Sucesso!";
@@ -39,9 +56,6 @@
 		echo "Usuário não adicionado!";
 	}
 
+        
 	die();
-	/*if($resultado){
-		echo "Sucesso!";
-	}else{
-		echo "Erro!";
-	}*/
+	
