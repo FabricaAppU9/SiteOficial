@@ -88,7 +88,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<label>Email</label>
-						<input type="text" name="Email" class="form-control" placeholder="Email">
+						<input type="text" name="email" class="form-control" placeholder="Email">
 					</div>
 					<div class="col-md-6">
 						<label>Nome</label>
@@ -133,7 +133,7 @@
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>RA</label>
-						<input type="text" name="RA" class="form-control" placeholder="RA">
+						<input type="text" name="ra" class="form-control" placeholder="RA">
 					</div>
 					<div class="col-md-6">
 						<label>Curso</label>

@@ -5,16 +5,16 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/Login.php");
-    require_once("classe/Daocurso.php");
+        require_once("classe/Daocurso.php");
 
 	$obj_aluno = new Aluno();
 	$obj_daoaluno = new DaoAluno();
 	$obj_daousuario = new DaoUsuario();
-    $obj_daocurso = new DaoCurso();
+        $obj_daocurso = new DaoCurso();
 
 
 	$ra = $_POST['ra'];
-    $obj_aluno->setEmail($_POST['email']);
+        $obj_aluno->setEmail($_POST['email']);
 	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $obj_aluno->getEmail(), 1);
 
 	if($resulta_usu){
@@ -28,14 +28,17 @@
 		$obj_aluno->setSemestre($_POST['semestre']);
 		$obj_aluno->setPus_id($usuario['pus_id']);
 		$obj_aluno->setId($_POST['curso']);
-		$obj_aluno->setPcs_id($_POST['curso']);
+		//$obj_aluno->setPcs_id($_POST['curso']);
         
 		$data = date('y/m/d');
-        
-        
+                
+                var_dump($obj_aluno);
+                
 		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
+                
+                
 
-		if($resultado){
+                if($resultado){
 			echo "Sucesso!";
 		}else{
 			echo "Erro!";
