@@ -70,8 +70,14 @@
 			
 		}
 	});
+
+    $("#trocar-img").click(function(){
+        $("#sell-foto").attr("disabled", "disabled");
+    });
+
 	$("#trocar-img").change(function(){
 		if($(this).val() !== ""){
+		    $("#sell-foto").removeAttr("disabled");
 			$("#arquivo-selecionado").html("Arquivo selecionado!");
 		}
 	});
@@ -174,6 +180,34 @@
 		        data: dados,
 		        success: function (data) {
 		            alert(data);
+		        },
+		    });
+	});
+
+	//Alterar projetos na tela professor
+	$("#salvar-edit-projeto").click(function(){
+		var dados = $("#form-edit-projeto").serialize();
+			$.ajax({
+		        url: 'editar-projeto.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+					window.location.href = 'projetos.php'
+		        },
+		    });
+	});
+	
+	//Adicionar projetos na tela professor
+	$("#add-projeto").click(function(){
+		var dados = $("#form-add-projeto").serialize();
+			$.ajax({
+		        url: 'adicionar-projeto.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+					window.location.href = 'projetos.php'
 		        },
 		    });
 	});
