@@ -19,7 +19,7 @@
        
       
 	if($resulta_usu){
-		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao, $ra);
+		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao,  $obj_aluno->getEmail());
 		$obj_aluno->setRa($_POST['ra']);
                 $nome = utf8_decode($_POST['nome']);
 		$obj_aluno->setNome($nome);
@@ -27,17 +27,19 @@
 		$obj_aluno->setPcr_id($_POST['cargo']);
 		$obj_aluno->setPpe_id($_POST['periodo']);
 		$obj_aluno->setSemestre($_POST['semestre']);
-		$obj_aluno->setPus_id($usuario['pus_id']);
+                $usuarioId = (int)($usuario['pus_id']);
+		$obj_aluno->setPus_id($usuarioId);
+               
 		//$obj_aluno->setId($_POST['curso']);
 		//$obj_aluno->setPcs_id($_POST['curso']);
         
 		$data = date('y/m/d');
                 
-                var_dump($obj_aluno);
+                
                 
 		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
                 
-                //var_dump($resultado);
+                
 
                 if($resultado){
 			echo "Sucesso!";
