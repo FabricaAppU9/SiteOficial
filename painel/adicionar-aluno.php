@@ -33,7 +33,7 @@
         
 		$data = date('y/m/d');
                 
-                //var_dump($obj_aluno);
+                var_dump($obj_aluno);
                 
 		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
                 
