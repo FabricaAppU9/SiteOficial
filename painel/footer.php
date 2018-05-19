@@ -216,6 +216,31 @@
 	});
         
         //Validacao dos formulários
+        $("#form-add-projeto").validate({
+          rules: {
+            projeto_nome: {
+                required: true
+            },
+            projeto_desc: {
+                required: true
+            },
+            projeto_inicio: {
+                required: true,
+            },
+            projeto_fim: {
+                date: true
+            },
+            projeto_tec: {
+                required: true
+            }
+        },
+        messages: {
+            projeto_nome : "Insira o nome do projeto",
+            projeto_desc: "Insira a descricao do projeto",
+            projeto_inicio: "Insira a data de inicio",
+            projeto_tec: "Insira as tecnologias utilizadas"
+        }
+     });
         
 </script>
 	</body>
