@@ -14,9 +14,9 @@
 							<label>Descrição</label>
 							<input type="text" name="descricao" class="form-control">
 							<label>Data de Inicio (aaaa-MM-dd)</label>
-							<input type="text" name="dt_inicio" class="form-control">
+							<input type="text" name="dt_inicio" class="form-control data">
 							<label>Data de término (aaaa-MM-dd)</label>
-							<input type="text" name="dt_termino" class="form-control">
+							<input type="text" name="dt_termino" class="form-control data ">
 							<label>Tecnologias</label>
 							<input type="text" name="tecnologias" class="form-control">
 							<div class="row">

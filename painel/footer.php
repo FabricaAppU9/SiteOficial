@@ -212,6 +212,10 @@
 		        },
 		    });
 	});
+        
+        //Formato de datas na tela de projeto
+         $(".data").mask("00/00/0000");
+         
 </script>
 	</body>
 </html>
