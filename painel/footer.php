@@ -1,6 +1,8 @@
 
 <script src="js/jquery.js"></script>
+ <!-- Inclusão do Plugin jQuery Validation-->
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
 		// teste
@@ -108,6 +110,7 @@
 			data: dados,
 			success: function(msg){
 				alert(msg);
+                                
 			}
 		});
 	});
@@ -211,6 +214,9 @@
 		        },
 		    });
 	});
+        
+        //Validacao dos formulários
+        
 </script>
 	</body>
 </html>
