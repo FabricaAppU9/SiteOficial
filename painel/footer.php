@@ -110,6 +110,7 @@
 			data: dados,
 			success: function(msg){
 				alert(msg);
+                                
 			}
 		});
 	});
