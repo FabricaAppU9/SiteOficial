@@ -88,17 +88,17 @@
 				<div class="row">
 					<div class="col-md-6">
 						<label>Email</label>
-						<input type="text" name="email" class="form-control" placeholder="Email">
+                                                <input id="aluno_email" type="email" name="email" class="form-control" placeholder="Email" required>
 					</div>
 					<div class="col-md-6">
 						<label>Nome</label>
-						<input type="text" name="nome" class="form-control" placeholder="nome">
+                                                <input id="aluno_nome" type="text" name="nome" class="form-control" placeholder="nome" required>
 					</div>
 				</div>
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>Campus</label>
-						<select name="campus" class="form-control">
+                                                <select id="aluno_campus" name="campus" class="form-control" required>
 							<option value="">Selecione</option>
 							<?php foreach($campus as $campu){?>
 							<option value="<?=$campu['pca_id']?>"><?=utf8_encode($campu['pca_nome'])?></option>
@@ -107,7 +107,7 @@
 					</div>
 					<div class="col-md-6">
 						<label>Cargo</label>
-						<select name="cargo" class="form-control">
+                                                <select id="aluno_cargo" name="cargo" class="form-control" required>
 							<option value="">Selecione</option>
 							<?php foreach($cargos as $cargo){?>
 							<option value="<?=$cargo['pcr_id']?>"><?=utf8_encode($cargo['pcr_nome'])?></option>
@@ -118,7 +118,7 @@
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>Periodo</label>
-						<select name="periodo" class="form-control">
+                                                <select id="aluno_periodo" name="periodo" class="form-control" required>
 							<option value="">Selecione</option>
 							<?php foreach($periodos as $periodo){?>
 							<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($periodo['ppe_nome'])?></option>
@@ -127,17 +127,17 @@
 					</div>
 					<div class="col-md-6">
 						<label>Semestre</label>
-						<input type="text" name="semestre" class="form-control" placeholder="Semestre">
+                                                <input id="aluno_semestre" type="text" name="semestre" class="form-control" placeholder="Semestre" required>
 					</div>
 				</div>
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>RA</label>
-						<input type="text" name="ra" class="form-control" placeholder="RA">
+                                                <input id="aluno_ra" type="text" name="ra" class="form-control" placeholder="RA" required>
 					</div>
 					<div class="col-md-6">
 						<label>Curso</label>
-						<select name="curso" class="form-control">
+                                                <select id="aluno_curso" name="curso" class="form-control" required>
 							<option value="">Selecione</option>
 							<?php foreach($cursos as $curso){?>
 							<option value="<?=$curso['id']?>"><?=utf8_encode($curso['curso'])?></option>
