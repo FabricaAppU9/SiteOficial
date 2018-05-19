@@ -1,6 +1,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
 		// teste
