@@ -5,6 +5,11 @@
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="awe/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="awe/css/font-awesome.min.css">
+        <style>
+            label.error { 
+                color: red; 
+            }
+        </style>
 		<title>Tela de login</title>
 	</head>
 	<body>
@@ -48,7 +53,16 @@
 <script src="js/jquery.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 <script>
-     $("#form-login").validate();
+     $("#form-login").validate({
+          rules: {
+            login: {
+                required: true,
+            }
+        },
+        messages: {
+            login : "Insira um email válido"
+        }
+     });
 </script>
 <script>
 	$("#entrar").click(function(){
