@@ -21,7 +21,7 @@
 						<label class="sr-only" for="login">Login</label>
 					    <div class="input-group">
 					      <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-					      <input type="text" class="form-control" id="login" placeholder="Login" name="login">
+                                              <input type="email" class="form-control" id="login" placeholder="Login" name="login" required>
 					      
 					    </div>
 					</div>
@@ -31,7 +31,7 @@
 						<label class="sr-only" for="senha">Senha</label>
 					    <div class="input-group">
 					      <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
-					      <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
+                                              <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
 					      
 					    </div>
 					</div>
