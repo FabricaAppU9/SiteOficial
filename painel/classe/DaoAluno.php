@@ -93,7 +93,7 @@
             
 			
                         
-                        $query = "INSERT INTO aluno (pal_ra, pal_nome, pal_pcr_id, pal_pca_id, pal_ppe_id, pal_semestre, pal_pus_id) VALUES ('{$aluno->getRa()}', '{$aluno->getNome()}',  {$aluno->getPcr_id()}, {$aluno->getPca_id()},  {$aluno->getPpe_id()}, '{$aluno->getSemestre()}', {$aluno->getPus_id()})";
+                        $query = "INSERT INTO aluno (pal_ra, pal_nome, pal_pcr_id, pal_pca_id, pal_ppe_id, pal_semestre, pal_pus_id, pal_habilitado) VALUES ('{$aluno->getRa()}', '{$aluno->getNome()}',  {$aluno->getPcr_id()}, {$aluno->getPca_id()},  {$aluno->getPpe_id()}, '{$aluno->getSemestre()}', {$aluno->getPus_id()}, 1)";
                         
                         
                
