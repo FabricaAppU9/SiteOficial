@@ -216,16 +216,6 @@
 	});
         
         //Validacao dos formulários
-        $("#form-add-aluno").validate({
-          rules: {
-            login: {
-                required: true,
-            }
-        },
-        messages: {
-            login : "Insira um email válido"
-        }
-     });
         
 </script>
 	</body>
