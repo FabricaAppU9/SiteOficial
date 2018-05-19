@@ -45,7 +45,7 @@
 
 			$alunos    = array();
 
-			$query     = "SELECT * FROM depoimento_aluno left join aluno on aluno.pal_id = depoimento_aluno.pda_pal_id";
+			$query     = "SELECT * FROM depoimento_aluno left join aluno on aluno.pal_pus_id = depoimento_aluno.pda_pal_id";
 			$resultado = mysqli_query($conexao, $query);
 
 			while($aluno = mysqli_fetch_assoc($resultado)){

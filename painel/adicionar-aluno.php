@@ -5,7 +5,7 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/Login.php");
-        require_once("classe/Daocurso.php");
+    require_once("classe/Daocurso.php");
 
 	$obj_aluno = new Aluno();
 	$obj_daoaluno = new DaoAluno();
@@ -14,14 +14,14 @@
 
 
 	$ra = $_POST['ra'];
-        $obj_aluno->setEmail($_POST['email']);
+    $obj_aluno->setEmail($_POST['email']);
 	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $obj_aluno->getEmail(), 1);
        
       
-	if($resulta_usu){
+	   if($resulta_usu){
 		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao,  $obj_aluno->getEmail());
 		$obj_aluno->setRa($_POST['ra']);
-                $nome = utf8_decode($_POST['nome']);
+            $nome = utf8_decode($_POST['nome']);
 		$obj_aluno->setNome($nome);
 		$obj_aluno->setPca_id($_POST['campus']);
 		$obj_aluno->setPcr_id($_POST['cargo']);
