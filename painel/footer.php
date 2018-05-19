@@ -215,7 +215,7 @@
 	});
         
         //Validacao dos formulários
-        $("#form-login").validate();
+        
 </script>
 	</body>
 </html>

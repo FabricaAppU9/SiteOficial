@@ -46,6 +46,10 @@
 	</body>
 </html>
 <script src="js/jquery.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+<script>
+     $("#form-login").validate();
+</script>
 <script>
 	$("#entrar").click(function(){
 		$("#form-login").submit();
