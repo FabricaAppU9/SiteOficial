@@ -56,7 +56,7 @@
      $("#form-login").validate({
           rules: {
             login: {
-                required: true,
+                required: true
             }
         },
         messages: {
