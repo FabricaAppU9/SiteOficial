@@ -108,7 +108,7 @@
 			data: dados,
 			success: function(msg){
 				alert(msg);
-                                alert(dados);
+                                
 			}
 		});
 	});
