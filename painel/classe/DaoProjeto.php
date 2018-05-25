@@ -30,8 +30,9 @@
 			return mysqli_query($conexao,$query);
 		}
 
-		public function excluirProjeto(){
-			
+		public function desabilitarProjeto($conexao, $prj_id){
+			$query = "UPDATE projeto SET prj_habilitado = 0 WHERE prj_id = {$prj_id}";
+                        return mysqli_query($conexao,$query);
 		}
 		
 		public function buscaProjetoPorId($conexao, $id){
