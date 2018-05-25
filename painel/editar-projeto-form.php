@@ -20,10 +20,15 @@
 							<input type="text" name="nome" value="<?=utf8_encode($linhaProjeto['prj_nome'])?>" class="form-control">
 							<label>Descrição</label>
 							<input type="text" name="descricao" value="<?=utf8_encode($linhaProjeto['prj_descricao'])?>" class="form-control">
-							<label>Data de Inicio (aaaa-MM-dd)</label>
-							<input type="text" name="dt_inicio" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_inicio']));?>" class="form-control">
-							<label>Data de término (aaaa-MM-dd)</label>
-							<input type="text" name="dt_termino" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_fim']));?>" class="form-control">
+							<label>Data de Inicio</label>
+							<input type="text" name="dt_inicio" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_inicio']));?>" class="form-control data">
+							<label>Data de término</label>
+                                                        <?php if($linhaProjeto['prj_data_fim'] == '0000-00-00') {?>
+                                                            <input type="text" name="dt_termino" value="0000-00-00" class="form-control data">
+                                                        <?php } else{ ?>
+                                                            <input type="text" name="dt_termino" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_fim']));?>" class="form-control data">
+                                                        <?php }?>
+							
 							<label>Tecnologias</label>
 							<input type="text" name="tecnologias" value="<?=utf8_encode($linhaProjeto['prj_tecnologias'])?>" class="form-control">
 							<div class="row">
