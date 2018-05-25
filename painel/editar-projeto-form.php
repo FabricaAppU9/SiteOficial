@@ -21,9 +21,9 @@
 							<label>Descrição</label>
 							<input type="text" name="descricao" value="<?=utf8_encode($linhaProjeto['prj_descricao'])?>" class="form-control">
 							<label>Data de Inicio (aaaa-MM-dd)</label>
-							<input type="text" name="dt_inicio" value="<?=$linhaProjeto['prj_data_inicio']?>" class="form-control">
+							<input type="text" name="dt_inicio" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_inicio']));?>" class="form-control">
 							<label>Data de término (aaaa-MM-dd)</label>
-							<input type="text" name="dt_termino" value="<?=$linhaProjeto['prj_data_fim']?>" class="form-control">
+							<input type="text" name="dt_termino" value="<?php echo date("d/m/Y", strtotime($linhaProjeto['prj_data_fim']));?>" class="form-control">
 							<label>Tecnologias</label>
 							<input type="text" name="tecnologias" value="<?=utf8_encode($linhaProjeto['prj_tecnologias'])?>" class="form-control">
 							<div class="row">
