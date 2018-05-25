@@ -46,7 +46,10 @@
 						<td><?= $proj['prj_tecnologias'] ?></td>
 
 						<td>
-							<a class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
+                                                    <form>
+                                                        <input type="hidden" value="<?php $proj['prj_id']?>">
+                                                        <button class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></button>&nbsp;&nbsp;
+                                                    </form>
 							<a href="editar-projeto-form.php?id=<?=$proj['prj_id']?>" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
 						</td>
 					</tr>
