@@ -216,18 +216,7 @@
         //Formato de datas na tela de projeto
          $(".data").mask("00/00/0000");
          
-         $("#desabilitar-projeto").click(function(){
-		var dados = $("#form-desabilitar-depoimento").serialize();
-			$.ajax({
-		        url: 'desabilitar-projeto.php',
-		        type: 'post',
-		        data: dados,
-		        success: function (data) {
-		            alert(data);
-					window.location.href = 'projetos.php'
-		        },
-		    });
-	});
+         
          
 </script>
 	</body>
