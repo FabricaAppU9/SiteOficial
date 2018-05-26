@@ -46,9 +46,9 @@
 						<td><?= $proj['prj_tecnologias'] ?></td>
 
 						<td>
-                                                    <form>
-                                                        <input type="hidden" value="<?php $proj['prj_id']?>">
-                                                        <button class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></button>&nbsp;&nbsp;
+                                                    <form method="post" id="form-desabilitar-depoimento">
+                                                        <input type="hidden" name="projeto_id" value="<?=$proj['prj_id']?>">
+                                                        <a  id="desabilitar-projeto" class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
                                                     </form>
 							<a href="editar-projeto-form.php?id=<?=$proj['prj_id']?>" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
 						</td>
