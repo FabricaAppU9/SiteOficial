@@ -24,4 +24,17 @@
 			//return $query;
 			//return $aluno->getFacebook();
 		}
+                
+                public function listaProfessores($conexao){
+                    $professores = array();
+                    
+                    $query = "SELECT * FROM professor WHERE prf_habilitado = 1";
+                    $resultado = mysqli_query($conexao, $query);
+                    
+                    while ($professor = mysqli_fetch_assoc($resultado)){
+                        array_push($professores, $professor);
+                    }
+                    
+                    return $professores;
+                }
 	}
