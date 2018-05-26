@@ -14,6 +14,7 @@
         $projeto = $obj_daoprojeto->desabilitarProjeto($conexao, $projeto_id);
         
         header("Location: projetos.php");
+        die();
         
         
         
