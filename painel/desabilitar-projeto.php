@@ -8,16 +8,12 @@
         $obj_projeto    = new Projeto();
         $obj_daoprojeto = new DaoProjeto();
         
-        $projeto_id = $_POST['projeto_id'];
+        $projeto_id = $_GET['id'];
+        var_dump($projeto_id);
         
         $projeto = $obj_daoprojeto->desabilitarProjeto($conexao, $projeto_id);
         
-        if($projeto){
-            echo 'Sucesso';
-        }
-        else{
-            'Erro';
-        }
+        header("Location: projetos.php");
         
         
         
