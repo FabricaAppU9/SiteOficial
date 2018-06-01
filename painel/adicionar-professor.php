@@ -20,7 +20,11 @@
         $usuarioId = (int)($usuario['pus_id']);
         $obj_professor->setPus_id($usuarioId);
         
-        $resultado = $obj_daoprofessor->adicionaProfessor($conexao, $obj_professor);
+        try{
+            $resultado = $obj_daoprofessor->adicionaProfessor($conexao, $obj_professor);
+        } catch(Exception $e){
+            print_r($e);
+        }
         
         if($resultado){
             echo 'Sucesso';
