@@ -37,4 +37,10 @@
                     
                     return $professores;
                 }
+                
+                public function adicionaProfessor($conexao, Professor $professor){
+                    $query = "INSERT INTO professor (prf_nome, prf_pus_id, prf_habilitado, prf_pcr_id) VALUES ('{$professor->getNome()}', '{$professor->getPus_id()}', 1 , 3) ";
+                    return mysqli_query($conexao, $query);
+                    
+                }
 	}
