@@ -9,12 +9,12 @@
                     <div class="border-dotted"></div>
                         <form method="POST" id="form-add-professor">
                                 <label>Nome</label>
-                                <input type="text" name="nome" class="form-control">
+                                <input type="text" name="nome" class="form-control" required>
                                 <label>E-mail</label>
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="email" class="form-control" required>
                                 <div class="row">
                                         <div class="col-md-12 botaosalvar">
-                                                <button input type="submit" class="btn btn-default salvar" id="add-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</button>
+                                                <button input type="submit" class="btn btn-default salvar" id="add-professor"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</button>
                                         </div>
                                 </div>
                         </form>
