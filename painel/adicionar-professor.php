@@ -12,3 +12,5 @@
     
     $obj_professor->setNome($_POST['nome']);
     $obj_professor->setEmail($_POST['email']);
+    
+    $resultausu = $obj_daousuario->insereUsuario($conexao, $obj_professor->getEmail(), 2);
