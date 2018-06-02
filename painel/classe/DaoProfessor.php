@@ -43,4 +43,9 @@
                     return mysqli_query($conexao, $query);
                     
                 }
+                
+                public function desabilitarProfessor($conexao, $prf_id){
+                    $query = "UPDATE professor SET prf_habilitado = 0 WHERE prf_id = {$prf_id}";
+                    return mysqli_query($conexao,$query);
+                }
 	}
