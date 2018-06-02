@@ -33,7 +33,6 @@
 						<td><?= $prof['prf_nome'] ?></td>
 						<td>
                                                     <a href="desabilitar-professor.php?id=<?=$proj['prj_id']?>" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
-                                                    <a href="editar-professor-form.php?id=<?=$proj['prj_id']?>" title="Professor Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
 						</td>
 					</tr>
                                         <?php } ?>
