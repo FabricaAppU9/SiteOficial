@@ -32,7 +32,7 @@
 					<?php foreach($professores as $prof) { ?>
 						<td><?= $prof['prf_nome'] ?></td>
 						<td>
-                                                    <a href="desabilitar-professor.php?id=<?=$proj['prj_id']?>" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
+                                                    <a href="desabilitar-professor.php?id=<?=$prof['prf_id']?>" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
 						</td>
 					</tr>
                                         <?php } ?>
