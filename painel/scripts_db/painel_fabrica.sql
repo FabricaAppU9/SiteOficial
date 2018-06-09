@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 24-Mar-2018 às 15:03
--- Versão do servidor: 10.1.29-MariaDB
--- PHP Version: 7.2.0
+-- Generation Time: 09-Jun-2018 às 14:41
+-- Versão do servidor: 10.1.30-MariaDB
+-- PHP Version: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -94,6 +94,27 @@ INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
 (2, 'Design'),
 (3, 'Professor');
 
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `curso`
+--
+
+CREATE TABLE `curso` (
+  `id` int(11) NOT NULL,
+  `curso` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `curso`
+--
+
+INSERT INTO `curso` (`id`, `curso`) VALUES
+(1, 'Ciencias da Computacao'),
+(2, 'Tecnologia da Informacao');
+
+-- --------------------------------------------------------
 -- --------------------------------------------------------
 
 --
@@ -134,7 +155,7 @@ CREATE TABLE `depoimento_professor` (
 --
 
 INSERT INTO `depoimento_professor` (`pdp_id`, `pdp_texto`, `pdp_data_inclusao`, `pdp_data_update`, `pdp_prf_id`) VALUES
-(2, 'Testando depoimento do professor apÃ³s alteraÃ§Ã£o da tabela', '2017-09-30', '0000-00-00', 2);
+(2, 'Testando depoimento do professor alterado\r\n', '2017-09-30', '2018-05-25', 2);
 
 -- --------------------------------------------------------
 
@@ -173,7 +194,29 @@ INSERT INTO `menu` (`pme_id`, `pme_nome`, `pme_url`, `pme_ptu_id`, `pme_icone`) 
 (4, 'Minha Conta', 'minha-conta-professor.php', 2, 'fa fa-user'),
 (5, 'Depoimento', 'depoimento-professor.php', 2, 'fa fa-comment'),
 (6, 'Alunos', 'alunos.php', 2, 'fa fa-user'),
-(7, 'Projetos', 'projetos.php', 2, 'fa fa-code');
+(7, 'Projetos', 'projetos.php', 2, 'fa fa-code'),
+(8, 'Professores', 'professores.php', 2, 'fa fa-graduation-cap');
+
+-- --------------------------------------------------------
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `periodo`
+--
+
+CREATE TABLE `periodo` (
+  `ppe_id` int(11) NOT NULL,
+  `ppe_nome` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `periodo`
+--
+
+INSERT INTO `periodo` (`ppe_id`, `ppe_nome`) VALUES
+(1, 'Manha'),
+(2, 'Noite');
 
 -- --------------------------------------------------------
 
@@ -215,8 +258,17 @@ CREATE TABLE `projeto` (
   `prj_descricao` longtext COLLATE utf8_unicode_ci NOT NULL,
   `prj_data_inicio` date NOT NULL,
   `prj_data_fim` date NOT NULL,
-  `prj_tecnologias` longtext COLLATE utf8_unicode_ci NOT NULL
+  `prj_tecnologias` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `prj_habilitado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `projeto`
+--
+
+INSERT INTO `projeto` (`prj_id`, `prj_nome`, `prj_descricao`, `prj_data_inicio`, `prj_data_fim`, `prj_tecnologias`, `prj_habilitado`) VALUES
+(1, 'Site Oficial', 'Teste Site Oficial', '2015-04-30', '0000-00-00', 'PHP, Sublime Text', 1),
+(11, 'Cavidade', 'Odonto', '2018-02-24', '0000-00-00', 'Modelagem 3D', 0);
 
 -- --------------------------------------------------------
 
@@ -258,7 +310,9 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_foto`, `pus_habilitado`) VALUES
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
-(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1);
+(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1),
+(4, 'g@e.com', 'b6118b5c9b886f8a7736c1100949d034', 2, NULL, 1),
+(5, 'debora@e.com', 'b6118b5c9b886f8a7736c1100949d034', 2, NULL, 1);
 
 --
 -- Indexes for dumped tables
@@ -353,10 +407,22 @@ ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `professor`
+--
+ALTER TABLE `professor`
+  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `projeto`
 --
 ALTER TABLE `projeto`
-  MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
