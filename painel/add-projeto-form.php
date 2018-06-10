@@ -12,11 +12,11 @@
 							<label>Nome</label>
                                                         <input id="projeto_nome" type="text" name="nome" class="form-control">
 							<label>Descrição</label>
-							<input id="projeto_desc" type="text" name="descricao" class="form-control">
-							<label>Data de Inicio (aaaa-MM-dd)</label>
-                                                        <input id="projeto_inicio" type="text" name="dt_inicio" class="form-control">
-							<label>Data de término (aaaa-MM-dd)</label>
-                                                        <input id="projeto_fim" type="text" name="dt_termino" class="form-control">
+							<input type="text" name="descricao" class="form-control">
+							<label>Data de Inicio</label>
+							<input type="text" name="dt_inicio" class="form-control data">
+							<label>Data de término</label>
+							<input type="text" name="dt_termino" class="form-control data ">
 							<label>Tecnologias</label>
                                                         <input id="projeto_tec" type="text" name="tecnologias" class="form-control">
 							<div class="row">

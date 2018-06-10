@@ -2,7 +2,7 @@
 <script src="js/jquery.js"></script>
  <!-- Inclusão do Plugin jQuery Validation-->
 <script src="bootstrap/js/bootstrap.js"></script>
-<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+<script src="bootstrap/js/jquery.mask.min.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
 		// teste
@@ -215,6 +215,7 @@
 		    });
 	});
         
+
         //Validacao dos formulários
         $("#form-add-projeto").validate({
           rules: {
@@ -242,6 +243,23 @@
         }
      });
         
+        //Formato de datas na tela de projeto
+         $(".data").mask("00/00/0000");
+         
+         //Adicionar professores na tela professor
+	$("#add-professor").click(function(){
+		var dados = $("#form-add-professor").serialize();
+			$.ajax({
+		        url: 'adicionar-professor.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+                            window.location.href = 'professores.php';
+		        }
+		    });
+	});
+         
 </script>
 	</body>
 </html>
