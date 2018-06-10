@@ -24,4 +24,28 @@
 			//return $query;
 			//return $aluno->getFacebook();
 		}
+                
+                public function listaProfessores($conexao){
+                    $professores = array();
+                    
+                    $query = "SELECT * FROM professor WHERE prf_habilitado = 1";
+                    $resultado = mysqli_query($conexao, $query);
+                    
+                    while ($professor = mysqli_fetch_assoc($resultado)){
+                        array_push($professores, $professor);
+                    }
+                    
+                    return $professores;
+                }
+                
+                public function adicionaProfessor($conexao, Professor $professor){
+                    $query = "INSERT INTO professor (prf_nome, prf_pus_id, prf_habilitado, prf_pcr_id) VALUES ('{$professor->getNome()}', '{$professor->getPus_id()}', 1 , 3) ";
+                    return mysqli_query($conexao, $query);
+                    
+                }
+                
+                public function desabilitarProfessor($conexao, $prf_id){
+                    $query = "UPDATE professor SET prf_habilitado = 0 WHERE prf_id = {$prf_id}";
+                    return mysqli_query($conexao,$query);
+                }
 	}

@@ -216,7 +216,19 @@
         //Formato de datas na tela de projeto
          $(".data").mask("00/00/0000");
          
-         
+         //Adicionar professores na tela professor
+	$("#add-professor").click(function(){
+		var dados = $("#form-add-professor").serialize();
+			$.ajax({
+		        url: 'adicionar-professor.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+                            window.location.href = 'professores.php';
+		        }
+		    });
+	});
          
 </script>
 	</body>
