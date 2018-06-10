@@ -1,6 +1,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/jquery.mask.min.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
 		// teste
@@ -211,6 +212,12 @@
 		        },
 		    });
 	});
+        
+        //Formato de datas na tela de projeto
+         $(".data").mask("00/00/0000");
+         
+         
+         
 </script>
 	</body>
 </html>
