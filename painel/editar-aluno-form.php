@@ -6,7 +6,7 @@
     require_once("classe/DaoCampus.php");
    
 
-	$idAluno = $_GET['pus_id'];
+	$idAluno = $_GET['pal_id'];
 
 	$obj_alunos = new DaoAluno();
 	$linhaAluno = $obj_aluno->buscaAlunoPorUsuario($conexao, $idAluno);
@@ -17,9 +17,10 @@
 			<h1><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Editar Aluno</h1>
 			<div class="border-dotted"></div>
 			<!--<div class="edit-depoimento">-->
-						<form method="POST" id="form-edit-projeto">
-							<input type="hidden" name="id" value="<?=$idProjeto?>">
+						<form method="POST" id="form-edit-aluno">
+							<input type="hidden" name="id" value="<?=$idAluno?>">
 							
+							<label>Nome</label>
 							<input type="text" name=nome value="<?=utf8_encode($linhaAluno['pal_nome'])?>" class="form-control">
                             
 							<label>RA</label>
@@ -33,10 +34,16 @@
                            
 							<label>Cargo</label>
 							<input type="text" name="cargo" value="<?=utf8_encode($linhaAluno['pal_pcr_id'])?>" class="form-control">
-                           
+
+							<label>Cargo</label>
+							<input type="text" name="período" value="<?=utf8_encode($linhaAluno['pal_ppe_id'])?>" class="form-control">
+
+							<label>Semestre</label>
+							<input type="text" name="semestre" value="<?=utf8_encode($linhaAluno['pal_semestre'])?>" class="form-control">
+
 							<div class="row">
-								<div class="col-md-12 botaosalvar">
-									<td><a href="editar-aluno.php?pus_id=<?=$idAluno?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:red;" aria-hidden="true"></i></a></td>
+							<div class="col-md-12 botaosalvar">
+									<button input type="submit" class="btn btn-default salvar" id="salvar-edit-aluno"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
 								</div>
 							</div>
 						</form>
