@@ -53,7 +53,7 @@ CREATE TABLE `aluno` (
 --
 
 INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`, `pal_semestre`, `pal_ppe_id`, `pal_pcg_id`, `pal_foto`, `pal_pus_id`, `pal_facebook`, `pal_github`, `pal_linkedin`, `pal_habilitado`, `pal_data_ini`, `pal_data_update`, `pal_data_fim`) VALUES
-(1, 'Bianca Arantes', '2214202556', 1, 1, '5 Semestre', 2, NULL, '1494081667590de0831e61a_1.jpg', 1, 'https://www.facebook.com/bianca.luna.351756', 'https://github.com/BiancaArantes28', 'https://www.linkedin.com/in/bianca-arantes-dos-santos-919744121/', 1, '2016-05-12', '2017-05-27', NULL);
+(1, 'Bianca Arantes', '2214202556', 1, 1, '5 Semestre', 2, NULL, '1494081667590de0831e61a_1.jpg', 1, 'https://www.facebook.com/bianca.luna.351756', 'https://github.com/BiancaArantes28', 'https://www.linkedin.com/in/bianca-arantes-dos-santos-919744121/', 1, '2016-05-12', '2018-04-14', NULL);
 
 -- --------------------------------------------------------
 
@@ -90,7 +90,7 @@ CREATE TABLE `cargo` (
 --
 
 INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
-(1, 'Programadora'),
+(1, 'Programador'),
 (2, 'Design'),
 (3, 'Professor');
 
@@ -118,6 +118,25 @@ INSERT INTO `curso` (`id`, `curso`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `curso`
+--
+
+CREATE TABLE `curso` (
+  `id` int(11) NOT NULL,
+  `curso` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `curso`
+--
+
+INSERT INTO `curso` (`id`, `curso`) VALUES
+(1, 'Ciencias da Computacao'),
+(2, 'Tecnologia da Informacao');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `depoimento_aluno`
 --
 
@@ -134,7 +153,8 @@ CREATE TABLE `depoimento_aluno` (
 --
 
 INSERT INTO `depoimento_aluno` (`pda_id`, `pda_texto`, `pda_data_inicio`, `pda_data_update`, `pda_pal_id`) VALUES
-(5, 'Teste 2  dia 29 de setembro', '2017-09-27', '2017-09-29', 1);
+(5, 'Teste 2  dia 29 de setembro\r\n// Teste de Editor 07/04/2018 by: Lucas Pedro', '2017-09-27', '2018-04-07', 1),
+(6, 'Teste de Listagem de depoimentos 07/04/2018 by: Lucas Pedro', '2018-04-07', '2018-04-07', 0);
 
 -- --------------------------------------------------------
 
@@ -221,6 +241,25 @@ INSERT INTO `periodo` (`ppe_id`, `ppe_nome`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `periodo`
+--
+
+CREATE TABLE `periodo` (
+  `ppe_id` int(11) NOT NULL,
+  `ppe_nome` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Extraindo dados da tabela `periodo`
+--
+
+INSERT INTO `periodo` (`ppe_id`, `ppe_nome`) VALUES
+(1, 'Manha'),
+(2, 'Noite');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `professor`
 --
 
@@ -273,6 +312,7 @@ INSERT INTO `projeto` (`prj_id`, `prj_nome`, `prj_descricao`, `prj_data_inicio`,
 -- --------------------------------------------------------
 
 --
+
 -- Estrutura da tabela `tipo_usuario`
 --
 
@@ -310,9 +350,7 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_foto`, `pus_habilitado`) VALUES
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
-(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1),
-(4, 'g@e.com', 'b6118b5c9b886f8a7736c1100949d034', 2, NULL, 1),
-(5, 'debora@e.com', 'b6118b5c9b886f8a7736c1100949d034', 2, NULL, 1);
+(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1)
 
 --
 -- Indexes for dumped tables
@@ -335,6 +373,12 @@ ALTER TABLE `campus`
 --
 ALTER TABLE `cargo`
   ADD PRIMARY KEY (`pcr_id`);
+
+--
+-- Indexes for table `curso`
+--
+ALTER TABLE `curso`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `depoimento_aluno`
@@ -361,16 +405,16 @@ ALTER TABLE `menu`
   ADD PRIMARY KEY (`pme_id`);
 
 --
+-- Indexes for table `periodo`
+--
+ALTER TABLE `periodo`
+  ADD PRIMARY KEY (`ppe_id`);
+
+--
 -- Indexes for table `professor`
 --
 ALTER TABLE `professor`
   ADD PRIMARY KEY (`prf_id`);
-
---
--- Indexes for table `projeto`
---
-ALTER TABLE `projeto`
-  ADD PRIMARY KEY (`prj_id`);
 
 --
 -- Indexes for table `tipo_usuario`
@@ -392,7 +436,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `campus`
@@ -407,6 +451,7 @@ ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `professor`
 --
 ALTER TABLE `professor`
@@ -417,6 +462,37 @@ ALTER TABLE `professor`
 --
 ALTER TABLE `projeto`
   MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+-- AUTO_INCREMENT for table `depoimento_aluno`
+--
+ALTER TABLE `depoimento_aluno`
+  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `depoimento_professor`
+--
+ALTER TABLE `depoimento_professor`
+  MODIFY `pdp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `galeria`
+--
+ALTER TABLE `galeria`
+  MODIFY `pga_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `menu`
+--
+ALTER TABLE `menu`
+  MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+--
+-- AUTO_INCREMENT for table `tipo_usuario`
+--
+ALTER TABLE `tipo_usuario`
+  MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 
 --
 -- AUTO_INCREMENT for table `usuario`

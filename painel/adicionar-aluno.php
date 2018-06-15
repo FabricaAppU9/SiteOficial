@@ -5,30 +5,43 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/Login.php");
+    require_once("classe/Daocurso.php");
 
 	$obj_aluno = new Aluno();
 	$obj_daoaluno = new DaoAluno();
 	$obj_daousuario = new DaoUsuario();
+        $obj_daocurso = new DaoCurso();
+
 
 	$ra = $_POST['ra'];
-	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $ra, 1);
-
-	if($resulta_usu){
-		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao, $ra);
+    $obj_aluno->setEmail($_POST['email']);
+	$resulta_usu = $obj_daousuario->insereUsuario($conexao, $obj_aluno->getEmail(), 1);
+       
+      
+	   if($resulta_usu){
+		$usuario = $obj_daousuario->buscaUsuarioPorLogin($conexao,  $obj_aluno->getEmail());
 		$obj_aluno->setRa($_POST['ra']);
-		$nome = utf8_decode($_POST['nome']);
+            $nome = utf8_decode($_POST['nome']);
 		$obj_aluno->setNome($nome);
 		$obj_aluno->setPca_id($_POST['campus']);
 		$obj_aluno->setPcr_id($_POST['cargo']);
 		$obj_aluno->setPpe_id($_POST['periodo']);
 		$obj_aluno->setSemestre($_POST['semestre']);
-		$obj_aluno->setPus_id($usuario['pus_id']);
-		$obj_aluno->setPcs_id($_POST['curso']);
+                $usuarioId = (int)($usuario['pus_id']);
+		$obj_aluno->setPus_id($usuarioId);
+               
+		//$obj_aluno->setId($_POST['curso']);
+		//$obj_aluno->setPcs_id($_POST['curso']);
+        
 		$data = date('y/m/d');
+                
+                
+                
+		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
+                
+                
 
-		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno, $data);
-
-		if($resultado){
+                if($resultado){
 			echo "Sucesso!";
 		}else{
 			echo "Erro!";
@@ -37,9 +50,6 @@
 		echo "Usuário não adicionado!";
 	}
 
+        
 	die();
-	/*if($resultado){
-		echo "Sucesso!";
-	}else{
-		echo "Erro!";
-	}*/
+	
