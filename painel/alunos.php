@@ -6,20 +6,21 @@
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCurso.php");
     require_once("classe/DaoPeriodo.php");
-    requere_once("editar-aluno.php");
+   
     
     $obj_periodo = new DaoPeriodo();
 	$obj_campus = new DaoCampus();
 	$obj_cargo = new DaoCargo();
 	$obj_curso = new DaoCurso();
 	$obj_aluno = new DaoAluno();
-    $editar-aluno = new editar-aluno(); 
+     
 
 	$campus = $obj_campus->buscaCargos($conexao);
     $periodos = $obj_periodo->listaPeriodos($conexao);
 	$cargos = $obj_cargo->listaCargos($conexao);
 	$cursos = $obj_curso->listaCursos($conexao);
 	$alunos = $obj_aluno->listaAlunos($conexao);
+   
     
     
 ?>
@@ -66,7 +67,8 @@
 							<td><?=utf8_encode($aluno['pca_nome'])?></td>
 							<td><?=utf8_encode($aluno['curso'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-							<td><i class="fa fa-plus-circle" aria-hidden="true" id="modal-add-aluno"></i></td> <!-- criar ações para Editar e Excluir -->
+                            
+							<td><a href="editar-aluno-form.php?pus_id=<?=$aluno['pal_pus_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:red;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
                             
                             
                             

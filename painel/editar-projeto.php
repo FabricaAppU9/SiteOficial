@@ -17,8 +17,6 @@
 
 	$projeto = $obj_daoprojeto->alterarProjeto($conexao, $obj_projeto, $obj_projeto->getId());
 
-
-
 	//ar_dump($obj_projeto->getId());
 
 	if($projeto){

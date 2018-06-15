@@ -8,7 +8,7 @@
 	$obj_aluno    = new Aluno();
 	$obj_daoaluno = new DaoAluno();
 
-	$nome         = utf8_decode($_POST['nome']);
+	$nome = utf8_decode($_POST['nome']);
 	$obj_aluno->setNome($nome);
 	$obj_aluno->setPca_id($_POST['campus']);
 	$obj_aluno->setPcr_id($_POST['cargo']);
