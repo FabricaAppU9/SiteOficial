@@ -17,6 +17,17 @@
 			return $aluno;
 		}
 
+		public function buscaAlunoPorId($conexao, $pal_id){
+
+			$obj_aluno = new Aluno();
+		
+			$query     = "SELECT * FROM aluno WHERE pal_id = {$pal_id}";
+			$resultado = mysqli_query($conexao, $query);
+			$aluno = mysqli_fetch_assoc($resultado);
+
+			return $aluno;
+		}
+
 		public function listaAlunos($conexao){
 
 			$alunos    = array();

@@ -9,7 +9,7 @@
 	$idAluno = $_GET['pal_id'];
 
 	$obj_alunos = new DaoAluno();
-	$linhaAluno = $obj_aluno->buscaAlunoPorUsuario($conexao, $idAluno);
+	$linhaAluno = $obj_aluno->buscaAlunoPorId($conexao, $idAluno);
 ?>
 
 <section id="conteudo-depoimentos">
