@@ -23,11 +23,7 @@
 	$obj_aluno->setPpe_id($periodo);
 	$obj_aluno->setSemestre($semestre);
 
-	try{
-		$resultado = $obj_daoaluno->alterarAluno($conexao, $obj_aluno, $id);
-	} catch(Exception $e){
-		print_r($e);
-	}
+	$resultado = $obj_daoaluno->alterarAluno($conexao, $obj_aluno, $id);
 
 	if($resultado){
 		echo 'Sucesso';
