@@ -1,3 +1,4 @@
+
 <?php
 
         require_once("classe/conecta.php");
@@ -15,6 +16,4 @@
         
         header("Location: projetos.php");
         die();
-        
-        
         

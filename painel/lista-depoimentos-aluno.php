@@ -19,7 +19,7 @@
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
 	$depoimento  = $obj_depoimento->selecionarDepoimento($conexao, $_SESSION["id"]);
-	$lista_depoimento = $obj_aluno->listatodososdepoimentos($conexao);
+    $lista_depoimento = $obj_aluno->listatodososdepoimentos($conexao);
 ?>
 <section id="conteudo-depoimentos">
 		<div class="container">
@@ -45,15 +45,24 @@
 						<th>Depoimento</th>
 						<th>Data de criação</th>
 						<th>Data de atualização</th>
-						<th>Ação</th>
+                        <th>Ação</th>
 					</tr>
 					<?php foreach($lista_depoimento as $depoimento){?>
 						<tr>
 							<td><?=$depoimento['pal_nome']?></td>
-							<td><?=utf8_encode($depoimento['pda_texto'])?></td>
+                            <td><?=utf8_encode($depoimento['pda_texto'])?></td>
 							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
-							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
-							<td>>Excluir depoimento</td>
+                            
+                            
+                            <?php if ($depoimento['pda_data_update'] == "0000-00-00") { ?>
+    						<td>-</td>
+						<?php } else { ?>
+   							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
+						<?php } ?>       
+                            
+							<td>editar depoimento</td>
+                            
+                              
 						</tr>
 					<?php }?>
 				</table>
