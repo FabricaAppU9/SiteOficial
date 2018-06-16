@@ -451,17 +451,6 @@ ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
-<<<<<<< HEAD
--- AUTO_INCREMENT for table `professor`
---
-ALTER TABLE `professor`
-  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `projeto`
---
-ALTER TABLE `projeto`
-  MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
@@ -487,6 +476,11 @@ ALTER TABLE `menu`
   MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
+-- AUTO_INCREMENT for table `professor`
+--
+ALTER TABLE `professor`
+  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `tipo_usuario`
 --
@@ -494,10 +488,23 @@ ALTER TABLE `tipo_usuario`
   MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 
+-- AUTO_INCREMENT for table `professor`
+--
+ALTER TABLE `professor`
+  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `projeto`
+--
+ALTER TABLE `projeto`
+  MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
+
   MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 

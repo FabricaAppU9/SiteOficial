@@ -5,6 +5,11 @@
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="awe/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="awe/css/font-awesome.min.css">
+        <style>
+            label.error { 
+                color: red; 
+            }
+        </style>
 		<title>Tela de login</title>
 	</head>
 	<body>
@@ -21,7 +26,7 @@
 						<label class="sr-only" for="login">Login</label>
 					    <div class="input-group">
 					      <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-					      <input type="text" class="form-control" id="login" placeholder="Login" name="login">
+                                              <input type="email" class="form-control" id="login" placeholder="Login" name="login" required>
 					      
 					    </div>
 					</div>
@@ -31,7 +36,7 @@
 						<label class="sr-only" for="senha">Senha</label>
 					    <div class="input-group">
 					      <div class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></div>
-					      <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha">
+                                              <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
 					      
 					    </div>
 					</div>
@@ -46,6 +51,19 @@
 	</body>
 </html>
 <script src="js/jquery.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+<script>
+     $("#form-login").validate({
+          rules: {
+            login: {
+                required: true
+            }
+        },
+        messages: {
+            login : "Insira um email válido"
+        }
+     });
+</script>
 <script>
 	$("#entrar").click(function(){
 		$("#form-login").submit();

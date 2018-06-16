@@ -10,7 +10,7 @@
 			<!--<div class="edit-depoimento">-->
 						<form method="POST" id="form-add-projeto">
 							<label>Nome</label>
-							<input type="text" name="nome" class="form-control">
+                                                        <input id="projeto_nome" type="text" name="nome" class="form-control">
 							<label>Descrição</label>
 							<input type="text" name="descricao" class="form-control">
 							<label>Data de Inicio</label>
@@ -18,7 +18,7 @@
 							<label>Data de término</label>
 							<input type="text" name="dt_termino" class="form-control data ">
 							<label>Tecnologias</label>
-							<input type="text" name="tecnologias" class="form-control">
+                                                        <input id="projeto_tec" type="text" name="tecnologias" class="form-control">
 							<div class="row">
 								<div class="col-md-12 botaosalvar">
 									<button input type="submit" class="btn btn-default salvar" id="add-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</button>
