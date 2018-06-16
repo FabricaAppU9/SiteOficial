@@ -117,5 +117,11 @@
 			
 			return mysqli_query($conexao, $query);
 		}
+        
+        public function excluiAluno($conexao, $aluno_id){
+            
+			$query = "DELETE FROM aluno where pal_id = $aluno_id";
+            return mysqli_query($conexao, $query);
+	       }
 
 	}
