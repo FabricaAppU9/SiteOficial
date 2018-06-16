@@ -115,26 +115,6 @@ INSERT INTO `curso` (`id`, `curso`) VALUES
 (2, 'Tecnologia da Informacao');
 
 -- --------------------------------------------------------
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `curso`
---
-
-CREATE TABLE `curso` (
-  `id` int(11) NOT NULL,
-  `curso` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Extraindo dados da tabela `curso`
---
-
-INSERT INTO `curso` (`id`, `curso`) VALUES
-(1, 'Ciencias da Computacao'),
-(2, 'Tecnologia da Informacao');
-
--- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `depoimento_aluno`
@@ -241,25 +221,6 @@ INSERT INTO `periodo` (`ppe_id`, `ppe_nome`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `periodo`
---
-
-CREATE TABLE `periodo` (
-  `ppe_id` int(11) NOT NULL,
-  `ppe_nome` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Extraindo dados da tabela `periodo`
---
-
-INSERT INTO `periodo` (`ppe_id`, `ppe_nome`) VALUES
-(1, 'Manha'),
-(2, 'Noite');
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `professor`
 --
 
@@ -284,8 +245,6 @@ CREATE TABLE `professor` (
 
 INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `prf_pus_id`, `prf_facebook`, `prf_github`, `prf_linkedin`, `prf_data_ini`, `prf_data_update`, `prf_data_fim`, `prf_pcr_id`) VALUES
 (1, 'Joao teste', 1, '149528133859202ebabe5fb_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3);
-
--- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `projeto`
@@ -350,15 +309,22 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_foto`, `pus_habilitado`) VALUES
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
-(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1)
+(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1);
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `projeto`
+--
+ALTER TABLE `projeto`
+  ADD PRIMARY KEY (`prj_id`);
+
+--
 -- Indexes for table `aluno`
 --
+
 ALTER TABLE `aluno`
   ADD PRIMARY KEY (`pal_id`);
 
