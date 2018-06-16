@@ -8,7 +8,6 @@
 	$nome = $_POST['nome'];
 	$ra = $_POST['ra'];
 	$campus = $_POST['campus'];
-	$curso = $_POST['curso'];
 	$cargo = $_POST['cargo'];
 	$periodo = $_POST['período'];
 	$semestre = $_POST['semestre'];                      

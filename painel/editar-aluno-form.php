@@ -52,10 +52,6 @@
 									<?php $selected = '' ?>
 								<?php endforeach ?>
 							</select>
-                           
-							<label>Curso</label>
-							<input type="text" name="curso" value="<?=$linhaAluno['pal_ppe_id']?>" class="form-control">
-                           
 							<label>Cargo</label>
 							<select class="form-control" name="cargo">
 								<?php $selected = '' ?>
@@ -71,7 +67,7 @@
 							</select>
 
 							<label>Período</label>
-							<select class="form-control" name="periodo">
+							<select class="form-control" name="período">
 								<?php $selected = '' ?>
 								<?php foreach ($periodos as $periodo): ?>
 									<?php

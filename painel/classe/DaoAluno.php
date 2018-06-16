@@ -114,6 +114,7 @@
 
 		public function alterarAluno($conexao, Aluno $aluno, $id){
 			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_ra = '{$aluno->getRa()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_ppe_id = {$aluno->getPpe_id()}, pal_semestre = '{$aluno->getSemestre()}' WHERE pal_id = {$id}"; 
+			
 			return mysqli_query($conexao, $query);
 		}
 
