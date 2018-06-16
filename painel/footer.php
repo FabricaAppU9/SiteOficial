@@ -259,6 +259,20 @@
 		        }
 		    });
 	});
+
+	     //Adicionar alunos na tela professor
+		 $("#salvar-edit-aluno").click(function(){
+		var dados = $("#form-edit-aluno").serialize();
+			$.ajax({
+		        url: 'editar-aluno.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+                            window.location.href = 'alunos.php';
+		        }
+		    });
+	});
          
 </script>
 	</body>

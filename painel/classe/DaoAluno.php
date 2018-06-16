@@ -17,6 +17,17 @@
 			return $aluno;
 		}
 
+		public function buscaAlunoPorId($conexao, $pal_id){
+
+			$obj_aluno = new Aluno();
+		
+			$query     = "SELECT * FROM aluno WHERE pal_id = {$pal_id}";
+			$resultado = mysqli_query($conexao, $query);
+			$aluno = mysqli_fetch_assoc($resultado);
+
+			return $aluno;
+		}
+
 		public function listaAlunos($conexao){
 
 			$alunos    = array();
@@ -45,7 +56,7 @@
 
 			$alunos    = array();
 
-			$query     = "SELECT * FROM depoimento_aluno left join aluno on aluno.pal_id = depoimento_aluno.pda_pal_id";
+			$query     = "SELECT * FROM depoimento_aluno left join aluno on aluno.pal_pus_id = depoimento_aluno.pda_pal_id";
 			$resultado = mysqli_query($conexao, $query);
 
 			while($aluno = mysqli_fetch_assoc($resultado)){
@@ -99,6 +110,12 @@
                
 			return mysqli_query($conexao, $query);
 			#return $query;
+		}
+
+		public function alterarAluno($conexao, Aluno $aluno, $id){
+			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_ra = '{$aluno->getRa()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_ppe_id = {$aluno->getPpe_id()}, pal_semestre = '{$aluno->getSemestre()}' WHERE pal_id = {$id}"; 
+			
+			return mysqli_query($conexao, $query);
 		}
 
 	}

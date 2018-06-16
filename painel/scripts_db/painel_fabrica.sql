@@ -350,7 +350,7 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_foto`, `pus_habilitado`) VALUES
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
-(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1),
+(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1)
 
 --
 -- Indexes for dumped tables
@@ -451,6 +451,7 @@ ALTER TABLE `cargo`
   MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -485,6 +486,7 @@ ALTER TABLE `professor`
 --
 ALTER TABLE `tipo_usuario`
   MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 
 -- AUTO_INCREMENT for table `professor`
 --

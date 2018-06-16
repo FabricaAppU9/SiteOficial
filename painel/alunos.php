@@ -63,7 +63,9 @@
 							<td><?=utf8_encode($aluno['pca_nome'])?></td>
 							<td><?=utf8_encode($aluno['curso'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-							<td>Editar ou Excluir</td> <!-- criar ações para Editar e Excluir -->
+
+                            
+							<td><a href="editar-aluno-form.php?pal_id=<?=$aluno['pal_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:red;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
 						</tr>
 					<?php }?>
 					
@@ -118,7 +120,7 @@
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>Periodo</label>
-                                                <select name="periodo" class="form-control">
+						<select name="periodo" class="form-control">
 							<option value="">Selecione</option>
 							<?php foreach($periodos as $periodo){?>
 							<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($periodo['ppe_nome'])?></option>
@@ -133,7 +135,7 @@
 				<div class="row margin-top20">
 					<div class="col-md-6">
 						<label>RA</label>
-                                                <input type="text" name="ra" class="form-control" placeholder="RA">
+						<input type="text" name="ra" class="form-control" placeholder="RA">
 					</div>
 					<div class="col-md-6">
 						<label>Curso</label>
