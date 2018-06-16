@@ -57,10 +57,32 @@
 							<input type="text" name="curso" value="<?=$linhaAluno['pal_ppe_id']?>" class="form-control">
                            
 							<label>Cargo</label>
-							<input type="text" name="cargo" value="<?=utf8_encode($linhaAluno['pal_pcr_id'])?>" class="form-control">
+							<select class="form-control" name="cargo">
+								<?php $selected = '' ?>
+								<?php foreach ($cargos as $cargo): ?>
+									<?php
+										if ($linhaAluno['pal_pcr_id'] == $cargo['pcr_id']) {
+											$selected = 'selected';
+										}
+									?>
+									<option <?php echo $selected ?> value="<?php echo $cargo['pcr_id'] ?>"><?php echo $cargo['pcr_nome'] ?></option>
+									<?php $selected = '' ?>
+								<?php endforeach ?>
+							</select>
 
-							<label>Cargo</label>
-							<input type="text" name="período" value="<?=utf8_encode($linhaAluno['pal_ppe_id'])?>" class="form-control">
+							<label>Período</label>
+							<select class="form-control" name="periodo">
+								<?php $selected = '' ?>
+								<?php foreach ($periodos as $periodo): ?>
+									<?php
+										if ($linhaAluno['pal_ppe_id'] == $periodo['ppe_id']) {
+											$selected = 'selected';
+										}
+									?>
+									<option <?php echo $selected ?> value="<?php echo $periodo['ppe_id'] ?>"><?php echo $periodo['ppe_nome'] ?></option>
+									<?php $selected = '' ?>
+								<?php endforeach ?>
+							</select>
 
 							<label>Semestre</label>
 							<input type="text" name="semestre" value="<?=utf8_encode($linhaAluno['pal_semestre'])?>" class="form-control">
