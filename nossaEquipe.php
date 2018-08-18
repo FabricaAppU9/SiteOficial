@@ -12,8 +12,12 @@
 	require_once("painel/classe/Professor.php");
 	$obj_daoaluno =		new DaoAluno();
 	$obj_aluno =		new Aluno();
-	$obj_daoProfessor = new DaoProfessor();
+	$obj_daoprofessor = new DaoProfessor();
 	$obj_professor =	new Professor();
+
+	$professores = $obj_daoprofessor->listaProfessores($conexao);
+	
+
 ?>
 <section class="our-team" id="team">
 	<div class="container">
@@ -25,29 +29,30 @@
 		</div>
 		
 		<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s">
-
-			<div class="col-lg-3 col-sm-3">
-				<div class="team-member" style="margin-bottom:0px !important;">
+			
+			<?php
+				foreach($professores as $prof){?>
+					<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/user.jpg" alt="">
+						<img src="painel/imagens/alunos/<?=$prof['prf_foto']?>"  alt="">
 					</figure>
 					<div class="member-details">
-						<h5 class="dark-text yellow-border-bottom">Rosana Cordovil</h5>
+						<h5 class="dark-text green-border-bottom"><?=$prof['prf_nome']?></h5>
 						<div class="position">
-							<p>Professora agosto/2016 - Atual</p>
-							<p>Campus: Memorial</p>
+							<p>Programadora maio/2016 - Atual</p>
+							<p>Campus: Santo Amaro</p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/jsoft.souza?fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-carlos-silva-de-souza-67427b15?authType=name&authToken=Cdvi&trk=Skyline_click_NBM&sl=NBM%3B506464293%3A1474121162270%3B1%3B77916445%3B"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							 <li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
-							
+							<li><a target="_blank" href="https://www.facebook.com/bianca.luna.351756"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$prof['prf_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://github.com/BiancaArantes28"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
-				</div>
-			</div>
+				<?php }?>
+			?>
 			<div class="col-lg-3 col-sm-3">
 				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
