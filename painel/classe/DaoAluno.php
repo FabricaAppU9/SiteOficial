@@ -17,6 +17,17 @@
 			return $aluno;
 		}
 
+		public function buscaAlunoPorId($conexao, $pal_id){
+
+			$obj_aluno = new Aluno();
+		
+			$query     = "SELECT * FROM aluno WHERE pal_id = {$pal_id}";
+			$resultado = mysqli_query($conexao, $query);
+			$aluno = mysqli_fetch_assoc($resultado);
+
+			return $aluno;
+		}
+
 		public function listaAlunos($conexao){
 
 			$alunos    = array();
@@ -100,5 +111,17 @@
 			return mysqli_query($conexao, $query);
 			#return $query;
 		}
+
+		public function alterarAluno($conexao, Aluno $aluno, $id){
+			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_ra = '{$aluno->getRa()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_ppe_id = {$aluno->getPpe_id()}, pal_semestre = '{$aluno->getSemestre()}' WHERE pal_id = {$id}"; 
+			
+			return mysqli_query($conexao, $query);
+		}
+        
+        public function excluiAluno($conexao, $aluno_id){
+            
+			$query = "DELETE FROM aluno where pal_id = $aluno_id";
+            return mysqli_query($conexao, $query);
+	       }
 
 	}

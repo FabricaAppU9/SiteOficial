@@ -9,7 +9,7 @@
 		public function listaProjeto($conexao){
 			$projetos = array();
 
-			$query = "SELECT * FROM projeto";
+			$query = "SELECT * FROM projeto WHERE prj_habilitado = 1";
 			$resultado = mysqli_query($conexao, $query);
 
 			while($projeto = mysqli_fetch_assoc($resultado)){
@@ -20,8 +20,8 @@
 		}
 
 		public function inserirProjeto($conexao, Projeto $projeto){
-			$query = "INSERT INTO projeto(prj_nome, prj_descricao, prj_data_inicio, prj_data_fim, prj_tecnologias) VALUES ('{$projeto->getNome()}', '{$projeto->getDescricao()}',
-			'{$projeto->getDataInicio()}', '{$projeto->getDataFim()}', '{$projeto->getTecnologias()}')";
+			$query = "INSERT INTO projeto(prj_nome, prj_descricao, prj_data_inicio, prj_data_fim, prj_tecnologias, prj_habilitado) VALUES ('{$projeto->getNome()}', '{$projeto->getDescricao()}',
+			'{$projeto->getDataInicio()}', '{$projeto->getDataFim()}', '{$projeto->getTecnologias()}', 1)";
 			return mysqli_query($conexao,$query);
 		}
 
@@ -30,8 +30,9 @@
 			return mysqli_query($conexao,$query);
 		}
 
-		public function excluirProjeto(){
-			
+		public function desabilitarProjeto($conexao, $prj_id){
+			$query = "UPDATE projeto SET prj_habilitado = 0 WHERE prj_id = {$prj_id}";
+                        return mysqli_query($conexao,$query);
 		}
 		
 		public function buscaProjetoPorId($conexao, $id){

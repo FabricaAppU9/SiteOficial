@@ -7,7 +7,7 @@ body {
 header {
   width: 100%;
   height: 40px;
-  background-color: #00cc00;
+  background-color: #051246;
 }
 header nav .logo {
   padding: 5px 0px 0px 0px;
@@ -30,7 +30,7 @@ header nav .menu ul li a {
   cursor: pointer;
 }
 header nav .menu ul li .dropdown-menu {
-  background-color: #00cc00;
+  background-color: #051246;
 }
 header nav .menu ul li .dropdown-menu li {
   display: block;
@@ -42,7 +42,7 @@ header nav .menu ul li .dropdown-menu li a {
   cursor: pointer;
 }
 header nav .menu ul li .dropdown-menu li a:hover {
-  background-color: #00cc00;
+  background-color: #051246;
   text-decoration: none;
 }
 header nav .menu ul li .notificacoes-menu {
@@ -50,7 +50,7 @@ header nav .menu ul li .notificacoes-menu {
   width: 250px;
 }
 header nav .menu ul li .notificacoes-menu h4 {
-  color: #00cc00;
+  color: #051246;
 }
 header nav .menu ul li .notificacoes-menu ul {
   float: left;
@@ -70,7 +70,7 @@ header nav .menu ul li .notificacoes-menu ul li a:hover {
   background-color: #fff;
 }
 header nav .menu ul li .notificacoes-menu a {
-  color: #00cc00;
+  color: #051246;
   text-decoration: underline;
 }
 body {
@@ -101,7 +101,7 @@ body {
 #conteudo-minhaconta .img-perfil label {
   margin-left: 80px;
   margin-top: 15px;
-  color: #00cc00;
+  color: #051246;
 }
 #conteudo-minhaconta p {
   color: red;
@@ -133,12 +133,12 @@ body {
   display: none;
 }
 #conteudo-minhaconta .salvar {
-  background-color: #00cc00;
+  background-color: #051246;
   color: #fff;
   float: right;
 }
 #conteudo-minhaconta .salvar:hover {
-  background-color: #009900;
+  background-color: #020616;
   color: #fff;
 }
 #conteudo-alunos {
@@ -186,7 +186,7 @@ body {
   cursor: pointer;
 }
 .modal .modal-header a:hover {
-  color: #00cc00;
+  color: #051246;
 }
 .modal .modal-content {
   padding: 20px;
@@ -235,19 +235,19 @@ body {
   height: 400px !important;
 }
 #trocar-senha-modal #box-trocar-senha {
-  background-color: #00cc00;
+  background-color: #051246;
   color: #fff;
 }
 #trocar-senha-modal #box-trocar-senha:hover {
-  background-color: #009900;
+  background-color: #020616;
   color: #fff;
 }
 #trocar-senha-modal #box-trocar-senha-professor {
-  background-color: #00cc00;
+  background-color: #051246;
   color: #fff;
 }
 #trocar-senha-modal #box-trocar-senha-professor:hover {
-  background-color: #009900;
+  background-color: #020616;
   color: #fff;
 }
 #conteudo-depoimentos {
@@ -282,15 +282,11 @@ body {
   padding: 0px;
 }
 #conteudo-depoimentos .edit-depoimento .botaosalvar .salvar {
-  background-color: #00cc00;
+  background-color: #051246;
   color: #fff;
   float: right;
 }
 #conteudo-depoimentos .edit-depoimento .botaosalvar .salvar:hover {
-  background-color: #009900;
+  background-color: #020616;
   color: #fff;
 }
-/*#table_depoimento{
-  display: none;
-  margin-top: 10px;
-}*/

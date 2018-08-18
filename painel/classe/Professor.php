@@ -3,7 +3,8 @@
 class Professor{
 
 	private $nome;
-	private $habilitado;
+        private $email;
+        private $habilitado;
 	private $foto;
 	private $pus_id;
 	private $facebook;
@@ -17,8 +18,12 @@ class Professor{
 	public function setNome($nome){
 		$this->nome = $nome;
 	}
+        
+        public function  setEmail($email){
+            $this->email = $email;
+        }
 
-	public function setHabilitado($habilitado){
+        public function setHabilitado($habilitado){
 		$this->habilitado = $habilitado;
 	}
 
@@ -54,10 +59,14 @@ class Professor{
 		$this->data_fim = $data_fim;
 	}
 
-	//Setters
+	//Getters
 	public function getNome(){
-		return $this->nome;
+            return $this->nome;
 	}
+        
+        public function getEmail(){
+            return $this->email; 
+        }
 
 	public function getHabilitado(){
 		return $this->habilitado;

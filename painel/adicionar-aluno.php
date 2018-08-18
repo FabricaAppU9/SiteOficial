@@ -5,7 +5,7 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/Login.php");
-    require_once("classe/Daocurso.php");
+  require_once("classe/Daocurso.php");
 
 	$obj_aluno = new Aluno();
 	$obj_daoaluno = new DaoAluno();
@@ -35,17 +35,19 @@
         
 		$data = date('y/m/d');
                 
+                //Validacao
+                if($obj_aluno->getRa() == null || $obj_aluno->getNome() == null || $obj_aluno->getPca_id() == null || $obj_aluno->getPcr_id() == null || $obj_aluno->getPpe_id() == null || $obj_aluno->getSemestre() == null){
+                    echo "Dados incorretos";
+                }
+                else{
+                    $resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
                 
-                
-		$resultado = $obj_daoaluno->adicionaAluno($conexao, $obj_aluno);
-                
-                
-
-                if($resultado){
+                    if($resultado){
 			echo "Sucesso!";
-		}else{
+                    }else{
 			echo "Erro!";
-		}
+                    }
+                }
 	}else{
 		echo "Usuário não adicionado!";
 	}

@@ -33,8 +33,7 @@
 						<th>Ação</th>
 					</tr>
 					<tr>
-					<?php foreach($projetos as $proj) :
-					?>
+					<?php foreach($projetos as $proj) { ?>
 						<td><?= $proj['prj_nome'] ?></td>
 						<td><?=utf8_encode($proj['prj_descricao'])?></td>
 						<td><?=date('d/m/Y',  strtotime($proj['prj_data_inicio']))?></td>
@@ -46,11 +45,11 @@
 						<td><?= $proj['prj_tecnologias'] ?></td>
 
 						<td>
-							<a class="excluir-depoimento" title="Excluir Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
-							<a href="editar-projeto-form.php?id=<?=$proj['prj_id']?>" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
+                                                    <a href="desabilitar-projeto.php?id=<?=$proj['prj_id']?>" title="Desabilitar Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
+                                                    <a href="editar-projeto-form.php?id=<?=$proj['prj_id']?>" title="Editar Projeto"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a>
 						</td>
 					</tr>
-					<?php endforeach?>
+                                        <?php } ?>
 				</table>
 			</div>
 			<!--Add Projeto - Falta adicionar o botao-->

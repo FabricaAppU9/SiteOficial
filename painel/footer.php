@@ -1,6 +1,8 @@
 
 <script src="js/jquery.js"></script>
+ <!-- Inclusão do Plugin jQuery Validation-->
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/jquery.mask.min.js"></script>
 <script type="text/javascript">
 	$("#trocar-senha").click(function(){
 		// teste
@@ -212,6 +214,66 @@
 		        },
 		    });
 	});
+        
+
+        //Validacao dos formulários
+        $("#form-add-projeto").validate({
+          rules: {
+            projeto_nome: {
+                required: true
+            },
+            projeto_desc: {
+                required: true
+            },
+            projeto_inicio: {
+                required: true,
+            },
+            projeto_fim: {
+                date: true
+            },
+            projeto_tec: {
+                required: true
+            }
+        },
+        messages: {
+            projeto_nome : "Insira o nome do projeto",
+            projeto_desc: "Insira a descricao do projeto",
+            projeto_inicio: "Insira a data de inicio",
+            projeto_tec: "Insira as tecnologias utilizadas"
+        }
+     });
+        
+        //Formato de datas na tela de projeto
+         $(".data").mask("00/00/0000");
+         
+         //Adicionar professores na tela professor
+	$("#add-professor").click(function(){
+		var dados = $("#form-add-professor").serialize();
+			$.ajax({
+		        url: 'adicionar-professor.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+                            window.location.href = 'professores.php';
+		        }
+		    });
+	});
+
+	     //Adicionar alunos na tela professor
+		 $("#salvar-edit-aluno").click(function(){
+		var dados = $("#form-edit-aluno").serialize();
+			$.ajax({
+		        url: 'editar-aluno.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+                            window.location.href = 'alunos.php';
+		        }
+		    });
+	});
+         
 </script>
 	</body>
 </html>
