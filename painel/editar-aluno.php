@@ -10,7 +10,8 @@
 	$campus = $_POST['campus'];
 	$cargo = $_POST['cargo'];
 	$periodo = $_POST['período'];
-	$semestre = $_POST['semestre'];                      
+	$semestre = $_POST['semestre']; 
+    $erro = 0;
 
 	$obj_aluno    = new Aluno();
 	$obj_daoaluno = new DaoAluno();
@@ -23,11 +24,11 @@
 	$obj_aluno->setSemestre($semestre);
 
 	$resultado = $obj_daoaluno->alterarAluno($conexao, $obj_aluno, $id);
-
-	if($resultado){
-		echo 'Sucesso';
-	}
-	else{
-		echo 'Erro';
-	}
+    
+    
+        if($resultado){
+		   echo "<script>
+            alert('Usuario editado com sucesso!');
+                </script>";
+        }
 ?>
