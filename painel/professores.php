@@ -3,7 +3,7 @@
 	require_once("header.php");
 	require_once("classe/DaoProjeto.php");
         //Listar professores
-        $obj_professores = new DaoProfessor();
+    $obj_professores = new DaoProfessor();
 	$professores = $obj_professores->listaProfessores($conexao);
 
 	//var_dump($projetos);
@@ -16,7 +16,7 @@
 			
 			<div class="row">
 					<div class="col-md-12 botaosalvar">
-                                            <a href="add-professor-form.php" class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR PROFESSOR</a>
+                    	<a href="add-professor-form.php" class="btn btn-default salvar"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ADICIONAR PROFESSOR</a>
 					</div>
 				</div>
 			
