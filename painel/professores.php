@@ -1,12 +1,9 @@
 <?php 
-	// teste
 	require_once("header.php");
 	require_once("classe/DaoProjeto.php");
         //Listar professores
     $obj_professores = new DaoProfessor();
 	$professores = $obj_professores->listaProfessores($conexao);
-
-	//var_dump($projetos);
 	
 ?>
 <section id="conteudo-depoimentos">
@@ -32,10 +29,10 @@
 					<?php foreach($professores as $prof) { ?>
 						<td><?= $prof['prf_nome'] ?></td>
 						<td>
-                                                    <a href="desabilitar-professor.php?id=<?=$prof['prf_id']?>" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
+                            <a href="desabilitar-professor.php?id=<?=$prof['prf_id']?>" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
 						</td>
 					</tr>
-                                        <?php } ?>
+                    <?php } ?>
 				</table>
 			</div>
 		</div>
