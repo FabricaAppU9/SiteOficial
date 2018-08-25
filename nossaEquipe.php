@@ -30,12 +30,19 @@
 		</div>
 		
 		<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s">
-		<div class="col-lg-3 col-sm-3">
+		<?php
+					foreach($professores as $prof){?>
+            <div class="col-lg-3 col-sm-3">
 				<div class="team-member">
-					<?php
-					foreach($professores as $prof){?>	
+						
 					<figure class="profile-pic"> 
-						<img src="painel/imagens/alunos/<?=$prof['prf_foto']?>"alt="">
+						
+                            <?php if(!isset($prof['prf_foto'])) {?>
+                                <img src="painel/imagens/alunos/usuario.png"<?=$prof['prf_foto']?>"alt="">
+                            <?php } else{?> 
+                                <img src="painel/imagens/alunos/<?=$prof['prf_foto']?>"alt="">
+                            <?php } ?> 
+                            
 					</figure>
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom"><?=$prof['prf_nome']?></h5>
@@ -45,15 +52,16 @@
 					</div>
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
 						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$prof['prf_facebook']?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="<?=$prof['prf_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://github.com/DanielGTI"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$prof['prf_github']?>"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
-					<?php }?>
+					
 				</div>
 			</div>
+            <?php }?>
 			<div class="col-lg-3 col-sm-3">
 				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
