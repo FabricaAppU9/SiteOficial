@@ -63,28 +63,34 @@
 				</div>
 			</div>
             <?php }?>
+            <?php 
+            foreach($alunos as $aluno){?>
 			<div class="col-lg-3 col-sm-3">
 				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/alexandre.jpg" alt="">
+						<?php if(!isset($prof['prf_foto'])) {?>
+                                <img src="painel/imagens/alunos/usuario.png"<?=$aluno['pal_foto']?>"alt="">
+                            <?php } else{?> 
+                                <img src="painel/imagens/alunos/<?=$aluno['pal_foto']?>"alt="">
+                            <?php } ?> 
 					</figure>
 					<div class="member-details">
-						<h5 class="dark-text red-border-bottom">Alexandre Alves</h5>
+						<h5 class="dark-text red-border-bottom"><?=$aluno['pal_nome']?></h5>
 						<div class="position">
-							<p>Programador maio/2016 - Atual</p>
-							<p>Campus: Santo Amaro</p>
+							<p>Campus: <?=$aluno['pca_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100004935793311&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/alexandre-correa-alves-4aa5ab9b?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<!-- <li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
+							<li><a target="_blank" href="<?=$aluno['pal_facebook']?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$aluno['pal_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							 <li><a target="_blank" href="<?=$aluno['pal_github']?>"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div><!--div team fecha aqui-->
+		<?php }?>
 		</div> 
 	</div>
 </section>
