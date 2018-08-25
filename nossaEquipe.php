@@ -77,7 +77,7 @@
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom"><?=$aluno['pal_nome']?></h5>
 						<div class="position">
-							<p>Campus:<?=$aluno['pca_nome']?></p>
+							<p>Campus: <?=$aluno['pca_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons">
