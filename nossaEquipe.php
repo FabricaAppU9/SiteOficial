@@ -39,7 +39,7 @@
 					<figure class="profile-pic"> 
 						
                             <?php if(!isset($prof['prf_foto'])) {?>
-                                <img src="painel/imagens/alunos/usuario.png"<?=$prof['prf_foto']?>"alt="">
+                                <img src="painel/imagens/alunos/usuario.png" alt="">
                             <?php } else{?> 
                                 <img src="painel/imagens/alunos/<?=$prof['prf_foto']?>"alt="">
                             <?php } ?> 
@@ -68,8 +68,8 @@
 			<div class="col-lg-3 col-sm-3">
 				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
-						<?php if(!isset($prof['prf_foto'])) {?>
-                                <img src="painel/imagens/alunos/usuario.png"<?=$aluno['pal_foto']?>"alt="">
+						<?php if(!isset($aluno['pal_foto'])) {?>
+                                <img src="painel/imagens/alunos/usuario.png" alt="">
                             <?php } else{?> 
                                 <img src="painel/imagens/alunos/<?=$aluno['pal_foto']?>"alt="">
                             <?php } ?> 
