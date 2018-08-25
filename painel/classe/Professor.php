@@ -3,8 +3,8 @@
 class Professor{
 
 	private $nome;
-        private $email;
-        private $habilitado;
+    private $email;
+    private $habilitado;
 	private $foto;
 	private $pus_id;
 	private $facebook;
