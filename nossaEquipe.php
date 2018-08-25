@@ -77,7 +77,7 @@
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom"><?=$aluno['pal_nome']?></h5>
 						<div class="position">
-							<p>Campus: <?=$aluno['pca_nome']?></p>
+							<p>Campus:<?=$aluno['pca_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons">
@@ -85,11 +85,10 @@
 							<li><a target="_blank" href="<?=$aluno['pal_facebook']?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="<?=$aluno['pal_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							 <li><a target="_blank" href="<?=$aluno['pal_github']?>"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
 					</div>
 				</div>
-			</div><!--div team fecha aqui-->
+			</div>
 		<?php }?>
 		</div> 
 	</div>
