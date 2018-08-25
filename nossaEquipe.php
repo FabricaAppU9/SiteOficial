@@ -18,6 +18,7 @@
 	$obj_professor =	new Professor();
 
 	$professores = $obj_daoprofessor->listaProfessores($conexao);
+    $alunos = $obj_daoaluno->listaAlunos($conexao);
 ?>
 
 <section class="our-team" id="team">
