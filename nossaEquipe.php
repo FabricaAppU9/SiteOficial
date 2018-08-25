@@ -48,7 +48,7 @@
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom"><?=$prof['prf_nome']?></h5>
 						<div class="position">
-							<p>Professor agosto/2016 - Atual</p>
+							<p>Cargo: <?=$prof['pcr_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
