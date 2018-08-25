@@ -46,7 +46,7 @@
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
 						<ul>
 							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000048922241&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="<?=$prof['prf_linkedin']?>">"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$prof['prf_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li><a target="_blank" href="https://github.com/DanielGTI"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 							<!--<li><a href=""><i class="fa fa-skype"></i></a></li>-->
 						</ul>
