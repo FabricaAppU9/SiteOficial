@@ -8,6 +8,11 @@
 	$obj_depoimento    = new DepoimentoProfessor();
 	$obj_daodepoimento = new DaoDepoimentoProfessor();
 
-    $id = $_GET["id"];
-
     $depoimento = $obj_daodepoimento->excluirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
+
+    if($depoimento){
+        header("Location: professores.php");
+        die(); 
+	}else{
+		echo "Erro!";
+	}    
