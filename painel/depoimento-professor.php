@@ -19,6 +19,7 @@
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
 	$depoimento  = $obj_depoimento->selecionarDepoimento($conexao, $_SESSION["id"]);
+
 ?>
 <section id="conteudo-depoimentos">
 		<div class="container">
@@ -56,7 +57,14 @@
    							<td><?=date('d/m/Y',  strtotime($depoimento['pdp_data_update']))?></td>
 						<?php } ?>
 
-						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
+						<td>
+                            <a href="excluir-depoimento-professor.php?id=<?=$professor['prf_id']?>" class="excluir-depoimento" title="Excluir Depoimento">
+                                <i class='fa fa-times' style='color:red;' aria-hidden='true'></i>
+                            </a>&nbsp;&nbsp;
+                            <a class="editardepoimento" title="Editar Depoimento">
+                                <i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i>
+                            </a>
+                        </td>
 					</tr>
 				</table>
 			</div>
