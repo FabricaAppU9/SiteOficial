@@ -18,6 +18,7 @@
 	$obj_professor =	new Professor();
 
 	$professores = $obj_daoprofessor->listaProfessores($conexao);
+    $alunos = $obj_daoaluno->listaAlunos($conexao);
 ?>
 
 <section class="our-team" id="team">
@@ -38,7 +39,7 @@
 					<figure class="profile-pic"> 
 						
                             <?php if(!isset($prof['prf_foto'])) {?>
-                                <img src="painel/imagens/alunos/usuario.png"<?=$prof['prf_foto']?>"alt="">
+                                <img src="painel/imagens/alunos/usuario.png" alt="">
                             <?php } else{?> 
                                 <img src="painel/imagens/alunos/<?=$prof['prf_foto']?>"alt="">
                             <?php } ?> 
@@ -47,7 +48,7 @@
 					<div class="member-details">
 						<h5 class="dark-text red-border-bottom"><?=$prof['prf_nome']?></h5>
 						<div class="position">
-							<p>Professor agosto/2016 - Atual</p>
+							<p>Cargo: <?=$prof['pcr_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons" style="padding:0px !important;margin-top:0px !important;">
@@ -62,28 +63,33 @@
 				</div>
 			</div>
             <?php }?>
+            <?php 
+            foreach($alunos as $aluno){?>
 			<div class="col-lg-3 col-sm-3">
 				<div class="team-member" style="margin-bottom:0px !important;">
 					<figure class="profile-pic">
-						<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/alexandre.jpg" alt="">
+						<?php if(!isset($aluno['pal_foto'])) {?>
+                                <img src="painel/imagens/alunos/usuario.png" alt="">
+                            <?php } else{?> 
+                                <img src="painel/imagens/alunos/<?=$aluno['pal_foto']?>"alt="">
+                            <?php } ?> 
 					</figure>
 					<div class="member-details">
-						<h5 class="dark-text red-border-bottom">Alexandre Alves</h5>
+						<h5 class="dark-text red-border-bottom"><?=$aluno['pal_nome']?></h5>
 						<div class="position">
-							<p>Programador maio/2016 - Atual</p>
-							<p>Campus: Santo Amaro</p>
+							<p>Campus: <?=$aluno['pca_nome']?></p>
 						</div>
 					</div>
 					<div class="social-icons">
 						<ul>
-							<li><a target="_blank" href="https://www.facebook.com/profile.php?id=100004935793311&fref=ts"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-							<li><a target="_blank" href="https://www.linkedin.com/in/alexandre-correa-alves-4aa5ab9b?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<!-- <li><a target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a></li> -->
-							<!--<li><a target="_blank" href=""><i class="fa fa-skype"></i></a></li>-->
+							<li><a target="_blank" href="<?=$aluno['pal_facebook']?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="<?=$aluno['pal_linkedin']?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							 <li><a target="_blank" href="<?=$aluno['pal_github']?>"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
+		<?php }?>
 		</div> 
 	</div>
 </section>

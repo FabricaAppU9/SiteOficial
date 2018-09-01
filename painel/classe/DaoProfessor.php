@@ -28,7 +28,8 @@
                 public function listaProfessores($conexao){
                     $professores = array();
                     
-                    $query = "SELECT * FROM professor WHERE prf_habilitado = 1";
+                    $query = "SELECT * FROM professor INNER JOIN cargo 
+                    ON professor.prf_pcr_id = cargo.pcr_id WHERE prf_habilitado = 1";
                     $resultado = mysqli_query($conexao, $query);
                     
                     while ($professor = mysqli_fetch_assoc($resultado)){
