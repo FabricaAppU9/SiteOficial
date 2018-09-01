@@ -28,4 +28,10 @@
 			//return $query;
 			//return $aluno->getFacebook();
 		}
+        
+        //Excluir depoimento professor
+        public function excluirDepoimento($conexao, DepoimentoProfessor $depoimento, $prf_id){
+            $query = "DELETE FROM depoimento_professor WHERE pdp_prf_id = {$prf_id}";
+            return mysqli_query($conexao,$query);
+        }
 	}
