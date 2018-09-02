@@ -11,7 +11,7 @@
     $depoimento = $obj_daodepoimento->excluirDepoimento($conexao, $obj_depoimento, $_SESSION["id"]);
 
     if($depoimento){
-        header("Location: professores.php");
+        header("Location: depoimento-professor.php");
         die(); 
 	}else{
 		echo "Erro!";

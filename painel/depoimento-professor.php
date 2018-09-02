@@ -58,7 +58,7 @@
 						<?php } ?>
 
 						<td>
-                            <a href="excluir-depoimento-professor.php?id=<?=$professor['prf_id']?>" class="excluir-depoimento" title="Excluir Depoimento">
+                            <a href="excluir-depoimento-professor.php" class="excluir-depoimento" title="Excluir Depoimento">
                                 <i class='fa fa-times' style='color:red;' aria-hidden='true'></i>
                             </a>&nbsp;&nbsp;
                             <a class="editardepoimento" title="Editar Depoimento">
