@@ -152,6 +152,7 @@
 
 	});
 
+	//Editar depoimento aluno
 	$("#salvar-edit-depoimento").click(function(){
 		var dados = $("#form-edit-depoimento").serialize();
 			$.ajax({
@@ -160,6 +161,7 @@
 		        data: dados,
 		        success: function (data) {
 		            alert(data);
+					window.location.href = 'depoimento.php'
 		        },
 		    });
 	});
