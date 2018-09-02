@@ -99,8 +99,8 @@
 	});
 	//Fechar modal adicionar aluno:
 	$("body").on("click", "#fechar-modal-add-aluno", function(){
-		alert("teste");
-		$("#modal-aluno").css({"display" : "none"});
+		window.location.href = 'alunos.php'
+		
 	});
 	// Adicionar aluno:
 	$("#salvar-novo-aluno").click(function(){
