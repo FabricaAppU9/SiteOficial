@@ -94,7 +94,8 @@
 					</div>
 					<div class="col-md-6">
 						<label>Nome</label>
-                                                <input type="text" name="nome" class="form-control" placeholder="nome" required>
+                                                <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+
 					</div>
 				</div>
 				<div class="row margin-top20">

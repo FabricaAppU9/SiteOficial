@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 09-Jun-2018 às 14:41
--- Versão do servidor: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Generation Time: 18-Ago-2018 às 14:35
+-- Versão do servidor: 10.1.33-MariaDB
+-- PHP Version: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -53,7 +53,8 @@ CREATE TABLE `aluno` (
 --
 
 INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`, `pal_semestre`, `pal_ppe_id`, `pal_pcg_id`, `pal_foto`, `pal_pus_id`, `pal_facebook`, `pal_github`, `pal_linkedin`, `pal_habilitado`, `pal_data_ini`, `pal_data_update`, `pal_data_fim`) VALUES
-(1, 'Bianca Arantes', '2214202556', 1, 1, '5 Semestre', 2, NULL, '1494081667590de0831e61a_1.jpg', 1, 'https://www.facebook.com/bianca.luna.351756', 'https://github.com/BiancaArantes28', 'https://www.linkedin.com/in/bianca-arantes-dos-santos-919744121/', 1, '2016-05-12', '2018-04-14', NULL);
+(1, 'Bianca Arantes', '2214202556', 1, 1, '5 Semestre', 2, NULL, '1494081667590de0831e61a_1.jpg', 1, 'https://www.facebook.com/bianca.luna.351756', 'https://github.com/BiancaArantes28', 'https://www.linkedin.com/in/bianca-arantes-dos-santos-919744121/', 1, '2016-05-12', '2018-04-14', NULL),
+(4, 'Lucas Pedro', '2217102382', 1, 1, '4Âº Semestre', 2, NULL, NULL, 6, NULL, NULL, NULL, 1, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -72,7 +73,7 @@ CREATE TABLE `campus` (
 
 INSERT INTO `campus` (`pca_id`, `pca_nome`) VALUES
 (1, 'Santo Amaro'),
-(2, 'Memorial');
+(2, 'Vila Prudente');
 
 -- --------------------------------------------------------
 
@@ -91,9 +92,9 @@ CREATE TABLE `cargo` (
 
 INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
 (1, 'Programador'),
-(2, 'Design'),
-(3, 'Professor');
-
+(2, 'Designer'),
+(3, 'Professor'),
+(4, 'Lider');
 
 -- --------------------------------------------------------
 
@@ -111,8 +112,8 @@ CREATE TABLE `curso` (
 --
 
 INSERT INTO `curso` (`id`, `curso`) VALUES
-(1, 'Ciencias da Computacao'),
-(2, 'Tecnologia da Informacao');
+(1, 'Ciência da Computação'),
+(2, 'Tecnologia da Informação');
 
 -- --------------------------------------------------------
 
@@ -199,8 +200,6 @@ INSERT INTO `menu` (`pme_id`, `pme_nome`, `pme_url`, `pme_ptu_id`, `pme_icone`) 
 
 -- --------------------------------------------------------
 
--- --------------------------------------------------------
-
 --
 -- Estrutura da tabela `periodo`
 --
@@ -246,6 +245,8 @@ CREATE TABLE `professor` (
 INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `prf_pus_id`, `prf_facebook`, `prf_github`, `prf_linkedin`, `prf_data_ini`, `prf_data_update`, `prf_data_fim`, `prf_pcr_id`) VALUES
 (1, 'Joao teste', 1, '149528133859202ebabe5fb_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3);
 
+-- --------------------------------------------------------
+
 --
 -- Estrutura da tabela `projeto`
 --
@@ -271,7 +272,6 @@ INSERT INTO `projeto` (`prj_id`, `prj_nome`, `prj_descricao`, `prj_data_inicio`,
 -- --------------------------------------------------------
 
 --
-
 -- Estrutura da tabela `tipo_usuario`
 --
 
@@ -309,22 +309,16 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_foto`, `pus_habilitado`) VALUES
 (1, 'biancaarantes28@gmail.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 1, '', 1),
-(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1);
+(2, 'teste@professor.com', 'b44e1190aa21eca7ab280fb0d7bdf6a0', 2, NULL, 1),
+(6, 'lucas-pedrosilva@outlook.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `projeto`
---
-ALTER TABLE `projeto`
-  ADD PRIMARY KEY (`prj_id`);
-
---
 -- Indexes for table `aluno`
 --
-
 ALTER TABLE `aluno`
   ADD PRIMARY KEY (`pal_id`);
 
@@ -383,6 +377,12 @@ ALTER TABLE `professor`
   ADD PRIMARY KEY (`prf_id`);
 
 --
+-- Indexes for table `projeto`
+--
+ALTER TABLE `projeto`
+  ADD PRIMARY KEY (`prj_id`);
+
+--
 -- Indexes for table `tipo_usuario`
 --
 ALTER TABLE `tipo_usuario`
@@ -402,7 +402,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `campus`
@@ -414,10 +414,9 @@ ALTER TABLE `campus`
 -- AUTO_INCREMENT for table `cargo`
 --
 ALTER TABLE `cargo`
-  MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pcr_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
-
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
@@ -439,21 +438,9 @@ ALTER TABLE `galeria`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `pme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `professor`
---
-ALTER TABLE `professor`
-  MODIFY `prf_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `tipo_usuario`
---
-ALTER TABLE `tipo_usuario`
-  MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
-
 -- AUTO_INCREMENT for table `professor`
 --
 ALTER TABLE `professor`
@@ -465,13 +452,17 @@ ALTER TABLE `professor`
 ALTER TABLE `projeto`
   MODIFY `prj_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
+--
+-- AUTO_INCREMENT for table `tipo_usuario`
+--
+ALTER TABLE `tipo_usuario`
+  MODIFY `ptu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-
-  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

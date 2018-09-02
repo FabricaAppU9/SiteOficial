@@ -7,6 +7,7 @@
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCurso.php");
 	require_once("classe/DaoPeriodo.php");
+   
 	
 	$obj_periodo = new DaoPeriodo();
 	$obj_campus  = new DaoCampus();
@@ -23,6 +24,7 @@
 
 	$obj_alunos = new DaoAluno();
 	$linhaAluno = $obj_aluno->buscaAlunoPorId($conexao, $idAluno);
+    
 ?>
 
 <section id="conteudo-depoimentos">
@@ -86,6 +88,10 @@
 							<div class="row">
 							<div class="col-md-12 botaosalvar">
 									<button input type="submit" class="btn btn-default salvar" id="salvar-edit-aluno"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</button>
+                                <?php    
+                                    require_once("editar-aluno.php");            
+                                                                                   
+                                ?>
 								</div>
 							</div>
 						</form>
