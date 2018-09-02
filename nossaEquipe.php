@@ -75,7 +75,7 @@
                             <?php } ?> 
 					</figure>
 					<div class="member-details">
-						<h5 class="dark-text red-border-bottom"><?=$aluno['pal_nome']?></h5>
+						<h5 class="dark-text red-border-bottom"><?=utf8_encode($aluno['pal_nome'])?></h5>
 						<div class="position">
 							<p>Campus: <?=$aluno['pca_nome']?></p>
 						</div>
