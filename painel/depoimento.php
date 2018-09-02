@@ -59,8 +59,11 @@
    							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
 						<?php } ?>
 
-						<td><a class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'> <!-- erro na Exclusão de depoimentos -->
-                            </i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
+						<td>
+						<a href="excluir-depoimento-aluno.php" class="excluir-depoimento" title="Excluir Depoimento">
+							<i class='fa fa-times' style='color:red;' aria-hidden='true'> <!-- erro na Exclusão de depoimentos --></i></a>&nbsp;&nbsp;
+						<a class="editardepoimento" title="Editar Depoimento">
+							<i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
 					</tr>
 				</table>
 			</div>
