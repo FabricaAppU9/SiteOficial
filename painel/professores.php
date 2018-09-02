@@ -27,7 +27,7 @@
 					</tr>
 					<tr>
 					<?php foreach($professores as $prof) { ?>
-						<td><?= $prof['prf_nome'] ?></td>
+						<td><?= utf8_encode($prof['prf_nome']) ?></td>
 						<td>
                             <a href="desabilitar-professor.php" title="Desabilitar Professor"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
 						</td>

@@ -9,9 +9,14 @@
     $obj_professor =    new Professor();
     $obj_daoprofessor = new DaoProfessor();
     $obj_daousuario =   new DaoUsuario();
+
+    $nome = utf8_decode($_POST['nome']);
+    $email = utf8_decode($_POST['email']);
     
-    $obj_professor->setNome($_POST['nome']);
-    $obj_professor->setEmail($_POST['email']);
+
+    
+    $obj_professor->setNome($nome);
+    $obj_professor->setEmail($email);
     
     $resultausu = $obj_daousuario->insereUsuario($conexao, $obj_professor->getEmail(), 2);
     
