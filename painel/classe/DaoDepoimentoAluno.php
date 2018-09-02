@@ -29,8 +29,8 @@
 			return mysqli_query($conexao,$query);
 		}
 
-		public function excluirDepoimento($conexao, $pal_id){
-			$query = "DELETE FROM depoimento_aluno where pda_pal_id= {$pal_id}";
+		public function excluirDepoimento($conexao, DepoimentoAluno $depoimento, $pal_id){
+			$query = "DELETE FROM depoimento_aluno WHERE pda_pal_id= {$pal_id}";
 			return mysqli_query($conexao, $query);
 		} 
 	}
