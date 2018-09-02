@@ -33,7 +33,7 @@
 			$alunos    = array();
 
 
-			$query     = "SELECT * FROM aluno left join campus ON campus.pca_id = aluno.pal_pcr_id left join curso ON curso.id = aluno.pal_pcr_id left join cargo ON cargo.pcr_id = aluno.pal_pcr_id";
+			$query     = "SELECT * FROM aluno left join campus ON campus.pca_id = aluno.pal_pca_id left join curso ON curso.id = aluno.pal_pcr_id left join cargo ON cargo.pcr_id = aluno.pal_pcr_id";
 			$resultado = mysqli_query($conexao, $query);
             
             if($resultado == FALSE){
