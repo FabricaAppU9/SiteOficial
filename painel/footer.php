@@ -172,6 +172,7 @@
 		            data: dados,
 		            success: function (data) {
 		                alert(data);
+						window.location.href = 'depoimento-professor.php'
 		            },
 		        });
 	});
@@ -184,6 +185,7 @@
 		        data: dados,
 		        success: function (data) {
 		            alert(data);
+					window.location.href = 'depoimento-professor.php'
 		        },
 		    });
 	});
