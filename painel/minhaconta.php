@@ -5,17 +5,20 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCampus.php");
+	require_once("classe/DaoCurso.php");
 
 	$obj_usuario = new DaoUsuario();
 	$obj_aluno   = new DaoAluno();
 	$obj_cargo   = new DaoCargo();
 	$obj_campus  = new DaoCampus();
+	$obj_curso 	 = new DaoCurso();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	//$id_usuario  = (int)$_SESSION["id"];
 	$aluno       = $obj_aluno->buscaAlunoPorUsuario($conexao,$_SESSION["id"]);
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
+	$cursos 	 = $obj_curso->listaCursos($conexao);
 ?>
 <section id="conteudo-minhaconta">
 	<div id="teste"></div>
@@ -38,7 +41,7 @@
 						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
 						<input type="file" id="trocar-img" name="foto_perfil"><br>
 						<p id="arquivo-selecionado" style="color:green;">Nenhum arquivo selecionado!</p>
-						<input type="submit" id="sell-foto" class="btn btn-primary" value="Salvar">
+						<input type="submit" disabled="disabled" id="sell-foto" class="btn btn-primary" value="Salvar">
 					</div>
 					
 				</form>
@@ -88,6 +91,24 @@
 						    <p id="info_cargo"></p>
 						</div>
 					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							
+							<select name="curso" id="curso" class="form-control valida-form border_campus">
+								<option value="">Selecione o curso...</option>
+								<?php foreach($cursos as $curso){?>
+									<?php if($aluno['pal_pcu_id'] == $curso['pcu_id']){?>
+										<option value="<?=$curso['pcu_id']?>" selected="selected"><?=utf8_encode($curso['pcu_nome'])?></option>
+									<?php }else{?>
+									<option value="<?=$curso['pcu_id']?>"><?=utf8_encode($curso['pcu_nome'])?></option>
+									<?php }?>
+								<?php }?>
+							</select>
+						    <p id="info_curso"></p>
+						</div>
+					</div>
+
 					<div class="row">
 						<div class="col-md-12">
 							<input type="hidden" name="trocou-senha" id="trocou-senha" value="N">
