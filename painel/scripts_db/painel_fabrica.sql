@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Set-2018 às 03:24
+-- Generation Time: 07-Set-2018 às 03:43
 -- Versão do servidor: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -95,7 +95,7 @@ INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`,
 (42, 'Jonathan Paulo Souza', '2215111156', 1, 1, '1', 1, NULL, 1, NULL, 50, NULL, NULL, NULL, 1, NULL, NULL, NULL),
 (44, 'Luiz Aurélio Araújo Teixeira', '3017109303', 1, 1, '1', 1, NULL, 1, NULL, 52, NULL, NULL, NULL, 1, NULL, NULL, NULL),
 (45, 'Felipe Paes de Souza', '3017104726', 2, 1, '1', 1, NULL, 1, NULL, 53, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(46, 'Bianca Arantes Teste', '221411111', 1, 1, '8', 2, NULL, 9, '', 1, '', '', '', 1, NULL, '2018-09-05', NULL);
+(46, 'Bianca Arantes Teste', '221411111', 1, 1, '8', 2, NULL, 1, '', 1, '', '', '', 1, NULL, '2018-09-07', NULL);
 
 -- --------------------------------------------------------
 
@@ -275,7 +275,7 @@ CREATE TABLE `professor` (
 --
 
 INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `prf_pus_id`, `prf_facebook`, `prf_github`, `prf_linkedin`, `prf_data_ini`, `prf_data_update`, `prf_data_fim`, `prf_pcr_id`) VALUES
-(1, 'Joao teste', 1, '15362798995b91c55b1f4f6_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3),
+(1, 'Joao teste', 1, '15362845415b91d77d9a75e_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3),
 (2, 'Huoston Rodrigues Batista ', 1, NULL, 6, NULL, NULL, NULL, NULL, NULL, NULL, 3),
 (3, 'João Carlos da Silva Souza', 1, NULL, 7, NULL, NULL, NULL, NULL, NULL, NULL, 3),
 (4, 'Antônio Andrade dos Santos', 1, NULL, 8, NULL, NULL, NULL, NULL, NULL, NULL, 3),
