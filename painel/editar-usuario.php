@@ -12,6 +12,7 @@
 	$obj_aluno->setNome($nome);
 	$obj_aluno->setPca_id($_POST['campus']);
 	$obj_aluno->setPcr_id($_POST['cargo']);
+	$obj_aluno->setPcu_id($_POST['curso']);
 	$obj_aluno->setFacebook($_POST['facebook_aluno']);
 	$obj_aluno->setGithub($_POST['github']);
 	$obj_aluno->setLinkedin($_POST['linkedin']);
