@@ -61,7 +61,21 @@
 											$selected = 'selected';
 										}
 									?>
-									<option <?php echo $selected ?> value="<?php echo $cargo['pcr_id'] ?>"><?php echo $cargo['pcr_nome'] ?></option>
+									<option <?php echo $selected ?> value="<?php echo $cargo['pcr_id'] ?>"><?php echo utf8_encode($cargo['pcr_nome']) ?></option>
+									<?php $selected = '' ?>
+								<?php endforeach ?>
+							</select>
+
+							<label>Curso</label>
+							<select class="form-control" name="curso">
+								<?php $selected = '' ?>
+								<?php foreach ($cursos as $curso): ?>
+									<?php
+										if ($linhaAluno['pal_pcu_id'] == $curso['pcu_id']) {
+											$selected = 'selected';
+										}
+									?>
+									<option <?php echo $selected ?> value="<?php echo $curso['pcu_id'] ?>"><?php echo utf8_encode($curso['pcu_nome']) ?></option>
 									<?php $selected = '' ?>
 								<?php endforeach ?>
 							</select>

@@ -61,7 +61,7 @@
 							<td><?=$aluno['pal_ra']?></td>
 							<td><?=utf8_encode($aluno['pal_nome'])?></td>
 							<td><?=utf8_encode($aluno['pca_nome'])?></td>
-							<td><?=utf8_encode($aluno['curso'])?></td>
+							<td><?=utf8_encode($aluno['pcu_nome'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
                             <td>
                            <a href="excluir.php?id=<?=$aluno['pal_id']?>" title="Excluir"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
@@ -142,7 +142,7 @@
                                                 <select name="curso" class="form-control">
 							<option value="">Selecione</option>
 							<?php foreach($cursos as $curso){?>
-							<option value="<?=$curso['id']?>"><?=utf8_encode($curso['curso'])?></option>
+							<option value="<?=$curso['pcu_id']?>"><?=utf8_encode($curso['pcu_nome'])?></option>
 							<?php }?>
 						</select>
 					</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Set-2018 às 23:02
+-- Generation Time: 07-Set-2018 às 03:43
 -- Versão do servidor: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -37,6 +37,7 @@ CREATE TABLE `aluno` (
   `pal_semestre` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pal_ppe_id` int(11) NOT NULL,
   `pal_pcg_id` int(11) DEFAULT NULL,
+  `pal_pcu_id` int(11) NOT NULL,
   `pal_foto` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `pal_pus_id` int(11) NOT NULL,
   `pal_facebook` longtext COLLATE utf8mb4_unicode_ci,
@@ -52,48 +53,49 @@ CREATE TABLE `aluno` (
 -- Extraindo dados da tabela `aluno`
 --
 
-INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`, `pal_semestre`, `pal_ppe_id`, `pal_pcg_id`, `pal_foto`, `pal_pus_id`, `pal_facebook`, `pal_github`, `pal_linkedin`, `pal_habilitado`, `pal_data_ini`, `pal_data_update`, `pal_data_fim`) VALUES
-(4, 'Alexandre Pirolo', '3015106933', 1, 2, '6', 1, NULL, NULL, 12, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(5, 'Arlete Siqueira de Souza', '416101640', 1, 2, '6', 1, NULL, NULL, 13, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(6, 'Alexandre Correia Alves', '2318200853', 1, 1, '1', 1, NULL, NULL, 14, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(7, 'Claudio Diniz Antuned', '3017101805', 1, 2, '4', 1, NULL, NULL, 15, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(8, 'Daniel Lucas Gomes da Silva', '3015203069', 1, 2, '6', 1, NULL, NULL, 16, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(9, 'Davi Queiroz Sobrinho', '416106657', 1, 2, '6', 1, NULL, NULL, 17, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(10, 'Everton de Oliveira', '2515201261', 1, 2, '7', 1, NULL, NULL, 18, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(11, 'Felipe Rodrigues de Mello', '916204478', 1, 2, '5', 1, NULL, NULL, 19, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(12, 'Gabriel Dorneles Pereira da Silva', '2216111920', 1, 1, '1', 1, NULL, NULL, 20, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(13, 'Mayara Rodrigues Souza', '2217112579', 1, 1, '4', 2, NULL, '15358111785b8a9e6a816c4_21.jpg', 21, '', 'https://github.com/maahrodrigues', 'https://www.linkedin.com/in/mayara-rodrigues-92701295/', 1, NULL, '2018-09-01', NULL),
-(14, 'George Alan Rufo', '3017101422', 1, 2, '4', 1, NULL, NULL, 22, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(15, 'Guilherme Barbosa Alves', '3018106587', 1, 2, '2', 1, NULL, NULL, 23, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(16, 'Gean Carlos Araújo da Silva', '2216108098', 1, 1, '1', 1, NULL, NULL, 24, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(17, 'Guilherme Silva de Andrade', '917121532', 1, 2, '4', 1, NULL, NULL, 25, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(18, 'Guilherme Sant Ana Fujita', '415108696', 1, 1, '8 ', 2, NULL, NULL, 26, '', '', '', 1, NULL, '2018-09-02', NULL),
-(19, 'Jeison Junqueira Rodrigues', '3015104162', 1, 2, '8', 1, NULL, NULL, 27, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(20, 'Jônatas Ferreira Lino', '3016105214', 1, 2, '6', 1, NULL, NULL, 28, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(21, 'Janailson Rocha de sousa', '2213207111', 1, 1, '1', 1, NULL, NULL, 29, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(22, 'Júlio Marques Correa Dias', '2215113593', 1, 1, '1', 1, NULL, NULL, 30, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(23, 'Kelvin Pudimaits Silva', '2215202196', 1, 1, '1', 1, NULL, NULL, 31, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(24, 'Kimberly Costa Almeida', '916207219', 1, 2, '5', 1, NULL, NULL, 32, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(25, 'Luana Dias Lacerda', '2218104089', 1, 1, '1', 1, NULL, NULL, 33, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(26, 'Luiz Henrique de Oliveira Souza', '917105116', 1, 2, '4', 1, NULL, NULL, 34, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(27, 'Marcos Masahiro Santana Otake', '2215204085', 1, 1, '1', 1, NULL, NULL, 35, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(28, 'Mateus Guedes da Conceição', '2215202730', 1, 1, '1', 1, NULL, NULL, 36, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(29, 'Matheus Melo de Souza', '2215108065', 1, 1, '1', 1, NULL, NULL, 37, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(30, 'Noemi Ferreira Silva', '416106899', 1, 2, '6', 1, NULL, NULL, 38, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(31, 'Rafael da Silva Marinho', '3017109579', 1, 2, '4', 1, NULL, NULL, 39, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(32, 'Lucas Pedro da Silva', '2217102382', 1, 1, '1', 1, NULL, NULL, 40, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(33, 'Renato Rebouças da Silva', '2217202677', 1, 1, '1', 1, NULL, NULL, 41, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(34, 'Samuel Ribeiro', '916121273', 1, 2, '6', 1, NULL, NULL, 42, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(35, 'Sidney Rodrigues Novais', '3016103917', 1, 2, '6', 1, NULL, NULL, 43, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(36, 'Tatiani Silva', '3016200637', 1, 2, '5', 1, NULL, NULL, 44, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(37, 'Victor Augusto de Andrade Teixeira Monfardini', '916206890', 1, 2, '5', 1, NULL, NULL, 45, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(38, 'Rodolfo dos Santos Pinto', '2215108468', 1, 1, '1', 1, NULL, NULL, 46, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(39, 'VinÃ­cius Komninakis', '3017108746', 1, 2, '4', 1, NULL, NULL, 47, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(40, 'William Xavier Pereira', '3017109462', 1, 2, '4', 1, NULL, NULL, 48, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(41, 'Vinícius França', '2215114668', 1, 1, '1', 1, NULL, NULL, 49, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(42, 'Jonathan Paulo Souza', '2215111156', 1, 1, '1', 1, NULL, NULL, 50, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(44, 'Luiz Aurélio Araújo Teixeira', '3017109303', 1, 1, '1', 1, NULL, NULL, 52, NULL, NULL, NULL, 1, NULL, NULL, NULL),
-(45, 'Felipe Paes de Souza', '3017104726', 2, 1, '1', 1, NULL, NULL, 53, NULL, NULL, NULL, 1, NULL, NULL, NULL);
+INSERT INTO `aluno` (`pal_id`, `pal_nome`, `pal_ra`, `pal_pcr_id`, `pal_pca_id`, `pal_semestre`, `pal_ppe_id`, `pal_pcg_id`, `pal_pcu_id`, `pal_foto`, `pal_pus_id`, `pal_facebook`, `pal_github`, `pal_linkedin`, `pal_habilitado`, `pal_data_ini`, `pal_data_update`, `pal_data_fim`) VALUES
+(4, 'Alexandre Pirolo', '3015106933', 1, 2, '6', 1, NULL, 2, NULL, 12, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(5, 'Arlete Siqueira de Souza', '416101640', 1, 2, '6', 1, NULL, 1, NULL, 13, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(6, 'Alexandre Correia Alves', '2318200853', 1, 1, '1', 1, NULL, 1, NULL, 14, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(7, 'Claudio Diniz Antuned', '3017101805', 1, 2, '4', 1, NULL, 1, NULL, 15, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(8, 'Daniel Lucas Gomes da Silva', '3015203069', 1, 2, '6', 1, NULL, 1, NULL, 16, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(9, 'Davi Queiroz Sobrinho', '416106657', 1, 2, '6', 1, NULL, 1, NULL, 17, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(10, 'Everton de Oliveira', '2515201261', 1, 2, '7', 1, NULL, 1, NULL, 18, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(11, 'Felipe Rodrigues de Mello', '916204478', 1, 2, '5', 1, NULL, 1, NULL, 19, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(12, 'Gabriel Dorneles Pereira da Silva', '2216111920', 1, 1, '1', 1, NULL, 1, NULL, 20, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(13, 'Mayara Rodrigues Souza', '2217112579', 1, 1, '4', 2, NULL, 1, '15358111785b8a9e6a816c4_21.jpg', 21, '', 'https://github.com/maahrodrigues', 'https://www.linkedin.com/in/mayara-rodrigues-92701295/', 1, NULL, '2018-09-01', NULL),
+(14, 'George Alan Rufo', '3017101422', 1, 2, '4', 1, NULL, 1, NULL, 22, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(15, 'Guilherme Barbosa Alves', '3018106587', 1, 2, '2', 1, NULL, 1, NULL, 23, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(16, 'Gean Carlos Araújo da Silva', '2216108098', 1, 1, '1', 1, NULL, 1, NULL, 24, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(17, 'Guilherme Silva de Andrade', '917121532', 1, 2, '4', 1, NULL, 1, NULL, 25, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(18, 'Guilherme Sant Ana Fujita', '415108696', 1, 1, '8 ', 2, NULL, 1, NULL, 26, '', '', '', 1, NULL, '2018-09-02', NULL),
+(19, 'Jeison Junqueira Rodrigues', '3015104162', 1, 2, '8', 1, NULL, 1, NULL, 27, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(20, 'Jônatas Ferreira Lino', '3016105214', 1, 2, '6', 1, NULL, 1, NULL, 28, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(21, 'Janailson Rocha de sousa', '2213207111', 1, 1, '1', 1, NULL, 1, NULL, 29, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(22, 'Júlio Marques Correa Dias', '2215113593', 1, 1, '1', 1, NULL, 1, NULL, 30, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(23, 'Kelvin Pudimaits Silva', '2215202196', 1, 1, '1', 1, NULL, 1, NULL, 31, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(24, 'Kimberly Costa Almeida', '916207219', 1, 2, '5', 1, NULL, 1, NULL, 32, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(25, 'Luana Dias Lacerda', '2218104089', 1, 1, '1', 1, NULL, 1, NULL, 33, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(26, 'Luiz Henrique de Oliveira Souza', '917105116', 1, 2, '4', 1, NULL, 1, NULL, 34, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(27, 'Marcos Masahiro Santana Otake', '2215204085', 1, 1, '1', 1, NULL, 1, NULL, 35, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(28, 'Mateus Guedes da Conceição', '2215202730', 1, 1, '1', 1, NULL, 1, NULL, 36, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(29, 'Matheus Melo de Souza', '2215108065', 1, 1, '1', 1, NULL, 1, NULL, 37, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(30, 'Noemi Ferreira Silva', '416106899', 1, 2, '6', 1, NULL, 1, NULL, 38, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(31, 'Rafael da Silva Marinho', '3017109579', 1, 2, '4', 1, NULL, 1, NULL, 39, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(32, 'Lucas Pedro da Silva', '2217102382', 1, 1, '1', 1, NULL, 1, NULL, 40, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(33, 'Renato Rebouças da Silva', '2217202677', 1, 1, '1', 1, NULL, 1, NULL, 41, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(34, 'Samuel Ribeiro', '916121273', 1, 2, '6', 1, NULL, 1, NULL, 42, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(35, 'Sidney Rodrigues Novais', '3016103917', 1, 2, '6', 1, NULL, 1, NULL, 43, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(36, 'Tatiani Silva', '3016200637', 1, 2, '5', 1, NULL, 1, NULL, 44, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(37, 'Victor Augusto de Andrade Teixeira Monfardini', '916206890', 1, 2, '5', 1, NULL, 1, NULL, 45, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(38, 'Rodolfo dos Santos Pinto', '2215108468', 1, 1, '1', 1, NULL, 1, NULL, 46, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(39, 'Viní­cius Komninakis', '3017108746', 1, 2, '4', 1, NULL, 1, NULL, 47, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(40, 'William Xavier Pereira', '3017109462', 1, 2, '4', 1, NULL, 1, NULL, 48, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(41, 'Vinícius França', '2215114668', 1, 1, '1', 1, NULL, 1, NULL, 49, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(42, 'Jonathan Paulo Souza', '2215111156', 1, 1, '1', 1, NULL, 1, NULL, 50, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(44, 'Luiz Aurélio Araújo Teixeira', '3017109303', 1, 1, '1', 1, NULL, 1, NULL, 52, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(45, 'Felipe Paes de Souza', '3017104726', 2, 1, '1', 1, NULL, 1, NULL, 53, NULL, NULL, NULL, 1, NULL, NULL, NULL),
+(46, 'Bianca Arantes Teste', '221411111', 1, 1, '8', 2, NULL, 1, '', 1, '', '', '', 1, NULL, '2018-09-07', NULL);
 
 -- --------------------------------------------------------
 
@@ -142,15 +144,15 @@ INSERT INTO `cargo` (`pcr_id`, `pcr_nome`) VALUES
 --
 
 CREATE TABLE `curso` (
-  `id` int(11) NOT NULL,
-  `curso` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+  `pcu_id` int(11) NOT NULL,
+  `pcu_nome` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `curso`
 --
 
-INSERT INTO `curso` (`id`, `curso`) VALUES
+INSERT INTO `curso` (`pcu_id`, `pcu_nome`) VALUES
 (1, 'Ciência da Computação'),
 (2, 'Sistemas de Informação'),
 (3, 'Tecnologia em Análise e Desenvolvimento de Sistemas'),
@@ -273,7 +275,7 @@ CREATE TABLE `professor` (
 --
 
 INSERT INTO `professor` (`prf_id`, `prf_nome`, `prf_habilitado`, `prf_foto`, `prf_pus_id`, `prf_facebook`, `prf_github`, `prf_linkedin`, `prf_data_ini`, `prf_data_update`, `prf_data_fim`, `prf_pcr_id`) VALUES
-(1, 'Joao teste', 1, '149528133859202ebabe5fb_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3),
+(1, 'Joao teste', 1, '15362845415b91d77d9a75e_2.png', 2, 'teste', 'teste', 'teste', NULL, '2017-06-09', NULL, 3),
 (2, 'Huoston Rodrigues Batista ', 1, NULL, 6, NULL, NULL, NULL, NULL, NULL, NULL, 3),
 (3, 'João Carlos da Silva Souza', 1, NULL, 7, NULL, NULL, NULL, NULL, NULL, NULL, 3),
 (4, 'Antônio Andrade dos Santos', 1, NULL, 8, NULL, NULL, NULL, NULL, NULL, NULL, 3),
@@ -385,7 +387,8 @@ INSERT INTO `usuario` (`pus_id`, `pus_login`, `pus_senha`, `pus_ptu_id`, `pus_fo
 (50, 'jonathan.paulo.souza@gmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1),
 (51, 'jonathan.paulo.souza@gmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1),
 (52, 'luisaurelio40@gmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1),
-(53, 'felipe.souza-97@hotmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1);
+(53, 'felipe.souza-97@hotmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1),
+(54, 'biancaarantes28@gmail.com', 'b6118b5c9b886f8a7736c1100949d034', 1, NULL, 1);
 
 --
 -- Indexes for dumped tables
@@ -413,7 +416,7 @@ ALTER TABLE `cargo`
 -- Indexes for table `curso`
 --
 ALTER TABLE `curso`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`pcu_id`);
 
 --
 -- Indexes for table `depoimento_aluno`
@@ -477,7 +480,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `pal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `campus`
@@ -495,13 +498,13 @@ ALTER TABLE `cargo`
 -- AUTO_INCREMENT for table `curso`
 --
 ALTER TABLE `curso`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `pcu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `depoimento_aluno`
 --
 ALTER TABLE `depoimento_aluno`
-  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `pda_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `depoimento_professor`
@@ -543,7 +546,7 @@ ALTER TABLE `tipo_usuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `pus_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

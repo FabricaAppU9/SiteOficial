@@ -34,7 +34,7 @@
 						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
 						<input type="file" id="trocar-img" name="foto_perfil"><br>
 						<p id="arquivo-selecionado" style="color:green;">Nenhum arquivo selecionado!</p>
-						<input type="submit" id="sell-foto" class="btn btn-primary" value="Salvar">
+						<input type="submit" disabled="disabled" id="sell-foto" class="btn btn-primary" value="Salvar">
 					</div>
 					
 				</form>
