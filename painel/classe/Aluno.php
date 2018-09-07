@@ -8,7 +8,7 @@
 		private $pca_id; // campus do aluno na fábrica. Chave estrangeira da tabela campus.
 		private $semestre;
 		private $ppe_id; // período do aluno. Chave estrangeira da tabela período. CHAVE ppe_id = id.
-		private $id; // curso do aluno. Chave estrangeira da tabela curso.
+		private $pcu_id; // curso do aluno. Chave estrangeira da tabela curso.
 		private $foto;
 		private $pus_id;
 		private $facebook;
@@ -80,8 +80,8 @@
 			$this->habilitado = $habilitado;
 		}
 
-		public function setId($id){
-			$this->id = $id;
+		public function setPcu_id($pcu_id){
+			$this->pcu_id = $pcu_id;
 		}
 
 		public function setEmail($email){
@@ -148,8 +148,8 @@
 			return $this->habilitado;
 		}
 
-		public function getId(){
-			return $this->id;
+		public function getPcu_id(){
+			return $this->pcu_id;
 		}
 
 		public function getEmail(){
