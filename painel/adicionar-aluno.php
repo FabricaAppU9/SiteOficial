@@ -5,12 +5,12 @@
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/Login.php");
-  require_once("classe/Daocurso.php");
+  	require_once("classe/Daocurso.php");
 
 	$obj_aluno = new Aluno();
 	$obj_daoaluno = new DaoAluno();
 	$obj_daousuario = new DaoUsuario();
-        $obj_daocurso = new DaoCurso();
+    $obj_daocurso = new DaoCurso();
 
 
 	$ra = $_POST['ra'];
@@ -27,11 +27,9 @@
 		$obj_aluno->setPcr_id($_POST['cargo']);
 		$obj_aluno->setPpe_id($_POST['periodo']);
 		$obj_aluno->setSemestre($_POST['semestre']);
-                $usuarioId = (int)($usuario['pus_id']);
+        $usuarioId = (int)($usuario['pus_id']);
 		$obj_aluno->setPus_id($usuarioId);
-               
-		//$obj_aluno->setId($_POST['curso']);
-		//$obj_aluno->setPcs_id($_POST['curso']);
+		$obj_aluno->setPcu_id($_POST['curso']);
         
 		$data = date('y/m/d');
                 
