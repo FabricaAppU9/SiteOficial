@@ -13,6 +13,7 @@
 	$obj_cargo   = new DaoCargo();
 	$obj_campus  = new DaoCampus();
 	$obj_curso 	 = new DaoCurso();
+	$obj_periodo = new DaoPeriodo();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	//$id_usuario  = (int)$_SESSION["id"];
@@ -20,6 +21,7 @@
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
 	$cursos 	 = $obj_curso->listaCursos($conexao);
+	$periodos 	 = $obj_periodo->listaPeriodos($conexao);
 ?>
 <section id="conteudo-minhaconta">
 	<div id="teste"></div>
@@ -114,17 +116,17 @@
 					<div class="row">
 						<div class="col-md-12">
 							
-							<select name="periodo" id="curso" class="form-control valida-form border_campus">
+							<select name="periodo" id="periodo" class="form-control valida-form border_campus">
 								<option value="">Selecione o período...</option>
 								<?php foreach($periodos as $periodo){?>
 									<?php if($aluno['pal_ppe_id'] == $periodo['ppe_id']){?>
 										<option value="<?=$periodo['ppe_id']?>" selected="selected"><?=utf8_encode($periodo['ppe_nome'])?></option>
 									<?php }else{?>
-									<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($curso['ppe_nome'])?></option>
+									<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($periodo['ppe_nome'])?></option>
 									<?php }?>
 								<?php }?>
 							</select>
-						    <p id="info_curso"></p>
+						    <p id="info_periodo"></p>
 						</div>
 					</div>
 					<!--Fim período-->
