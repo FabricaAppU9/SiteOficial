@@ -1,11 +1,12 @@
 <?php 
-	// teste
+
 	require_once("header.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCampus.php");
 	require_once("classe/DaoCurso.php");
+	require_once('classe/DaoPeriodo.php');
 
 	$obj_usuario = new DaoUsuario();
 	$obj_aluno   = new DaoAluno();
@@ -108,6 +109,25 @@
 						    <p id="info_curso"></p>
 						</div>
 					</div>
+
+					<!--Período-->
+					<div class="row">
+						<div class="col-md-12">
+							
+							<select name="periodo" id="curso" class="form-control valida-form border_campus">
+								<option value="">Selecione o período...</option>
+								<?php foreach($periodos as $periodo){?>
+									<?php if($aluno['pal_ppe_id'] == $periodo['ppe_id']){?>
+										<option value="<?=$periodo['ppe_id']?>" selected="selected"><?=utf8_encode($periodo['ppe_nome'])?></option>
+									<?php }else{?>
+									<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($curso['ppe_nome'])?></option>
+									<?php }?>
+								<?php }?>
+							</select>
+						    <p id="info_curso"></p>
+						</div>
+					</div>
+					<!--Fim período-->
 
 					<div class="row">
 						<div class="col-md-12">
