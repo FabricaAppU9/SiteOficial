@@ -72,7 +72,7 @@
 							<td><?=utf8_encode($aluno['pal_semestre'])?></td>
                             <td>
                            <a href="excluir.php?id=<?=$aluno['pal_id']?>" title="Excluir"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
-							<a href="editar-aluno-form.php?pal_id=<?=$aluno['pal_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:Blue;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
+							<a href="editar-aluno-form.php?pal_id=<?=$aluno['pal_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
 						</tr>
 					<?php }?>
 					
