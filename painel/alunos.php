@@ -19,8 +19,6 @@
 	$cargos   = $obj_cargo->listaCargos($conexao);
 	$cursos   = $obj_curso->listaCursos($conexao);
 	$alunos   = $obj_aluno->listaAlunos($conexao);
-	$periodos = $obj_periodo->listaPeriodos($conexao);
-
     
 ?>
 <section id="conteudo-alunos">
@@ -36,7 +34,7 @@
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<center><select name="aluno-campus" id="filter-aluno-por-campus" class="form-control">
+				<center><select name="opcao" id="filter-aluno-por-campus" class="form-control">
 					<option value="">(Selecione o campus)</option>
 					<?php foreach($campus as $campu){?>
 					<option value="<?=$campu['pca_id']?>"><?=utf8_encode($campu['pca_nome'])?></option>
@@ -68,7 +66,7 @@
 							<td><?=utf8_encode($aluno['pca_nome'])?></td>
 							<td><?=utf8_encode($aluno['pcu_nome'])?></td>
 							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-							<td><?=utf8_encode($aluno['ppe_nome'])?></td>
+							<td><?=utf8_encode($aluno['ppe_id'])?></td>
 							<td><?=utf8_encode($aluno['pal_semestre'])?></td>
                             <td>
                            <a href="excluir.php?id=<?=$aluno['pal_id']?>" title="Excluir"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;

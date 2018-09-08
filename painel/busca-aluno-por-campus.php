@@ -15,9 +15,10 @@
 		$html .= "<td>".$aluno['pal_ra']."</td>";
 		$html .= "<td>".utf8_encode($aluno['pal_nome'])."</td>";
 		$html .= "<td>".utf8_encode($aluno['pca_nome'])."</td>";
-		$html .= "<td>".utf8_encode($aluno['curso'])."</td>";
+		$html .= "<td>".utf8_encode($aluno['pcu_nome'])."</td>";
 		$html .= "<td>".utf8_encode($aluno['pcr_nome'])."</td>";
 		$html .= "<td>".utf8_encode($aluno['ppe_nome'])."</td>";
+		$html .= "<td>".utf8_encode($aluno['pal_semestre'])."</td>";
 		$html .= "<td>Editar ou Excluir</td>";
 		$html .= "</tr>";
 	}
