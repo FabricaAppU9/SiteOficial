@@ -18,7 +18,7 @@
 			<ul class="social">
 				<li><a target="_blank" href="https://www.facebook.com/fabricaappu9"><i class="fa fa-facebook-official"></i></a></li>
 			</ul>
-			 ©2017 Uninove
+			 ©<?php echo date('Y')?> Uninove
 		</div>
 	</div>
 </footer>
