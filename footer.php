@@ -17,10 +17,6 @@
 		<div class="col-lg-3 col-sm-3 copyright">
 			<ul class="social">
 				<li><a target="_blank" href="https://www.facebook.com/fabricaappu9"><i class="fa fa-facebook-official"></i></a></li>
-				<li><a href="https://www.twitter.com/fabricaappu9"><i class="fa fa-twitter"></i></a></li>
-				<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-				<li><a href=""><i class="fa fa-github"></i></a></li>
-				<li><a href="https://www.skype.com/fabricaappu9"><i class="fa fa-skype"></i></a></li>
 			</ul>
 			 ©2017 Uninove
 		</div>
