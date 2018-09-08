@@ -19,7 +19,7 @@
 	$cargos   = $obj_cargo->listaCargos($conexao);
 	$cursos   = $obj_curso->listaCursos($conexao);
 	$alunos   = $obj_aluno->listaAlunos($conexao);
-	$periodos = $obj_aluno->listaPeriodos($conexao);
+	$periodos = $obj_periodo->listaPeriodos($conexao);
     
 ?>
 <section id="conteudo-alunos">
