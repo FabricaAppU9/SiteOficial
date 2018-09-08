@@ -8,16 +8,18 @@
     require_once("classe/DaoPeriodo.php");
     
     $obj_periodo = new DaoPeriodo();
-	$obj_campus = new DaoCampus();
-	$obj_cargo = new DaoCargo();
-	$obj_curso = new DaoCurso();
-	$obj_aluno = new DaoAluno();
+	$obj_campus  = new DaoCampus();
+	$obj_cargo   = new DaoCargo();
+	$obj_curso   = new DaoCurso();
+	$obj_aluno   = new DaoAluno();
+	$obj_periodo = new DaoPeriodo();
 
-	$campus = $obj_campus->buscaCargos($conexao);
+	$campus   = $obj_campus->buscaCargos($conexao);
     $periodos = $obj_periodo->listaPeriodos($conexao);
-	$cargos = $obj_cargo->listaCargos($conexao);
-	$cursos = $obj_curso->listaCursos($conexao);
-	$alunos = $obj_aluno->listaAlunos($conexao);
+	$cargos   = $obj_cargo->listaCargos($conexao);
+	$cursos   = $obj_curso->listaCursos($conexao);
+	$alunos   = $obj_aluno->listaAlunos($conexao);
+	$periodos = $obj_aluno->listaPeriodos($conexao);
     
 ?>
 <section id="conteudo-alunos">
