@@ -109,6 +109,19 @@
 						</div>
 					</div>
 
+					<!--Semestre-->
+					<div class="row">
+						<div class="col-md-12">		
+							<div class="input-group border_nome">
+						      <div class="input-group-addon tirar-borda-right"></div>
+						      <input type="text" class="form-control tirar-borda-left valida-form tirar-borda" name="semestre" id="nome" placeholder="Semestre" value="<?= utf8_encode($aluno['pal_semestre'])?>">
+						      <div class="input-group-addon tirar-bordar-left-ecolor nome_info"></div>
+						    </div>
+						    <p id="info_semestre"></p>
+						</div>
+					</div>
+					<!--Fim semestre-->
+
 					<div class="row">
 						<div class="col-md-12">
 							<input type="hidden" name="trocou-senha" id="trocou-senha" value="N">
