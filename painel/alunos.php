@@ -52,6 +52,8 @@
 						<th>Campus</th>
 						<th>Curso</th>
 						<th>Cargo</th>
+						<th>Período</th>
+						<th>Semestre</th>
 						<th>Ação</th>
 					</tr>
 				</thead>
