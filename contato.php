@@ -76,10 +76,10 @@
 			<center><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/ajax-loader.gif" style="margin-top:50px !important;margin-bottom:100px !important;width:200px;"></center>
 		</div>
 </section>
-<section class="contact-us" id="cadastrar">
+<!--<section class="contact-us" id="cadastrar">
 	<div class="container">
 		<div class="section-header">
-			<!--<h2 class="white-text">Selecione a opção de assunto</h2>-->
+			<h2 class="white-text">Selecione a opção de assunto</h2>
 			<h2 class="white-text">
 				Venha fazer parte da nossa equipe!
 			</h2>
@@ -93,7 +93,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <script>
 	$("#escolha-contato").change(function(){
 		var selecionado = $(this).val();
