@@ -116,6 +116,7 @@
 		});
 	});
 	$("#filter-aluno-por-campus").change(function(){
+		$("#table-alunos").css({"display":"table"});
 		var opcao = $(this).val();
 		$.ajax({
 			type: "POST",
