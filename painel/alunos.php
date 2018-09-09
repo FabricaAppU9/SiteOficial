@@ -45,7 +45,7 @@
 			<div class="col-md-4"></div>
 		</div>
 		<div class="row">
-			<table class="table table-bordered" style="margin-top:30px;">
+			<table id="table-alunos" class="table table-bordered" style="display:none; margin-top:30px;">
 				<thead>
 					<tr>
 						<th>RA</th>
@@ -59,21 +59,6 @@
 					</tr>
 				</thead>
 				<tbody id="colocar-alunos-por-ajax">
-					<?php foreach($alunos as $aluno){?>
-						<tr>
-							<td><?=$aluno['pal_ra']?></td>
-							<td><?=utf8_encode($aluno['pal_nome'])?></td>
-							<td><?=utf8_encode($aluno['pca_nome'])?></td>
-							<td><?=utf8_encode($aluno['pcu_nome'])?></td>
-							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-							<td><?=utf8_encode($aluno['ppe_id'])?></td>
-							<td><?=utf8_encode($aluno['pal_semestre'])?></td>
-                            <td>
-                           <a href="excluir.php?id=<?=$aluno['pal_id']?>" title="Excluir"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
-							<a href="editar-aluno-form.php?pal_id=<?=$aluno['pal_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
-						</tr>
-					<?php }?>
-					
 				</tbody>
 			</table
 		</div>
