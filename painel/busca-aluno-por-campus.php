@@ -11,6 +11,8 @@
 
 	$html = "";
 	foreach($alunos as $aluno){
+		$aluno_id = $aluno['pal_id'];
+		$name = "teste";
 		$html .= "<tr>";
 		$html .= "<td>".$aluno['pal_ra']."</td>";
 		$html .= "<td>".utf8_encode($aluno['pal_nome'])."</td>";
@@ -19,7 +21,10 @@
 		$html .= "<td>".utf8_encode($aluno['pcr_nome'])."</td>";
 		$html .= "<td>".utf8_encode($aluno['ppe_nome'])."</td>";
 		$html .= "<td>".utf8_encode($aluno['pal_semestre'])."</td>";
-		$html .= "<td>Editar ou Excluir</td>";
+		$html .= "<td>".
+		'<a href = "excluir.php?id='.$aluno_id.'">'.$name.'</a>'.
+		'<a href = "editar-aluno-form.php?id='.$aluno_id.'">'.$name.'</a>'.
+		"</td>";
 		$html .= "</tr>";
 	}
 
