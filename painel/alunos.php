@@ -8,16 +8,17 @@
     require_once("classe/DaoPeriodo.php");
     
     $obj_periodo = new DaoPeriodo();
-	$obj_campus = new DaoCampus();
-	$obj_cargo = new DaoCargo();
-	$obj_curso = new DaoCurso();
-	$obj_aluno = new DaoAluno();
+	$obj_campus  = new DaoCampus();
+	$obj_cargo   = new DaoCargo();
+	$obj_curso   = new DaoCurso();
+	$obj_aluno   = new DaoAluno();
+	$obj_periodo = new DaoPeriodo();
 
-	$campus = $obj_campus->buscaCargos($conexao);
+	$campus   = $obj_campus->buscaCargos($conexao);
     $periodos = $obj_periodo->listaPeriodos($conexao);
-	$cargos = $obj_cargo->listaCargos($conexao);
-	$cursos = $obj_curso->listaCursos($conexao);
-	$alunos = $obj_aluno->listaAlunos($conexao);
+	$cargos   = $obj_cargo->listaCargos($conexao);
+	$cursos   = $obj_curso->listaCursos($conexao);
+	$alunos   = $obj_aluno->listaAlunos($conexao);
     
 ?>
 <section id="conteudo-alunos">
@@ -33,7 +34,7 @@
 		<div class="row">
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
-				<center><select name="aluno-campus" id="filter-aluno-por-campus" class="form-control">
+				<center><select name="opcao" id="filter-aluno-por-campus" class="form-control">
 					<option value="">(Selecione o campus)</option>
 					<?php foreach($campus as $campu){?>
 					<option value="<?=$campu['pca_id']?>"><?=utf8_encode($campu['pca_nome'])?></option>
@@ -44,7 +45,7 @@
 			<div class="col-md-4"></div>
 		</div>
 		<div class="row">
-			<table class="table table-bordered" style="margin-top:30px;">
+			<table id="table-alunos" class="table table-bordered" style="display:none; margin-top:30px;">
 				<thead>
 					<tr>
 						<th>RA</th>
@@ -52,23 +53,12 @@
 						<th>Campus</th>
 						<th>Curso</th>
 						<th>Cargo</th>
+						<th>Período</th>
+						<th>Semestre</th>
 						<th>Ação</th>
 					</tr>
 				</thead>
 				<tbody id="colocar-alunos-por-ajax">
-					<?php foreach($alunos as $aluno){?>
-						<tr>
-							<td><?=$aluno['pal_ra']?></td>
-							<td><?=utf8_encode($aluno['pal_nome'])?></td>
-							<td><?=utf8_encode($aluno['pca_nome'])?></td>
-							<td><?=utf8_encode($aluno['pcu_nome'])?></td>
-							<td><?=utf8_encode($aluno['pcr_nome'])?></td>
-                            <td>
-                           <a href="excluir.php?id=<?=$aluno['pal_id']?>" title="Excluir"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;
-							<a href="editar-aluno-form.php?pal_id=<?=$aluno['pal_id']?>" title="Editar Aluno"><i class="fa fa-pencil" style="color:Blue;" aria-hidden="true"></i></a></td> <!-- criar ações para Editar e Excluir -->
-						</tr>
-					<?php }?>
-					
 				</tbody>
 			</table
 		</div>

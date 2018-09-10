@@ -81,7 +81,7 @@
 
 		public function buscaAlunoPorCampus($conexao, $pal_pca_id){
 			$alunos    = array();
-			$query = "SELECT * FROM aluno left join campus on campus.pca_id = aluno.pal_pca_id left join cargo on cargo.pcr_id = aluno.pal_pca_id left join curso on curso.id = aluno.pal_pca_id WHERE pal_pca_id = {$pal_pca_id}";
+			$query = "SELECT * FROM aluno left join campus on campus.pca_id = aluno.pal_pca_id left join cargo on cargo.pcr_id = aluno.pal_pcr_id left join curso on curso.pcu_id = aluno.pal_pcu_id left join periodo on periodo.ppe_id = aluno.pal_ppe_id WHERE pal_pca_id = {$pal_pca_id}";
 			$resultado = mysqli_query($conexao, $query);
             
 
@@ -94,7 +94,7 @@
 			while($aluno = mysqli_fetch_assoc($resultado)){
 				array_push($alunos,$aluno);
 			}
-
+			
 			return $alunos;
 		}
 
