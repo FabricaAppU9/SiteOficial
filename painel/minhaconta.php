@@ -1,17 +1,19 @@
 <?php 
-	// teste
+
 	require_once("header.php");
 	require_once("classe/DaoUsuario.php");
 	require_once("classe/DaoAluno.php");
 	require_once("classe/DaoCargo.php");
 	require_once("classe/DaoCampus.php");
 	require_once("classe/DaoCurso.php");
+	require_once('classe/DaoPeriodo.php');
 
 	$obj_usuario = new DaoUsuario();
 	$obj_aluno   = new DaoAluno();
 	$obj_cargo   = new DaoCargo();
 	$obj_campus  = new DaoCampus();
 	$obj_curso 	 = new DaoCurso();
+	$obj_periodo = new DaoPeriodo();
 
 	$usuario     = $obj_usuario->buscaUsuarioPorId($conexao, $_SESSION["id"]);
 	//$id_usuario  = (int)$_SESSION["id"];
@@ -19,6 +21,7 @@
 	$cargos      = $obj_cargo->listaCargos($conexao);
 	$campus      = $obj_campus->buscaCargos($conexao);
 	$cursos 	 = $obj_curso->listaCursos($conexao);
+	$periodos 	 = $obj_periodo->listaPeriodos($conexao);
 ?>
 <section id="conteudo-minhaconta">
 	<div id="teste"></div>
@@ -108,6 +111,37 @@
 						    <p id="info_curso"></p>
 						</div>
 					</div>
+
+					<!--Período-->
+					<div class="row">
+						<div class="col-md-12">
+							
+							<select name="periodo" id="periodo" class="form-control valida-form border_campus">
+								<option value="">Selecione o período...</option>
+								<?php foreach($periodos as $periodo){?>
+									<?php if($aluno['pal_ppe_id'] == $periodo['ppe_id']){?>
+										<option value="<?=$periodo['ppe_id']?>" selected="selected"><?=utf8_encode($periodo['ppe_nome'])?></option>
+									<?php }else{?>
+									<option value="<?=$periodo['ppe_id']?>"><?=utf8_encode($periodo['ppe_nome'])?></option>
+									<?php }?>
+								<?php }?>
+							</select>
+						    <p id="info_periodo"></p>
+						</div>
+					</div>
+					<!--Fim período-->
+					<!--Semestre-->
+					<div class="row">
+						<div class="col-md-12">		
+							<div class="input-group border_nome">
+						      <div class="input-group-addon tirar-borda-right"></div>
+						      <input type="text" class="form-control tirar-borda-left valida-form tirar-borda" name="semestre" id="semestre" placeholder="Semestre" value="<?= utf8_encode($aluno['pal_semestre'])?>">
+						      <div class="input-group-addon tirar-bordar-left-ecolor nome_info"></div>
+						    </div>
+						    <p id="info_semestre"></p>
+						</div>
+					</div>
+					<!--Fim semestre-->
 
 					<div class="row">
 						<div class="col-md-12">

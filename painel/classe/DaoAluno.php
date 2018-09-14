@@ -74,15 +74,14 @@
 		}
 
 		public function alteraUsuario($conexao, Aluno $aluno, $data_update, $pal_id){
-			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_pcu_id = {$aluno->getPcu_id()}, pal_facebook = '{$aluno->getFacebook()}', pal_github = '{$aluno->getGithub()}', pal_linkedin = '{$aluno->getLinkedin()}', pal_data_update = '{$data_update}' WHERE pal_pus_id = {$pal_id}"; 
+
+			$query = "UPDATE aluno SET pal_nome = '{$aluno->getNome()}', pal_pcr_id = {$aluno->getPcr_id()}, pal_pca_id = {$aluno->getPca_id()}, pal_pcu_id = {$aluno->getPcu_id()}, pal_ppe_id = {$aluno->getPpe_id()}, pal_facebook = '{$aluno->getFacebook()}', pal_github = '{$aluno->getGithub()}', pal_linkedin = '{$aluno->getLinkedin()}', pal_data_update = '{$data_update}' WHERE pal_pus_id = {$pal_id}"; 
 			return mysqli_query($conexao,$query);
-			//return $query;
-			//return $aluno->getFacebook();
 		}
 
 		public function buscaAlunoPorCampus($conexao, $pal_pca_id){
 			$alunos    = array();
-			$query = "SELECT * FROM aluno left join campus on campus.pca_id = aluno.pal_pca_id left join cargo on cargo.pcr_id = aluno.pal_pca_id left join curso on curso.id = aluno.pal_pca_id WHERE pal_pca_id = {$pal_pca_id}";
+			$query = "SELECT * FROM aluno left join campus on campus.pca_id = aluno.pal_pca_id left join cargo on cargo.pcr_id = aluno.pal_pcr_id left join curso on curso.pcu_id = aluno.pal_pcu_id left join periodo on periodo.ppe_id = aluno.pal_ppe_id WHERE pal_pca_id = {$pal_pca_id}";
 			$resultado = mysqli_query($conexao, $query);
             
 
@@ -95,7 +94,7 @@
 			while($aluno = mysqli_fetch_assoc($resultado)){
 				array_push($alunos,$aluno);
 			}
-
+			
 			return $alunos;
 		}
 
