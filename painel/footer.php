@@ -161,6 +161,7 @@
 		        data: dados,
 		        success: function (data) {
 		            alert(data);
+					window.location.href = 'depoimento.php'
 		        },
 		    });
 	});
