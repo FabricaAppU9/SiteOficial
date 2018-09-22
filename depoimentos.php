@@ -52,9 +52,10 @@
 										</div>
 									</div>
 									
-								</div>
-							
-								<div class="col-md-4" style="background-color:#FFFFFF;border-radius:5px;padding:10px;margin-left:15px;">
+								</div> <!--Fim depoimento professor Nacif-->
+
+								<!--Depoimento Heraldo-->
+								<div class="col-md-4" style="background-color:#FFFFFF;border-radius:5px;padding:10px;margin-left:15px; margin-bottom:15px;">
 									<div class="feedback-box">
 										<div class="message">
 											 “Tive uma entrevista na área de desenvolvimento, e comentei que faço parte do projeto que levantou mais o meu conhecimento, facilitando o processo de entrevista.
@@ -79,13 +80,50 @@ Estou super grato pela Fábrica e super grato pela equipe”
 										</div>
 									</div>
 									
-								</div>
+								</div> <!--Fim depoimento Heraldo-->
 							</div>
 						</div>
 					</div>
 				</div>
 				
-			</div>
+			</div> <!--Fim col-md-12-->
+	
+				<div class="col-md-12">
+				<div style="display: block;">
+					<div>
+						<div style="width: 100%; left: 0px; display: block;">
+							<?php foreach($alunos as $depoimento_aluno){?>
+							<div class="row">
+								<div class="col-md-6" style="background-color:#FFFFFF;border-radius:5px;padding:10px;  margin-bottom: 10px;">
+									<div class="feedback-box">
+										<div class="message">
+											 “<?=$depoimento_aluno['pda_texto']?>”
+										</div>
+										
+										<div class="client">
+											<div class="quote red-text">
+												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
+											</div>
+											<div class="client-info">
+												<a class="client-name" href=""><?=$depoimento_aluno['pal_nome']?></a> 
+												<div class="client-company">
+													 Aluno Uninove
+												</div>
+											</div>
+											<div class="client-image hidden-xs">
+												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px" style="margin-top: 13px;">
+											</div>
+										</div>
+									</div>
+									
+								</div> <!--Fim Teste-->
+							</div> <!--Fim row-->
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+				
+			</div> <!--col teste-->
 		</div>
 	</div>
 </section>
