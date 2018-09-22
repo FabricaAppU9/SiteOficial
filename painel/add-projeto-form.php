@@ -11,14 +11,10 @@
 				<p style="color:green;"><?=$_SESSION['foto']?></p>
 			<?php }?>
 			<div class="row">
-				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto.php"><!--Form upload de foto-->
-					<input type="hidden" name="id_usuario" value="<?=$_SESSION["id"]?>">
+				<!--Form upload de foto-->
+				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto.php">
 					<div class="col-md-6 img-perfil">
-						<?php if($aluno['pal_foto'] == null){?>
-							<img src="imagens/alunos/usuario.png" class="img-circle" width="50%"><br>
-						<?php }else{?>
-							<img src="imagens/alunos/<?=$aluno['pal_foto']?>" class="img-circle" width="50%"><br>
-						<?php }?>
+							<img src="imagens/alunos/<?=$projeto['prj_foto']?>" class="img-circle" width="50%"><br>
 						
 						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
 						<input type="file" id="trocar-img" name="foto_perfil"><br>
@@ -41,7 +37,7 @@
 							<input id="projeto_tec" type="text" name="tecnologias" class="form-control">
 							<div class="row">
 								<div class="col-md-12 botaosalvar">
-									<button input type="submit" class="btn btn-default salvar" id="add-projeto"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</button>
+									<button input type="submit" id="add-projeto" class="btn btn-primary">Salvar</button>
 								</div>
 							</div>
 						</form> <!--Fim form add projeto-->
