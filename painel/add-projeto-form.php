@@ -15,7 +15,6 @@
 				<div class="col-md-12">
 					<form method="POST" id="form-add-projeto">
 							<div class="col-md-12 img-perfil">
-									<img src="imagens/alunos/<?=$projeto['prj_foto']?>" class="img-circle" width="50%"><br>
 								<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
 								<input type="file" id="trocar-img" name="foto_perfil"><br>
 								<p id="arquivo-selecionado" style="color:green;">Nenhum arquivo selecionado!</p>
