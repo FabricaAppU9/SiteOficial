@@ -9,34 +9,7 @@
 
 	$obj_projeto    = new Projeto();
 	$obj_daoprojeto = new DaoProjeto();
-
-	function image_path(){
-		$arquivo_tmp = $_FILES[ 'foto_perfil' ][ 'tmp_name' ];
 	
-		$nome = $_FILES[ 'foto_perfil' ][ 'name' ];
-
-		$extensao = pathinfo ( $nome, PATHINFO_EXTENSION );
-		$extensao = strtolower ( $extensao );
-
-		if ( strstr ( '.jpg;.jpeg;.gif;.png', $extensao ) ) {
-
-			$novoNome = uniqid ( time () ) . '_' . $_SESSION["id"] . '.' . $extensao;
-
-			$destino = 'imagens/alunos/' . $novoNome;
-
-			if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-				return $novoNome;
-			}
-			else{
-				return NULL;
-			}
-		}
-		else{
-			echo 'Extensão não aceita';
-		}
-	}
-	
-	$foto = image_path();
 
     $data_inicio = $_POST['dt_inicio'];
     if(!isset($data_inicio) && empty($data_inicio)){
@@ -64,7 +37,7 @@
 	$obj_projeto->setDataFim($data_fim);
 	$obj_projeto->setTecnologias($_POST['tecnologias']);
 
-	$projeto = $obj_daoprojeto->inserirProjeto($conexao, $obj_projeto);
+	$projeto = $obj_daoprojeto->inserirProjeto($conexao, $obj_projeto, NULL);
 
 
 
