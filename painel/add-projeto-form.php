@@ -12,19 +12,14 @@
 			<?php }?>
 			<div class="row">
 				<!--Form upload de foto-->
-				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto.php">
-					<div class="col-md-6 img-perfil">
-							<img src="imagens/alunos/<?=$projeto['prj_foto']?>" class="img-circle" width="50%"><br>
-						
-						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
-						<input type="file" id="trocar-img" name="foto_perfil"><br>
-						<p id="arquivo-selecionado" style="color:green;">Nenhum arquivo selecionado!</p>
-						<input type="submit" disabled="disabled" id="sell-foto" class="btn btn-primary" value="Salvar">
-					</div>
-					
-				</form> <!--Fim do form para upload de foto-->
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<form method="POST" id="form-add-projeto">
+							<div class="col-md-12 img-perfil">
+									<img src="imagens/alunos/<?=$projeto['prj_foto']?>" class="img-circle" width="50%"><br>
+								<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
+								<input type="file" id="trocar-img" name="foto_perfil"><br>
+								<p id="arquivo-selecionado" style="color:green;">Nenhum arquivo selecionado!</p>
+							</div>
 							<label>Nome</label>
 							<input id="projeto_nome" type="text" name="nome" class="form-control">
 							<label>Descrição</label>
