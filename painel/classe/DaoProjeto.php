@@ -19,9 +19,9 @@
 			return $projetos;
 		}
 
-		public function inserirProjeto($conexao, Projeto $projeto){
-			$query = "INSERT INTO projeto(prj_nome, prj_descricao, prj_data_inicio, prj_data_fim, prj_tecnologias, prj_habilitado) VALUES ('{$projeto->getNome()}', '{$projeto->getDescricao()}',
-			'{$projeto->getDataInicio()}', '{$projeto->getDataFim()}', '{$projeto->getTecnologias()}', 1)";
+		public function inserirProjeto($conexao, Projeto $projeto, $foto){
+			$query = "INSERT INTO projeto(prj_nome, prj_descricao, prj_data_inicio, prj_data_fim, prj_tecnologias, prj_habilitado, prj_foto) VALUES ('{$projeto->getNome()}', '{$projeto->getDescricao()}',
+			'{$projeto->getDataInicio()}', '{$projeto->getDataFim()}', '{$projeto->getTecnologias()}', 1, NULL)";
 			return mysqli_query($conexao,$query);
 		}
 
