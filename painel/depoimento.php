@@ -61,7 +61,7 @@
 
 						<td>
                             <a  href="excluir-depoimento-aluno.php?id=<?=$aluno['pal_id']?>"  
-                               class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'> <!-- erro na Exclusão de depoimentos -->
+                               class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'> 
                             </i></a>&nbsp;&nbsp;<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>
 					</tr>
 				</table>

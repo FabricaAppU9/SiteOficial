@@ -50,23 +50,50 @@
 					<?php foreach($lista_depoimento as $depoimento){?>
 						<tr>
 							<td><?=$depoimento['pal_nome']?></td>
-                            <td><?=utf8_encode($depoimento['pda_texto'])?></td>
+							<td><?=utf8_encode($depoimento['pda_texto'])?></td>
 							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_inicio']))?></td>
-                            
-                            
-                            <?php if ($depoimento['pda_data_update'] == "0000-00-00") { ?>
-    						<td>-</td>
-						<?php } else { ?>
-   							<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
-						<?php } ?>       
-                            
-							<td>editar depoimento</td>
-                            
-                              
+							<?php if ($depoimento['pda_data_update'] == "0000-00-00") { ?>
+    							<td>-</td>
+							<?php } else { ?>
+   								<td><?=date('d/m/Y',  strtotime($depoimento['pda_data_update']))?></td>
+							<?php } ?>
+							<td>
+                            <a  href="excluir-depoimento-aluno-professor.php?id=<?=$depoimento['pal_pus_id']?>"  
+                               class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'> <!-- erro na Exclusão de depoimentos -->
+                            </i></a>&nbsp;&nbsp;
+							<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>       
 						</tr>
 					<?php }?>
 				</table>
-			</div>
+			</div> <!--Div row principal-->
+			<div class="add-depoimento" style="display: none;">
+				<div class="row">
+					<div class="col-md-12 textarea">
+						<form method="post" id="form-add-depoimento">
+							<textarea id="textId" name="depoimento" class="form-control" placeholder="Depoimento aqui"></textarea>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 botaosalvar">
+						<a class="btn btn-default salvar" id="salvar-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;SALVAR</a>
+					</div>
+				</div>
+			</div> <!--Fim adicionar depoimento-->
+			<div class="edit-depoimento">
+				<div class="row">
+					<div class="col-md-12 textarea">
+						<form method="post" id="form-edit-depoimento">
+							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
+						</form>
+					</div>
+				</div>
+				<!--Botão para salvar-->
+				<div class="row">
+					<div class="col-md-12 botaosalvar">
+						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
+					</div>
+				</div> <!--Fim edit depoimento-->
 		</div>
 
 	</section>
