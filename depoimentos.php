@@ -1,3 +1,19 @@
+<?php
+
+	require_once("painel/classe/DaoAluno.php");
+	require_once("painel/classe/Aluno.php");
+	require_once("painel/classe/DaoProfessor.php");
+	require_once("painel/classe/Professor.php");
+ 	$obj_daoaluno 		= new DaoAluno();
+	$obj_aluno 			= new Aluno();
+	$obj_daoProfessor 	= new DaoProfessor();
+	$obj_daoprofessor	= new DaoProfessor();
+	$obj_professor 		= new Professor();
+ 	$alunos = $obj_daoaluno->listatodososdepoimentos($conexao);
+
+
+?>
+
 <section class="testimonial" id="testimonials">
 	<div class="container">
 	    <div class="section-header">
