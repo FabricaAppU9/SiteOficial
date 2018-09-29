@@ -40,10 +40,12 @@
 											<div class="quote red-text">
 												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
 											</div>
-											<div class="client-info">
-												<a class="client-name" href="">Prof. Dr. Nacif</a>
-												<div class="client-company">
-													 UNINOVE / Hospital
+											<div style="margin-left: 500px;">
+												<div class="client-info">
+													<a class="client-name" href="">Prof. Dr. Nacif</a>
+													<div class="client-company">
+														 UNINOVE / Hospital
+													</div>
 												</div>
 											</div>
 											<div class="client-image hidden-xs">
@@ -68,10 +70,12 @@ Estou super grato pela Fábrica e super grato pela equipe”
 											<div class="quote red-text">
 												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
 											</div>
-											<div class="client-info">
-												<a class="client-name" href="">Heraldo de Souza</a>
-												<div class="client-company">
-													 UNINOVE / Iniciação Científica
+											<div style="margin-left:450px;">
+												<div class="client-info">
+													<a class="client-name" href="">Heraldo de Souza</a>
+													<div class="client-company">
+														 UNINOVE / Iniciação Científica
+													</div>
 												</div>
 											</div>
 											<div class="client-image hidden-xs">
@@ -104,10 +108,12 @@ Estou super grato pela Fábrica e super grato pela equipe”
 											<div class="quote red-text">
 												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
 											</div>
-											<div class="client-info">
-												<a class="client-name" href=""><?=utf8_encode($depoimento_aluno['pal_nome'])?></a>
-												<div class="client-company">
-													 Aluno Uninove
+											<div style="margin-left:450px;">
+												<div class="client-info">
+													<a class="client-name" href=""><?=utf8_encode($depoimento_aluno['pal_nome'])?></a>
+													<div class="client-company">
+														 Aluno Uninove
+													</div>
 												</div>
 											</div>
 											<div class="client-image hidden-xs">
@@ -126,7 +132,6 @@ Estou super grato pela Fábrica e super grato pela equipe”
 			</div> <!--col depoimento dos alunos-->
 
 						<div class="col-md-12">
-							<div class="col-md-12">
 					<div style="display: block;">
 						<div>
 							<div style="width: 100%; left: 0px; display: block;">
@@ -142,10 +147,12 @@ Estou super grato pela Fábrica e super grato pela equipe”
 												<div class="quote red-text">
 													<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
 												</div>
-												<div class="client-info">
-													<a class="client-name" href=""><?=utf8_encode($depoimento_professor['prf_nome'])?></a>
-													<div class="client-company">
-														 Professor Uninove
+												<div style="margin-left:450px;">
+													<div class="client-info">
+														<a class="client-name" href=""><?=utf8_encode($depoimento_professor['prf_nome'])?></a>
+														<div class="client-company">
+															 Professor Uninove
+														</div>
 													</div>
 												</div>
 												<div class="client-image hidden-xs">
@@ -161,7 +168,6 @@ Estou super grato pela Fábrica e super grato pela equipe”
 						</div>
 					</div>
 
-				</div> <!--col depoimento professores-->
 						</div>
 		</div>
 	</div>
