@@ -48,21 +48,5 @@
                 public function desabilitarProfessor($conexao, $prf_id){
                     $query = "UPDATE professor SET prf_habilitado = 0 WHERE prf_id = {$prf_id}";
                     return mysqli_query($conexao,$query);
-				}
-				
-				//Listar depoimentos dos professores
-				public function listatodososdepoimentos($conexao){
-
-					$professores    = array();
-		
-					$query     = "SELECT * FROM depoimento_professor left join professor on professor.prf_pus_id = depoimento_professor.pdp_prf_id";
-					$resultado = mysqli_query($conexao, $query);
-		
-					while($professor = mysqli_fetch_assoc($resultado)){
-						array_push($professores,$professor);
-					}
-		
-		
-					return $professores;
-				}
+                }
 	}
