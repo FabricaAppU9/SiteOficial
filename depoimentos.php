@@ -11,6 +11,9 @@
 	$obj_professor 		= new Professor();
  	$alunos = $obj_daoaluno->listatodososdepoimentos($conexao);
 
+	//var_dump($alunos);
+	//die();
+
 
 ?>
 
@@ -68,12 +71,14 @@ Estou super grato pela Fábrica e super grato pela equipe”
 											<div class="quote red-text">
 												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px">
 											</div>
-											<div class="client-info">
-												<a class="client-name" href="">Heraldo de Souza</a>
-												<div class="client-company">
-													 UNINOVE / Iniciação Científica
+											<div  style="margin-left:450px;">
+												<div class="client-info">
+													<a class="client-name" href="">Heraldo de Souza</a>
+													<div class="client-company">
+														 UNINOVE / Iniciação Científica
+													</div>
 												</div>
-											</div>
+											<div>
 											<div class="client-image hidden-xs">
 												<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/uninove.jpg" alt="" width="70px" style="margin-top: 13px;">
 											</div>
@@ -81,6 +86,9 @@ Estou super grato pela Fábrica e super grato pela equipe”
 									</div>
 
 								</div> <!--Fim Depoimento Heraldo-->
+
+								
+
 							</div>
 						</div>
 					</div>
