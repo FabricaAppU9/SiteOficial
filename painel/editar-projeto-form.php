@@ -19,7 +19,7 @@
 			<div class="row">
 				<!--formulario responsavel pela fotografia-->
 				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto-projeto.php">
-					<input type="hidden" name="id_usuario" value="<?=$_SESSION["id"]?>">
+					<input type="hidden" name="id_projeto" value="<?=$idProjeto?>">
 					<div class="col-md-6 img-perfil">
 						<?php if($linhaProjeto['prj_foto'] == null){?>
 							<img src="imagens/alunos/usuario.png" class="img-circle" width="50%"><br>
