@@ -5,7 +5,7 @@
 	require_once("classe/Login.php");
 	session_start();
 	ini_set('session.use_trans_sid', 10);
-	$obj_aluno = new DaoAluno();
+	$obj_projeto = new DaoProjeto();
 
 	$arquivo_tmp = $_FILES[ 'foto_perfil' ][ 'tmp_name' ];
 
@@ -22,7 +22,7 @@
 
 		if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
 
-			$obj_aluno->MudaFoto($conexao,$novoNome,$_SESSION["id"]);
+			$obj_projeto->MudaFoto($conexao,$novoNome,$_SESSION["id"]);
 			$_SESSION['foto'] = "Imagem alterada com Sucesso!";
 			header("Location: minhaconta.php");
 

@@ -18,13 +18,13 @@
 			<?php }?>
 			<div class="row">
 				<!--formulario responsavel pela fotografia-->
-				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto.php">
+				<form id="trocar-foto" method="post" enctype="multipart/form-data" action="mudar-foto-projeto.php">
 					<input type="hidden" name="id_usuario" value="<?=$_SESSION["id"]?>">
 					<div class="col-md-6 img-perfil">
 						<?php if($linhaProjeto['prj_foto'] == null){?>
 							<img src="imagens/alunos/usuario.png" class="img-circle" width="50%"><br>
 						<?php }else{?>
-							<img src="imagens/alunos/<?=$aluno['pal_foto']?>" class="img-circle" width="50%"><br>
+							<img src="imagens/alunos/<?=$linhaProjeto['prj_foto']?>" class="img-circle" width="50%"><br>
 						<?php }?>
 
 						<label for="trocar-img"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Trocar Imagem</label>
