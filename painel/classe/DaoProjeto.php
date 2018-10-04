@@ -26,7 +26,7 @@
 		}
 
 		public function alterarProjeto($conexao, Projeto $projeto, $prj_id){
-			$query = "UPDATE projeto SET prj_nome = '{$projeto->getNome()}', prj_descricao = '{$projeto->getDescricao()}', prj_data_inicio = '{$projeto->getDataInicio()}', prj_data_fim = '{$projeto->getDataFim()}', prj_tecnologias = '{$projeto->getTecnologias()}' WHERE prj_id = {$prj_id}"; 
+			$query = "UPDATE projeto SET prj_nome = '{$projeto->getNome()}', prj_descricao = '{$projeto->getDescricao()}', prj_data_inicio = '{$projeto->getDataInicio()}', prj_data_fim = '{$projeto->getDataFim()}', prj_tecnologias = '{$projeto->getTecnologias()}' WHERE prj_id = {$prj_id}";
 			return mysqli_query($conexao,$query);
 		}
 
@@ -34,11 +34,17 @@
 			$query = "UPDATE projeto SET prj_habilitado = 0 WHERE prj_id = {$prj_id}";
                         return mysqli_query($conexao,$query);
 		}
-		
+
 		public function buscaProjetoPorId($conexao, $id){
 			$query = "SELECT * FROM projeto WHERE prj_id = {$id}";
 			$resultado = mysqli_query($conexao,$query);
 			$projeto = mysqli_fetch_assoc($resultado);
 			return $projeto;
+		}
+
+		//Método para alterar a foto
+		public function MudaFoto($conexao, $foto, $prj_id){
+			$query = "UPDATE projeto SET prj_foto = '{$foto}' WHERE prj_id = {$prj_id}";
+			return mysqli_query($conexao,$query);
 		}
 	}
