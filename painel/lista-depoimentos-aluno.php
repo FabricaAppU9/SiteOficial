@@ -83,7 +83,8 @@
 			<div class="edit-depoimento">
 				<div class="row">
 					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-depoimento">
+						<form method="post" id="form-edit-depoimento-aluno">
+							<input type="hidden" id="id_aluno" name="id_aluno" value="<?=$depoimento['pda_pal_id']?>">
 							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
 						</form>
 					</div>
@@ -91,7 +92,7 @@
 				<!--Botão para salvar-->
 				<div class="row">
 					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
+						<a class="btn btn-default salvar" id="salvar-edit-depoimento-aluno"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
 					</div>
 				</div> <!--Fim edit depoimento-->
 		</div>
