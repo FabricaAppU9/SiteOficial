@@ -130,6 +130,67 @@
 						</div>
 					</div>
 				</div>
+
+				<!--Outras tecs-->
+				<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/angular.jpeg" alt="" width="50px">
+								</div>
+								<h5>Angular</h5>
+								<p>Framework Front-End.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/firebase.jpeg" alt="" width="50px">
+								</div>
+								<h5>Firebase</h5>
+								<p>Ferramenta de banco de dados.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/nodejs.jpeg" alt="" width="50px">
+								</div>
+								<h5>Node JS</h5>
+								<p>Node JS.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+							<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/pwa.jpeg" alt="" width="50px">
+									</div>
+									<h5>PWA</h5>
+									<p>PWA</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/ts.jpeg" alt="" width="50px">
+									</div>
+									<h5>TypeScript</h5>
+									<p>TypeScript.</p>
+								</div>
+							</div>
+							<!--<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/nodejs.jpeg" alt="" width="50px">
+									</div>
+									<h5>Node JS</h5>
+									<p>Node JS.</p>
+								</div>
+							</div>-->
+					</div>
 			</div>
 		</div>
 	<!-- </div> -->
