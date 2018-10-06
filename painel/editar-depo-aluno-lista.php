@@ -15,7 +15,9 @@
 	$depoimento = $obj_daodepoimento->alteraDepoimento($conexao, $obj_depoimento, $id);
 
 	if($depoimento){
+		header("Location: lista-depoimentos-aluno.php");
 		echo "Sucesso!";
+		die();
 	}else{
 		echo "Erro!";
 	}
