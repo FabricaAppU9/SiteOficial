@@ -8,11 +8,11 @@
 	$obj_depoimento = new DepoimentoAluno();
 	$obj_daodepoimento = new DaoDepoimentoAluno();
 	
-	
+	$id = $_POST['id_aluno'];
 	$obj_depoimento->setTexto(utf8_decode($_POST['depoimento_edit']));
 	$obj_depoimento->setDataUpdate(date('y/m/d'));
 
-	$depoimento = $obj_daodepoimento->alteraDepoimento($conexao, $obj_depoimento, $_ID["id"]);
+	$depoimento = $obj_daodepoimento->alteraDepoimento($conexao, $obj_depoimento, $id);
 
 	if($depoimento){
 		echo "Sucesso!";
