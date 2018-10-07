@@ -166,6 +166,20 @@
 		    });
 	});
 
+	//Editar depoimento aluno - Professor
+	$("#salvar-edit-depoimento-aluno").click(function(){
+		var dados = $("#form-edit-depoimento-aluno").serialize();
+			$.ajax({
+		        url: 'editar-depo-aluno-lista.php',
+		        type: 'post',
+		        data: dados,
+		        success: function (data) {
+		            alert(data);
+					window.location.href = 'lista-depoimentos-aluno.php'
+		        },
+		    });
+	});
+
 	//Adicionar depoimento professor
 	$("#salvar-depoimento-professor").click(function(){
 		var dados = $("#form-add-depoimento-professor").serialize();
