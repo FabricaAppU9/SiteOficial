@@ -48,15 +48,15 @@
 			<form action="enviar-contato.php" method="post">
 				<div>
 				<div class="col-lg-6 col-sm-6">
-					<input name="nome" placeholder="Seu Nome" class="form-control input-box" id="nome" type="text">
+					<input name="nome" placeholder="Seu Nome" class="form-control input-box" id="nome" type="text" required>
 				</div>
 				<div class="col-lg-6 col-sm-6">
-					<input name="email" placeholder="Seu Email" class="form-control input-box" id="e-mail" type="email">
+					<input name="email" placeholder="Seu Email" class="form-control input-box" id="e-mail" type="email" required>
 				</div>
 				</div>
 				
 				<div class="col-sm-12">
-					<textarea name="mensagem" class="form-control textarea-box" placeholder="Mensagem: " id="message"></textarea>
+					<textarea name="mensagem" class="form-control textarea-box" placeholder="Mensagem: " id="message" required></textarea>
 				</div>
 				<!--<h4 class="success pull-left white-text">
 					Your message has been sent successfully.
