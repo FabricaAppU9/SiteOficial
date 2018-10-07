@@ -10,7 +10,7 @@
                
                     Mensagem:' .$mensagem.' /n';
 
-    if(mail("contato@fabricaappu9.com.br", "Fale Conosco",$corpoemail,$headers)){
+    if(mail("contato@fabricaappu9.com.br", "Fale Conosco - Fábrica de Aplicativos",$corpoemail,$headers)){
 
 
  	   echo "<script>alert('Mensagem enviada com sucesso!');</script>";	
