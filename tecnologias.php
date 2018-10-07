@@ -181,15 +181,15 @@
 									<p>TypeScript.</p>
 								</div>
 							</div>
-							<!--<div class="col-sm-4">
+							<div class="col-sm-4">
 								<div class="feature ">
 									<div class="feature-icon">
-										<img src="painel/imagens/tecnologias/nodejs.jpeg" alt="" width="50px">
+										<img src="painel/imagens/tecnologias/3DMax.jpeg" alt="" width="50px">
 									</div>
-									<h5>Node JS</h5>
-									<p>Node JS.</p>
+									<h5>3DMax</h5>
+									<p>Modelagem de objetos 3D.</p>
 								</div>
-							</div>-->
+							</div>
 					</div>
 			</div>
 		</div>
