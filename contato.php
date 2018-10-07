@@ -44,19 +44,19 @@
 				<button class="btn btn-primary custom-button red-btn" id="botao-equipe">Enviar Contato</button>
 			</form> -->
 			
-			
-			<form class="contact-form" id="contato-normal">
+			<!-- class="contact-form" id="contato-normal"-->
+			<form action="enviar-contato.php" method="post">
 				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="nome" placeholder="Seu Nome" class="form-control input-box" id="nome" type="text">
 				</div>
 				<div class="col-lg-6 col-sm-6">
-					<input name="e-mail" placeholder="Seu Email" class="form-control input-box" id="e-mail" type="email">
+					<input name="email" placeholder="Seu Email" class="form-control input-box" id="e-mail" type="email">
 				</div>
 				</div>
 				
 				<div class="col-sm-12">
-					<textarea name="message" class="form-control textarea-box" placeholder="Mensagem: " id="message"></textarea>
+					<textarea name="mensagem" class="form-control textarea-box" placeholder="Mensagem: " id="message"></textarea>
 				</div>
 				<!--<h4 class="success pull-left white-text">
 					Your message has been sent successfully.
@@ -65,7 +65,7 @@
 				<h4 class="error pull-left white-text">
 					E-mail must be valid and message must be longer than 1 character.
 				</h4>-->
-				<button class="btn btn-primary custom-button red-btn" id="botao-normal">Enviar Contato</button>
+				<input type="submit" class="btn btn-primary custom-button red-btn" value="Enviar contato"/>
 			</form>
 		</div>
 		
