@@ -241,13 +241,43 @@
 								<p>Framework progressivo para construção de interfaces ao usuário.</p>
 							</div>
 						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/asp-net.jpg" alt="" width="50px">
+								</div>
+								<h5>ASP.NET Core</h5>
+								<p>Framework de desenvolvimento.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/entity.jpg" alt="" width="50px">
+								</div>
+								<h5>Entity Framework</h5>
+								<p>Camada para persistência dos dados.</p>
+							</div>
+						</div>
 						<!--<div class="col-sm-4">
 							<div class="feature ">
 								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/ionic-logo.png" alt="" width="50px">
+									<img src="painel/imagens/tecnologias/vue-logo.png" alt="" width="50px">
 								</div>
-								<h5>Ionic</h5>
-								<p>Desenvolvimento de aplicativos híbridos.</p>
+								<h5>Vue JS</h5>
+								<p>Framework progressivo para construção de interfaces ao usuário.</p>
+							</div>
+						</div>-->
+						<!--<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/asp-net.jpg" alt="" width="50px">
+								</div>
+								<h5>ASP.NET Core</h5>
+								<p>Framework de desenvolvimento.</p>
 							</div>
 						</div>-->
 					</div>
