@@ -199,18 +199,18 @@
 									<img src="painel/imagens/tecnologias/wordpress.jpeg" alt="" width="50px">
 								</div>
 								<h5>WordPress</h5>
-								<p>Criação de sites</p>
+								<p>Criação de sites.</p>
 							</div>
 						</div>
-						<!--<div class="col-sm-4">
+						<div class="col-sm-4">
 							<div class="feature ">
 								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/ts.jpeg" alt="" width="50px">
+									<img src="painel/imagens/tecnologias/keyshot.png" alt="" width="50px">
 								</div>
-								<h5>TypeScript</h5>
-								<p>TypeScript.</p>
+								<h5>Keyshot</h5>
+								<p>Renderização de imagens em alta qualidade.</p>
 							</div>
-						</div>-->
+						</div>
 						<!--<div class="col-sm-4">
 							<div class="feature ">
 								<div class="feature-icon">
