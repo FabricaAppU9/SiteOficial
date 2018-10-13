@@ -211,13 +211,43 @@
 								<p>Renderização de imagens em alta qualidade.</p>
 							</div>
 						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/ionic-logo.png" alt="" width="50px">
+								</div>
+								<h5>Ionic</h5>
+								<p>Desenvolvimento de aplicativos híbridos.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/laravel-logo.png" alt="" width="50px">
+								</div>
+								<h5>Laravel</h5>
+								<p>Framework PHP de desenvolvimento web que utiliza também o MVC.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/vue-logo.png" alt="" width="50px">
+								</div>
+								<h5>Vue JS</h5>
+								<p>Framework progressivo para construção de interfaces ao usuário.</p>
+							</div>
+						</div>
 						<!--<div class="col-sm-4">
 							<div class="feature ">
 								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/3DMax.jpeg" alt="" width="50px">
+									<img src="painel/imagens/tecnologias/ionic-logo.png" alt="" width="50px">
 								</div>
-								<h5>3DMax</h5>
-								<p>Modelagem de objetos 3D.</p>
+								<h5>Ionic</h5>
+								<p>Desenvolvimento de aplicativos híbridos.</p>
 							</div>
 						</div>-->
 					</div>
