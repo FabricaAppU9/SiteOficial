@@ -45,7 +45,7 @@
 			</form> -->
 			
 			<!-- class="contact-form" id="contato-normal"-->
-			<form action="enviar-contato.php" method="post">
+			<form action="enviar-contato-sendgrid.php" method="post">
 				<div>
 				<div class="col-lg-6 col-sm-6">
 					<input name="nome" placeholder="Seu Nome" class="form-control input-box" id="nome" type="text" required>
