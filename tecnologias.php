@@ -191,6 +191,36 @@
 								</div>
 							</div>
 					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/wordpress.jpeg" alt="" width="50px">
+								</div>
+								<h5>WordPress</h5>
+								<p>Criação de sites</p>
+							</div>
+						</div>
+						<!--<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/ts.jpeg" alt="" width="50px">
+								</div>
+								<h5>TypeScript</h5>
+								<p>TypeScript.</p>
+							</div>
+						</div>-->
+						<!--<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/3DMax.jpeg" alt="" width="50px">
+								</div>
+								<h5>3DMax</h5>
+								<p>Modelagem de objetos 3D.</p>
+							</div>
+						</div>-->
+					</div>
 			</div>
 		</div>
 	<!-- </div> -->
