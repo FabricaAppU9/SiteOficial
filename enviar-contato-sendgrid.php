@@ -21,9 +21,14 @@
 	$sendgrid = new \SendGrid($API_KEY);
 	try {
 		$response = $sendgrid->send($email);
-		print $response->statusCode() . "\n";
-		print_r($response->headers());
-		print $response->body() . "\n";
+		//print $response->statusCode() . "\n";
+		if($response->statusCode() == 202){
+			echo "<script>alert('Mensagem enviada com sucesso')</script>";
+		}
+		else{
+			echo('Erro ao enviar mensagem');
+			die();
+		}
 	} catch (Exception $e) {
 		echo 'Caught exception: '. $e->getMessage() ."\n";
 	}
