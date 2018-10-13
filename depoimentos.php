@@ -57,7 +57,7 @@
 								</div> <!--Fim depoimento professor Nacif-->
 
 								<!--Depoimento Heraldo-->
-								<div class="col-md-12" style="background-color:#FFFFFF;border-radius:5px;padding:10px; margin-left:10px; margin-bottom:15px;">
+								<div class="col-md-12" style="background-color:#FFFFFF;border-radius:5px;padding:10px; margin-bottom:15px;">
 									<div class="feedback-box">
 										<div class="message">
 											 “Tive uma entrevista na área de desenvolvimento, e comentei que faço parte do projeto que levantou mais o meu conhecimento, facilitando o processo de entrevista.
