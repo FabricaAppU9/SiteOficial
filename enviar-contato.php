@@ -1,42 +1,23 @@
 <?php
-$nome     = utf8_decode($_POST['name']);
-$email    = $_POST['email'];
-$mensagem = utf8_decode($_POST['message']);
-$e        = utf8_decode("é");
-require_once("PHPMailer/PHPMailerAutoload.php");
 
-$mail = new PHPMailer();
+    $nome = utf8_decode($_POST['nome']);
+    $email = utf8_decode($_POST['email']);
+    $mensagem = utf8_decode($_POST['mensagem']);
 
-$mail->isSMTP();
-$mail->Charset = 'UTF-8';
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ss1';
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);
-$mail->Username = "seuemail@gmail.com";
-$mail->Password = "";
+    $headers = "From: ". $nome;
 
-$mail->setFrom("seuemail@gmail.com",$nome);
-$mail->addAddress("seuemail@gmail.com");
-$mail->Subject = "Contato";
-$mail->msgHTML("<html>Ola eu sou {$nome}, meu email {$e}: {$email} <br/> {$mensagem}</html>");
-$mail->AltBody = "Ola eu sou {$nome}, meu email {$e}: {$email} <br/> {$mensagem}";
-$html = "";
-if($mail->send()){
-	$html .= "Email enviado com sucesso!";
-}else{
-	$html .= "Seu email não foi enviado!";
+    $corpoemail = 'Ola, meu nome é' .$nome.' , Meu email é '.$email.'/n
+               
+                    Mensagem:' .$mensagem.' /n';
+
+    if(mail("contato@fabricaappu9.com.br", "Fale Conosco - Fábrica de Aplicativos",$corpoemail,$headers)){
+
+
+ 	   echo "<script>alert('Mensagem enviada com sucesso!');</script>";	
+ 	   header("Location: index.php");
+
+    } else{
+
+        echo "<script>alert('Erro ao enviar, tente diretamente pelo email contato@fabricaappu9.com.br');</script>";	
+
 }
-echo $html;
-
-
-
-
-
