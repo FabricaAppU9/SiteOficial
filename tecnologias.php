@@ -169,7 +169,7 @@
 										<img src="painel/imagens/tecnologias/pwa.jpeg" alt="" width="50px">
 									</div>
 									<h5>PWA</h5>
-									<p>PWA</p>
+									<p>Progressive Web Apps</p>
 								</div>
 							</div>
 							<div class="col-sm-4">
