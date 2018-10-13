@@ -28,7 +28,7 @@
 								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/astah.png" alt="" width="50px">
 							</div>
 							<h5>Astah</h5>
-							<p>Utilizamos o astah para os diagramas da UML.</p>
+							<p>Criação e edição dos diagramas da UML.</p>
 						</div>
 					</div>
 					
@@ -38,7 +38,7 @@
 								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/drive.png" alt="" width="50px">
 							</div>
 							<h5>Google Drive</h5>
-							<p>Armazenamento em nuvens.</p>
+							<p>Armazenamento em nuvem.</p>
 						</div>
 					</div>
 				</div>
