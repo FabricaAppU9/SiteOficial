@@ -1,7 +1,7 @@
 <?php
 	require 'vendor/autoload.php';
 
-	$API_KEY = "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";
+	$API_KEY = "";
     $nome = utf8_decode($_POST['nome']);
 	$email_user = utf8_decode($_POST['email']);
 	$mensagem = utf8_decode($_POST['mensagem']);
