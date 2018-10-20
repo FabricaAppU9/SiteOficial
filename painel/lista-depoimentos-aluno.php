@@ -61,7 +61,7 @@
                             <a  href="excluir-depoimento-aluno-professor.php?id=<?=$depoimento['pal_pus_id']?>"  
                                class="excluir-depoimento" title="Excluir Depoimento"><i class='fa fa-times' style='color:red;' aria-hidden='true'> <!-- erro na Exclusão de depoimentos -->
                             </i></a>&nbsp;&nbsp;
-							<a class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>       
+							<a href="editar-depoimento-aluno-professor.php?id=<?=$depoimento['pda_pal_id']?>" class="editardepoimento" title="Editar Depoimento"><i class="fa fa-pencil" style="color:yellow;" aria-hidden="true"></i></a></td>       
 						</tr>
 					<?php }?>
 				</table>
@@ -80,22 +80,6 @@
 					</div>
 				</div>
 			</div> <!--Fim adicionar depoimento-->
-			<div class="edit-depoimento">
-				<div class="row">
-					<div class="col-md-12 textarea">
-						<form method="post" id="form-edit-depoimento">
-							<textarea id="textId" name="depoimento_edit" class="form-control" placeholder="Depoimento aqui"><?=utf8_encode($depoimento['pda_texto'])?></textarea>
-						</form>
-					</div>
-				</div>
-				<!--Botão para salvar-->
-				<div class="row">
-					<div class="col-md-12 botaosalvar">
-						<a class="btn btn-default salvar" id="salvar-edit-depoimento"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;ALTERAR</a>
-					</div>
-				</div> <!--Fim edit depoimento-->
-		</div>
-
 	</section>
 
 <?php require_once("footer.php");?>
