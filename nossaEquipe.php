@@ -18,6 +18,7 @@
 	$obj_professor =	new Professor();
 
 	$professores = $obj_daoprofessor->listaProfessores($conexao);
+
     $alunos = $obj_daoaluno->listaAlunos($conexao);
 ?>
 
@@ -31,7 +32,8 @@
 		</div>
 		
 		<div style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 3s; -moz-animation-duration: 3s; animation-duration: 3s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="row wow fadeInRight animated" data-wow-offset="40" data-wow-duration="3s" data-wow-delay="0.15s">
-		<?php
+		
+            <?php
 					foreach($professores as $prof){?>
             <div class="col-lg-3 col-sm-3">
 				<div class="team-member">
