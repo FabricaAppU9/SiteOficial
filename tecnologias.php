@@ -278,34 +278,17 @@
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="feature ">
-								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/asp-net.jpg" alt="" width="50px">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/mysql.png" alt="" width="70px">
+									</div>
+									<h5>MySQL</h5>
+									<p>Banco de dados.</p>
 								</div>
-								<h5>ASP.NET Core</h5>
-								<p>Framework de desenvolvimento.</p>
-							</div>
-						</div>
-					</div>
+					</div> <!--Fim row--> 
 
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="feature ">
-								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/entity.jpg" alt="" width="50px">
-								</div>
-								<h5>Entity Framework</h5>
-								<p>Camada para persistência dos dados.</p>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="feature ">
-								<div class="feature-icon">
-									<img src="painel/imagens/tecnologias/mysql.png" alt="" width="50px">
-								</div>
-								<h5>MySQL</h5>
-								<p>Banco de dados.</p>
-							</div>
+
 						</div>
 						<!--<div class="col-sm-4">
 							<div class="feature ">
