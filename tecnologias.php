@@ -25,20 +25,20 @@
 					<div class="col-sm-4">
 						<div class="feature ">
 							<div class="feature-icon">
-								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/astah.png" alt="" width="50px">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/ac.png" alt="" width="80px">
 							</div>
 							<h5>Astah</h5>
-							<p>Utilizamos o astah para os diagramas da UML.</p>
+							<p>Criação e edição dos diagramas da UML.</p>
 						</div>
 					</div>
 					
 					<div class="col-sm-4">
 						<div class="feature ">
 							<div class="feature-icon">
-								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/drive.png" alt="" width="50px">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/googledrive.png" alt="" width="50px">
 							</div>
 							<h5>Google Drive</h5>
-							<p>Armazenamento em nuvens.</p>
+							<p>Armazenamento em nuvem.</p>
 						</div>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 					<div class="col-sm-4">
 						<div class="feature ">
 							<div class="feature-icon">
-								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/git.jpg" alt="" width="50px">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/git.png" alt="" width="50px">
 							</div>
 							<h5>Git</h5>
 							<p>Subir códigos para a aplicação.</p>
@@ -56,7 +56,7 @@
 					<div class="col-sm-4">
 						<div class="feature ">
 							<div class="feature-icon">
-								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/github.png" alt="" width="50px">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/github.png" alt="" width="70px">
 							</div>
 							<h5>Github</h5>
 							<p>Diretórios e divisão de tarefas entre a equipe.</p>
@@ -68,7 +68,7 @@
 								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/visual_studio2.jpg" alt="" width="50px">
 							</div>
 							<h5>Visual Studio</h5>
-							<p>Utilizado para desenvolvimento em nuvem.</p>
+							<p>Utilizado para desenvolvimento.</p>
 						</div>
 					</div>
 				</div>
@@ -129,7 +129,177 @@
 							<p>Sistema operacional em nuvem.</p>
 						</div>
 					</div>
+                    
+                    <div class="col-sm-4">
+						<div class="feature ">
+							<div class="feature-icon">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/entity.png" alt="" width="70px">
+							</div>
+							<h5>Entity Framework Core</h5>
+							<p>Utilizado para camadas de persistência.</p>
+						</div>
+					</div>
+				
+                <div class="col-sm-4">
+						<div class="feature ">
+							<div class="feature-icon">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/asp.png" alt="" width="70px">
+							</div>
+							<h5>ASP.NET Core</h5>
+							<p>Framework utilizado no desenvolvimento.</p>
+						</div>
+					</div>
+                
+                    
+                    <div class="col-sm-4">
+						<div class="feature ">
+							<div class="feature-icon">
+								<img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/csharp.jpg" alt="" width="50px">
+							</div>
+							<h5>CSharp</h5>
+							<p>Linguagem utilizada no desenvolvimento.</p>
+						</div>
+					</div>
+                    
+                
+                
+                </div> 
+                    
 				</div>
+
+				<!--Outras tecs-->
+				<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/angular.jpeg" alt="" width="50px">
+								</div>
+								<h5>Angular</h5>
+								<p>Framework Front-End.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/firebase.jpeg" alt="" width="50px">
+								</div>
+								<h5>Firebase</h5>
+								<p>Ferramenta de banco de dados.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/nodejs.jpeg" alt="" width="50px">
+								</div>
+								<h5>Node JS</h5>
+								<p>Node JS.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+							<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/pwa.jpeg" alt="" width="50px">
+									</div>
+									<h5>PWA</h5>
+									<p>Progressive Web Apps</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/ts.jpeg" alt="" width="50px">
+									</div>
+									<h5>TypeScript</h5>
+									<p>TypeScript.</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/3DMax.jpeg" alt="" width="50px">
+									</div>
+									<h5>3DMax</h5>
+									<p>Modelagem de objetos 3D.</p>
+								</div>
+							</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/wordpress.jpeg" alt="" width="50px">
+								</div>
+								<h5>WordPress</h5>
+								<p>Criação de sites.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/keyshot.png" alt="" width="50px">
+								</div>
+								<h5>Keyshot</h5>
+								<p>Renderização de imagens em alta qualidade.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/ionic-logo.png" alt="" width="50px">
+								</div>
+								<h5>Ionic</h5>
+								<p>Desenvolvimento de aplicativos híbridos.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/laravel-logo.png" alt="" width="50px">
+								</div>
+								<h5>Laravel</h5>
+								<p>Framework PHP de desenvolvimento web que utiliza também o MVC.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/vue-logo.png" alt="" width="50px">
+								</div>
+								<h5>Vue JS</h5>
+								<p>Framework progressivo para construção de interfaces ao usuário.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+								<div class="feature ">
+									<div class="feature-icon">
+										<img src="painel/imagens/tecnologias/mysql.png" alt="" width="70px">
+									</div>
+									<h5>MySQL</h5>
+									<p>Banco de dados.</p>
+								</div>
+					</div> <!--Fim row--> 
+
+					<div class="row">
+
+						</div>
+						<!--<div class="col-sm-4">
+							<div class="feature ">
+								<div class="feature-icon">
+									<img src="painel/imagens/tecnologias/asp-net.jpg" alt="" width="50px">
+								</div>
+								<h5>ASP.NET Core</h5>
+								<p>Framework de desenvolvimento.</p>
+							</div>
+						</div>-->
+					</div>
 			</div>
 		</div>
 	<!-- </div> -->
