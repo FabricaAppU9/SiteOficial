@@ -43,6 +43,12 @@
    							<td><?=date('d/m/Y',  strtotime($proj['prj_data_fim']))?></td>
 						<?php } ?>
 						<td><?= $proj['prj_tecnologias'] ?></td>
+                        
+                        
+                        
+                       
+					</figure>
+                        
 
 						<td>
                                                     <a href="desabilitar-projeto.php?id=<?=$proj['prj_id']?>" title="Desabilitar Projeto"><i class='fa fa-times' style='color:red;' aria-hidden='true'></i></a>&nbsp;&nbsp;

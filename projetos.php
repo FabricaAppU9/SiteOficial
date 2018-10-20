@@ -39,8 +39,36 @@
 				</div>-->
 				</a>
 	        </li>
+                
+                
+                
+                <!--teste -->
+                
+                
+        <li style="visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; animation-duration: 1.5s;-webkit-animation-delay: 0.15s; -moz-animation-delay: 0.15s; animation-delay: 0.15s;" class="wow fadeInDown animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+	        <a data-toggle="modal" href="#myModalprojeto" id="projeto"><img src="Zerif%20-%20Responsive%20One%20Page%20Template_arquivos/projetos1.png" alt="project" style="border-radius: 30px;">
+				<!--<div class="project-info">
+					<div class="project-details">
+						<h5 class="white-text red-border-bottom"
+						Pro-Spiro </h5>
+						<div class="details white-text">
+							Android
+						</div>
+					</div>
+				</div>-->
+				</a>
+	        </li>         
+                
+                
+                
+                
+                
+                
+                
+                <!-- FIM TESTE 1 -->
 
-			</ul>
+
+ 		</ul>
 		</div>
 	</div>
 		<div id="loaded-content"></div>
@@ -77,6 +105,8 @@
       </div>
 	</div>
 </div>
+
+
 <div class="modal fade" id="myModalProspiro" role="dialog">
 	<div class="modal-dialog" style="min-width:80%;">
 		<!-- Modal content-->
@@ -106,3 +136,39 @@
       </div>
 	</div>
 </div>
+
+
+
+
+<!-- TESTE -->
+
+<div class="modal fade" id="myModalprojeto" role="dialog">
+	<div class="modal-dialog" style="min-width:80%;">
+		<!-- Modal content-->
+      <div class="modal-content" style="padding: 20px;min-height: auto;">
+      	<div class="modal-header" style="min-height: 40px;">
+      		
+      		<button type="button" class="close" data-dismiss="modal">&times;</button>
+      		<h3>TESTE</h3>
+      	</div>
+      	<div class="modal-body">
+      	<table>
+      		<tr>
+      			<td>Descrição</td>
+      			<td>Teste.</td>
+      		</tr>
+      		<tr>
+      			<td>Tecnologias</td>
+      			<td>Teste.</td>
+      		</tr>
+      		<tr>
+      			<td></td>
+      		</tr>
+      	</table>
+      	</div>
+      	<div class="modal-footer">
+      	</div>
+      </div>
+	</div>
+</div>
+
